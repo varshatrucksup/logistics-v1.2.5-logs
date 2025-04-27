@@ -1,0 +1,141 @@
+{
+  "context": {
+    "domain": "ONDC:LOG10",
+    "country": "IND",
+    "city": "*",
+    "core_version": "1.2.5",
+    "action": "update",
+    "transaction_id": "44d08fab-11e2-4197-b5ed-d983e07cef75",
+    "message_id": "ba6e22a4-d53e-43c3-8b9c-224e1a55e569",
+    "timestamp": "2025-04-27T07:35:21.674Z",
+    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
+    "bap_id": "ondc.sequelstring.com/buyer/protocol",
+    "ttl": "PT30S",
+    "bpp_id": "ondc.sequelstring.com/seller/protocol",
+    "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
+  },
+  "message": {
+    "update_target": "fulfillment",
+    "order": {
+      "id": "SS-1745739314379",
+      "items": [
+        {
+          "id": "I1",
+          "category_id": "Immediate Delivery"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "d9f9d25a-1635-472d-a0cd-62e7eacdde56",
+          "type": "Delivery",
+          "start": {
+            "instructions": {
+              "code": "2",
+              "short_desc": "7890",
+              "long_desc": "additional instructions for pickup",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": ".."
+              }
+            },
+            "authorization": {
+              "type": "OTP",
+              "token": "1234",
+              "valid_from": "2025-04-27T07:35:21.674Z",
+              "valid_to": "2025-04-27T07:50:21.674Z"
+            }
+          },
+          "end": {
+            "instructions": {
+              "code": "1",
+              "short_desc": "5817",
+              "long_desc": "additional instructions for pickup",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": ".."
+              }
+            }
+          },
+          "tags": [
+            {
+              "code": "state",
+              "list": [
+                {
+                  "code": "ready_to_ship",
+                  "value": "yes"
+                }
+              ]
+            },
+            {
+              "code": "linked_provider",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "P1"
+                },
+                {
+                  "code": "name",
+                  "value": "Seller1"
+                }
+              ]
+            },
+            {
+              "code": "linked_order",
+              "list": [
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "declared_value",
+                  "value": "1000.00"
+                },
+                {
+                  "code": "category",
+                  "value": "Home & Kitchen"
+                },
+                {
+                  "code": "weight_unit",
+                  "value": "kilogram"
+                },
+                {
+                  "code": "weight_value",
+                  "value": 2
+                },
+                {
+                  "code": "dim_unit",
+                  "value": "centimeter"
+                },
+                {
+                  "code": "length",
+                  "value": 25
+                },
+                {
+                  "code": "breadth",
+                  "value": 24
+                },
+                {
+                  "code": "height",
+                  "value": 40
+                },
+                {
+                  "code": "prep_time",
+                  "value": "PT30M"
+                },
+                {
+                  "code": "shipment_type",
+                  "value": "box"
+                },
+                {
+                  "code": "id",
+                  "value": "RO1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "updated_at": "2025-04-27T07:35:21.674Z"
+    }
+  }
+}
