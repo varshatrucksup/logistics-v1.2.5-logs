@@ -1,0 +1,167 @@
+{
+  "context": {
+    "domain": "ONDC:LOG11",
+    "country": "IND",
+    "city": "*",
+    "core_version": "1.2.5",
+    "action": "on_search",
+    "transaction_id": "e0251dd0-52cf-42b0-b0f5-b480764dad2c",
+    "message_id": "f17fc3f9-673c-4b6f-beb1-db2c838ede8b",
+    "timestamp": "2025-04-27T12:01:27.024Z",
+    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
+    "bap_id": "ondc.sequelstring.com/buyer/protocol",
+    "ttl": "PT30S",
+    "bpp_id": "ondc.sequelstring.com/seller/protocol",
+    "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
+  },
+  "message": {
+    "catalog": {
+      "bpp/descriptor": {
+        "name": "ONDC Pramaaan Logistics",
+        "tags": [
+          {
+            "code": "bpp_terms",
+            "list": [
+              {
+                "code": "static_terms",
+                "value": ""
+              },
+              {
+                "code": "static_terms_new",
+                "value": "https://github.com/ONDC-Official/NP-Static-Terms/lspNP_LSP/1.0/tc.pdf"
+              },
+              {
+                "code": "effective_date",
+                "value": "2024-11-20T00:00:00.000Z"
+              }
+            ]
+          }
+        ]
+      },
+      "bpp/providers": [
+        {
+          "id": "P1",
+          "descriptor": {
+            "name": "ONDC Pramaaan Logistics",
+            "short_desc": "Swiftly Yours, Delivered with Care",
+            "long_desc": "We deliver everywhere—yes, even Mars (just give us a little more rocket fuel)."
+          },
+          "categories": [
+            {
+              "id": "Express Delivery",
+              "time": {
+                "label": "TAT",
+                "duration": "P1D",
+                "timestamp": "2025-04-28"
+              }
+            }
+          ],
+          "fulfillments": [
+            {
+              "id": "40538f20-3c61-4208-8abd-293e64f218d0",
+              "type": "Delivery",
+              "start": {
+                "time": {
+                  "duration": "PT15M"
+                }
+              },
+              "tags": [
+                {
+                  "code": "distance",
+                  "list": [
+                    {
+                      "code": "motorable_distance_type",
+                      "value": "kilometer"
+                    },
+                    {
+                      "code": "motorable_distance",
+                      "value": "1.16"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0577928d-21ef-4eef-9610-026b8ee83b10",
+              "type": "RTO"
+            }
+          ],
+          "locations": [
+            {
+              "id": "L1",
+              "gps": "12.921200,77.588000",
+              "address": {
+                "street": "Jayanagar 4th Block",
+                "city": "Bengaluru",
+                "area_code": "560076",
+                "state": "KA"
+              }
+            }
+          ],
+          "items": [
+            {
+              "id": "exp_del",
+              "parent_item_id": "",
+              "descriptor": {
+                "code": "P2P",
+                "name": "Express Delivery",
+                "long_desc": "Upto 1 day for Delivery",
+                "short_desc": "Upto 1 day for Delivery"
+              },
+              "category_id": "Express Delivery",
+              "fulfillment_id": "40538f20-3c61-4208-8abd-293e64f218d0",
+              "price": {
+                "currency": "INR",
+                "value": "23.47"
+              },
+              "time": {
+                "label": "TAT",
+                "duration": "P1D"
+              }
+            },
+            {
+              "id": "rto_exp",
+              "parent_item_id": "exp_del",
+              "category_id": "Express Delivery",
+              "descriptor": {
+                "code": "P2P",
+                "name": "Express Delivery",
+                "long_desc": "Upto 1 day for Delivery",
+                "short_desc": "Upto 1 day for Delivery"
+              },
+              "fulfillment_id": "0577928d-21ef-4eef-9610-026b8ee83b10",
+              "time": {
+                "label": "TAT",
+                "duration": "P1D",
+                "timestamp": "2025-04-28"
+              },
+              "price": {
+                "currency": "INR",
+                "value": "35.20"
+              }
+            }
+          ],
+          "tags": [
+            {
+              "code": "lsp_features",
+              "list": [
+                {
+                  "code": "005",
+                  "value": "yes"
+                },
+                {
+                  "code": "009",
+                  "value": "yes"
+                },
+                {
+                  "code": "00C",
+                  "value": "yes"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "context": {
+    "domain": "ONDC:LOG11",
+    "country": "IND",
+    "city": "*",
+    "core_version": "1.2.5",
+    "action": "on_status",
+    "transaction_id": "e0251dd0-52cf-42b0-b0f5-b480764dad2c",
+    "message_id": "d28960da-7f39-4bca-a6d5-e97e16ab97df",
+    "timestamp": "2025-04-27T12:02:12.967Z",
+    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
+    "bap_id": "ondc.sequelstring.com/buyer/protocol",
+    "ttl": "PT50S",
+    "bpp_id": "ondc.sequelstring.com/seller/protocol",
+    "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
+  },
+  "message": {
+    "order": {
+      "id": "SS-1745755293418",
+      "state": "Completed",
+      "provider": {
+        "id": "P1",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "exp_del",
+          "category_id": "Express Delivery",
+          "fulfillment_id": "40538f20-3c61-4208-8abd-293e64f218d0",
+          "time": {
+            "label": "TAT",
+            "duration": "P1D"
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "23.47"
+        },
+        "breakup": [
+          {
+            "price": {
+              "currency": "INR",
+              "value": "23.47"
+            },
+            "@ondc/org/item_id": "exp_del",
+            "@ondc/org/title_type": "delivery"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "@ondc/org/item_id": "exp_del",
+            "@ondc/org/title_type": "tax"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "40538f20-3c61-4208-8abd-293e64f218d0",
+          "type": "Delivery",
+          "state": {
+            "descriptor": {
+              "code": "Order-delivered"
+            }
+          },
+          "tracking": false,
+          "start": {
+            "location": {
+              "id": "S1",
+              "gps": "12.921200,77.588000",
+              "address": {
+                "name": "Sherlock Holmes",
+                "building": "221 B",
+                "locality": "Baker Street",
+                "city": "Baker Street",
+                "state": "Karanataka",
+                "country": "India",
+                "area_code": "560076"
+              }
+            },
+            "contact": {
+              "phone": "9876543210",
+              "email": "sherlock@detective.com"
+            },
+            "instructions": {
+              "name": "Proof Of Pickup",
+              "images": ["http://sequelstring-lsp-ondc.com/proof"]
+            },
+            "person": {
+              "name": "Sherlock Holmes"
+            },
+            "time": {
+              "duration": "PT15M",
+              "range": {
+                "start": "2025-04-27T09:00:00.000Z",
+                "end": "2025-04-27T23:00:00.000Z"
+              },
+              "timestamp": "2025-04-27T12:01:53.477Z"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.930800,77.583900",
+              "address": {
+                "name": "Tony Soprano",
+                "building": "633 Stagtrail Rd",
+                "locality": "N. Caldwell",
+                "city": "N. Caldwell",
+                "state": "Karanataka",
+                "country": "India",
+                "area_code": "560076"
+              }
+            },
+            "contact": {
+              "phone": "9876543210",
+              "email": "tony@soprano.com"
+            },
+            "person": {
+              "name": "Tony Soprano"
+            },
+            "instructions": {
+              "name": "Proof Of Delivery",
+              "images": ["http://sequelstring-lsp-ondc.com/proof"]
+            },
+            "time": {
+              "range": {
+                "start": "2025-04-28T09:30:00.000Z",
+                "end": "2025-04-28T19:00:00.000Z"
+              },
+              "timestamp": "2025-04-27T12:02:12.967Z"
+            }
+          },
+          "tags": [
+            {
+              "code": "fulfillment_delay",
+              "list": [
+                {
+                  "code": "state",
+                  "value": "Order-picked-up"
+                },
+                {
+                  "code": "reason_id",
+                  "value": "004"
+                },
+                {
+                  "code": "timestamp",
+                  "value": "2025-04-27T12:01:59.641Z"
+                },
+                {
+                  "code": "attempt",
+                  "value": "yes"
+                }
+              ]
+            },
+            {
+              "code": "fulfillment_delay",
+              "list": [
+                {
+                  "code": "state",
+                  "value": "Order-delivered"
+                },
+                {
+                  "code": "reason_id",
+                  "value": "005"
+                },
+                {
+                  "code": "timestamp",
+                  "value": "2025-04-28T12:01:59.641Z"
+                },
+                {
+                  "code": "attempt",
+                  "value": "yes"
+                }
+              ]
+            }
+          ],
+          "agent": {
+            "name": "Tom Hagen",
+            "phone": "9876543210"
+          },
+          "vehicle": {
+            "registration": "3LVJ945"
+          }
+        }
+      ],
+      "billing": {
+        "name": "ONDC Pramaan Logistics Buyer NP",
+        "address": {
+          "name": "Sherlock Holmes",
+          "building": "221 B",
+          "locality": "Baker Street",
+          "city": "Baker Street",
+          "state": "Karanataka",
+          "country": "India",
+          "area_code": "560076"
+        },
+        "tax_number": "00ABCDE1234F1Z5",
+        "phone": "9876543210",
+        "email": "sherlock@detective.com",
+        "created_at": "2025-04-27T12:01:27.024Z",
+        "updated_at": "2025-04-27T12:01:27.024Z"
+      },
+      "payment": {
+        "collected_by": "BPP",
+        "type": "POST-FULFILLMENT",
+        "@ondc/org/settlement_basis": "invoicing",
+        "@ondc/org/settlement_window": "P15D",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_type": "upi",
+            "upi_address": "gft@oksbi",
+            "settlement_bank_account_no": "123456789123456",
+            "settlement_ifsc_code": "SBI00001234"
+          }
+        ],
+        "status": "NOT-PAID",
+        "time": {
+          "timestamp": "2025-04-27T12:02:12.967Z"
+        }
+      },
+      "cancellation_terms": [
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Pending",
+              "short_desc": "008"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "0.00",
+            "amount": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          }
+        },
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Agent-assigned",
+              "short_desc": "001,003"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "100.00",
+            "amount": {
+              "currency": "INR",
+              "value": "50.00"
+            }
+          }
+        },
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Order-picked-up",
+              "short_desc": "001,003"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "100.00",
+            "amount": {
+              "currency": "INR",
+              "value": "50.00"
+            }
+          }
+        }
+      ],
+      "updated_at": "2025-04-27T12:02:12.967Z"
+    }
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "context": {
+    "domain": "ONDC:LOG10",
+    "country": "IND",
+    "city": "*",
+    "core_version": "1.2.5",
+    "action": "on_status",
+    "transaction_id": "44d08fab-11e2-4197-b5ed-d983e07cef75",
+    "message_id": "a49831a1-a135-4cc5-bb59-6a391f98cdb3",
+    "timestamp": "2025-04-27T07:35:37.726Z",
+    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
+    "bap_id": "ondc.sequelstring.com/buyer/protocol",
+    "ttl": "PT50S",
+    "bpp_id": "ondc.sequelstring.com/seller/protocol",
+    "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
+  },
+  "message": {
+    "order": {
+      "id": "SS-1745739314379",
+      "state": "In-progress",
+      "provider": {
+        "id": "P1"
+      },
+      "items": [
+        {
+          "id": "I1",
+          "category_id": "Immediate Delivery",
+          "fulfillment_id": "d9f9d25a-1635-472d-a0cd-62e7eacdde56",
+          "time": {
+            "label": "TAT",
+            "duration": "PT45M",
+            "timestamp": "2025-04-27"
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "23.47"
+        },
+        "breakup": [
+          {
+            "price": {
+              "currency": "INR",
+              "value": "23.47"
+            },
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "delivery"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "tax"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "d9f9d25a-1635-472d-a0cd-62e7eacdde56",
+          "type": "Delivery",
+          "state": {
+            "descriptor": {
+              "code": "Order-picked-up"
+            }
+          },
+          "tracking": true,
+          "start": {
+            "location": {
+              "id": "S1",
+              "gps": "12.921200,77.588000",
+              "address": {
+                "name": "Sherlock Holmes",
+                "building": "221 B",
+                "locality": "Baker Street",
+                "city": "Baker Street",
+                "state": "Karanataka",
+                "country": "India",
+                "area_code": "560076"
+              }
+            },
+            "contact": {
+              "phone": "9876543210",
+              "email": "sherlock@detective.com"
+            },
+            "instructions": {
+              "name": "Proof Of Pickup",
+              "images": ["http://sequelstring-lsp-ondc.com/proof"]
+            },
+            "person": {
+              "name": "Sherlock Holmes"
+            },
+            "time": {
+              "duration": "PT15M",
+              "range": {
+                "start": "2025-04-27T09:00:00.000Z",
+                "end": "2025-04-27T23:00:00.000Z"
+              },
+              "timestamp": "2025-04-27T07:35:37.726Z"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.930800,77.583900",
+              "address": {
+                "name": "Tony Soprano",
+                "building": "633 Stagtrail Rd",
+                "locality": "N. Caldwell",
+                "city": "N. Caldwell",
+                "state": "Karanataka",
+                "country": "India",
+                "area_code": "560076"
+              }
+            },
+            "contact": {
+              "phone": "9876543210",
+              "email": "tony@soprano.com"
+            },
+            "person": {
+              "name": "Tony Soprano"
+            },
+            "instructions": {
+              "code": "1",
+              "short_desc": "5817",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": ".."
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2025-04-27T07:35:37.726Z",
+                "end": "2025-04-27T19:00:00.000Z"
+              }
+            }
+          },
+          "tags": [
+            {
+              "code": "linked_provider",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "P1"
+                },
+                {
+                  "code": "name",
+                  "value": "Seller1"
+                }
+              ]
+            },
+            {
+              "code": "linked_order",
+              "list": [
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "declared_value",
+                  "value": "1000.00"
+                },
+                {
+                  "code": "category",
+                  "value": "Home & Kitchen"
+                },
+                {
+                  "code": "weight_unit",
+                  "value": "kilogram"
+                },
+                {
+                  "code": "weight_value",
+                  "value": 2
+                },
+                {
+                  "code": "dim_unit",
+                  "value": "centimeter"
+                },
+                {
+                  "code": "length",
+                  "value": 25
+                },
+                {
+                  "code": "breadth",
+                  "value": 24
+                },
+                {
+                  "code": "height",
+                  "value": 40
+                },
+                {
+                  "code": "prep_time",
+                  "value": "PT30M"
+                },
+                {
+                  "code": "shipment_type",
+                  "value": "box"
+                },
+                {
+                  "code": "id",
+                  "value": "RO1"
+                }
+              ]
+            },
+            {
+              "code": "shipping_label",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "pdf"
+                },
+                {
+                  "code": "url",
+                  "value": "public link to pdf"
+                }
+              ]
+            },
+            {
+              "code": "tracking",
+              "list": [
+                {
+                  "code": "gps_enabled",
+                  "value": "yes"
+                },
+                {
+                  "code": "url_enabled",
+                  "value": "yes"
+                },
+                {
+                  "code": "url",
+                  "value": "http://sequelstring-lsp-ondc.com/track"
+                }
+              ]
+            }
+          ],
+          "agent": {
+            "name": "Tom Hagen",
+            "phone": "9876543210"
+          },
+          "vehicle": {
+            "registration": "3LVJ945"
+          }
+        }
+      ],
+      "billing": {
+        "name": "ONDC Pramaan Logistics Buyer NP",
+        "address": {
+          "name": "Sherlock Holmes",
+          "building": "221 B",
+          "locality": "Baker Street",
+          "city": "Baker Street",
+          "state": "Karanataka",
+          "country": "India",
+          "area_code": "560076"
+        },
+        "tax_number": "00ABCDE1234F1Z5",
+        "phone": "9876543210",
+        "email": "sherlock@detective.com",
+        "created_at": "2025-04-27T07:34:29.704Z",
+        "updated_at": "2025-04-27T07:34:29.704Z"
+      },
+      "payment": {
+        "collected_by": "BPP",
+        "type": "POST-FULFILLMENT",
+        "@ondc/org/settlement_basis": "invoicing",
+        "@ondc/org/settlement_window": "P15D",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_type": "upi",
+            "upi_address": "gft@oksbi",
+            "settlement_bank_account_no": "123456789123456",
+            "settlement_ifsc_code": "SBI00001234"
+          }
+        ],
+        "status": "NOT-PAID"
+      },
+      "cancellation_terms": [
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Pending",
+              "short_desc": "008"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "0.00",
+            "amount": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          }
+        },
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Agent-assigned",
+              "short_desc": "001,003"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "100.00",
+            "amount": {
+              "currency": "INR",
+              "value": "50.00"
+            }
+          }
+        },
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Order-picked-up",
+              "short_desc": "001,003"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "100.00",
+            "amount": {
+              "currency": "INR",
+              "value": "50.00"
+            }
+          }
+        }
+      ],
+      "updated_at": "2025-04-27T07:35:37.726Z"
+    }
+  }
+}

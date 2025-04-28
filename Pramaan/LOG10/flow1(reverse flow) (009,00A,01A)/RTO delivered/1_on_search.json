@@ -1,0 +1,154 @@
+{
+  "context": {
+    "domain": "ONDC:LOG10",
+    "country": "IND",
+    "city": "*",
+    "core_version": "1.2.5",
+    "action": "on_search",
+    "transaction_id": "44d08fab-11e2-4197-b5ed-d983e07cef75",
+    "message_id": "100964bb-d571-47f7-83a3-c7f537f1c5e1",
+    "timestamp": "2025-04-27T07:34:29.704Z",
+    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
+    "bap_id": "ondc.sequelstring.com/buyer/protocol",
+    "ttl": "PT30S",
+    "bpp_id": "ondc.sequelstring.com/seller/protocol",
+    "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
+  },
+  "message": {
+    "catalog": {
+      "bpp/descriptor": {
+        "name": "ONDC Pramaaan Logistics",
+        "tags": [
+          {
+            "code": "bpp_terms",
+            "list": [
+              {
+                "code": "static_terms",
+                "value": ""
+              },
+              {
+                "code": "static_terms_new",
+                "value": "https://github.com/ONDC-Official/NP-Static-Terms/lspNP_LSP/1.0/tc.pdf"
+              },
+              {
+                "code": "effective_date",
+                "value": "2024-11-20T00:00:00.000Z"
+              }
+            ]
+          }
+        ]
+      },
+      "bpp/providers": [
+        {
+          "id": "P1",
+          "descriptor": {
+            "name": "ONDC Pramaaan Logistics",
+            "short_desc": "Swiftly Yours, Delivered with Care",
+            "long_desc": "We deliver everywhere—yes, even Mars (just give us a little more rocket fuel)."
+          },
+          "categories": [
+            {
+              "id": "Immediate Delivery",
+              "time": {
+                "label": "TAT",
+                "duration": "PT60M",
+                "timestamp": "2025-04-27"
+              }
+            }
+          ],
+          "fulfillments": [
+            {
+              "id": "d9f9d25a-1635-472d-a0cd-62e7eacdde56",
+              "type": "Delivery",
+              "start": {
+                "time": {
+                  "duration": "PT15M"
+                }
+              },
+              "tags": [
+                {
+                  "code": "distance",
+                  "list": [
+                    {
+                      "code": "motorable_distance_type",
+                      "value": "kilometer"
+                    },
+                    {
+                      "code": "motorable_distance",
+                      "value": "1.16"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cbd37f0c-3644-4c67-bd63-85e3274342a5",
+              "type": "RTO"
+            }
+          ],
+          "items": [
+            {
+              "id": "I1",
+              "parent_item_id": "",
+              "descriptor": {
+                "name": "60 min delivery",
+                "short_desc": "60 min delivery for F&B",
+                "long_desc": "60 min delivery for F&B"
+              },
+              "category_id": "Immediate Delivery",
+              "fulfillment_id": "d9f9d25a-1635-472d-a0cd-62e7eacdde56",
+              "price": {
+                "currency": "INR",
+                "value": "23.47"
+              },
+              "time": {
+                "label": "TAT",
+                "duration": "PT45M",
+                "timestamp": "2025-04-27"
+              }
+            },
+            {
+              "id": "I2",
+              "parent_item_id": "I1",
+              "category_id": "Immediate Delivery",
+              "descriptor": {
+                "name": "RTO quote",
+                "short_desc": "RTO quote",
+                "long_desc": "RTO quote"
+              },
+              "fulfillment_id": "cbd37f0c-3644-4c67-bd63-85e3274342a5",
+              "time": {
+                "label": "TAT",
+                "duration": "PT60M",
+                "timestamp": "2025-04-27"
+              },
+              "price": {
+                "currency": "INR",
+                "value": "35.20"
+              }
+            }
+          ],
+          "tags": [
+            {
+              "code": "lsp_features",
+              "list": [
+                {
+                  "code": "005",
+                  "value": "yes"
+                },
+                {
+                  "code": "009",
+                  "value": "yes"
+                },
+                {
+                  "code": "00C",
+                  "value": "yes"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

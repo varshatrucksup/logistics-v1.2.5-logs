@@ -1,0 +1,139 @@
+{
+  "context": {
+    "domain": "ONDC:LOG10",
+    "country": "IND",
+    "city": "*",
+    "core_version": "1.2.5",
+    "action": "search",
+    "transaction_id": "013b4cda-8a48-4ff6-92fd-8cb6ff1aa5be",
+    "message_id": "397016f5-b741-45c8-9f89-0d20ca06af57",
+    "timestamp": "2025-04-27T06:54:19.733Z",
+    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
+    "bap_id": "ondc.sequelstring.com/buyer/protocol",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "category": {
+        "id": "Immediate Delivery"
+      },
+      "provider": {
+        "time": {
+          "days": "1,2,3,4,5,6,7",
+          "duration": "PT30M",
+          "range": {
+            "start": "1100",
+            "end": "2100"
+          },
+          "schedule": {
+            "holidays": ["2025-05-23", "2025-05-23"]
+          }
+        }
+      },
+      "fulfillment": {
+        "type": "Delivery",
+        "start": {
+          "location": {
+            "gps": "12.921200,77.588000",
+            "address": {
+              "area_code": "560041"
+            },
+            "id": "S1"
+          },
+          "authorization": {
+            "type": "OTP"
+          }
+        },
+        "end": {
+          "location": {
+            "gps": "12.930800,77.583900",
+            "address": {
+              "area_code": "560001"
+            }
+          },
+          "authorization": {
+            "type": "OTP"
+          }
+        },
+        "tags": [
+          {
+            "code": "linked_provider",
+            "list": [
+              {
+                "code": "id",
+                "value": "P1"
+              },
+              {
+                "code": "name",
+                "value": "Seller1"
+              }
+            ]
+          },
+          {
+            "code": "linked_order",
+            "list": [
+              {
+                "code": "currency",
+                "value": "INR"
+              },
+              {
+                "code": "declared_value",
+                "value": "1000.00"
+              },
+              {
+                "code": "category",
+                "value": "Home & Kitchen"
+              },
+              {
+                "code": "weight_unit",
+                "value": "kilogram"
+              },
+              {
+                "code": "weight_value",
+                "value": 2
+              },
+              {
+                "code": "dim_unit",
+                "value": "centimeter"
+              },
+              {
+                "code": "length",
+                "value": 25
+              },
+              {
+                "code": "breadth",
+                "value": 24
+              },
+              {
+                "code": "height",
+                "value": 40
+              }
+            ]
+          }
+        ]
+      },
+      "payment": {
+        "type": "POST-FULFILLMENT"
+      },
+      "tags": [
+        {
+          "code": "lbnp_features",
+          "list": [
+            {
+              "code": "00B",
+              "value": "yes"
+            },
+            {
+              "code": "00E",
+              "value": "yes"
+            },
+            {
+              "code": "01D",
+              "value": "yes"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

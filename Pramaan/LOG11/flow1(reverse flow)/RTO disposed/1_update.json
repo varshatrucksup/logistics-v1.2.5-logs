@@ -1,0 +1,137 @@
+{
+  "context": {
+    "domain": "ONDC:LOG11",
+    "country": "IND",
+    "city": "*",
+    "core_version": "1.2.5",
+    "action": "update",
+    "transaction_id": "c38e38fb-abef-48db-b356-ebc576243490",
+    "message_id": "2179da05-a8b4-488a-8a29-477c4ff3400f",
+    "timestamp": "2025-04-27T11:31:51.100Z",
+    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
+    "bap_id": "ondc.sequelstring.com/buyer/protocol",
+    "ttl": "PT30S",
+    "bpp_id": "ondc.sequelstring.com/seller/protocol",
+    "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
+  },
+  "message": {
+    "update_target": "fulfillment",
+    "order": {
+      "id": "SS-1745753507922",
+      "items": [
+        {
+          "id": "exp_del",
+          "category_id": "Express Delivery"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "4c6abf2b-db0d-45e2-bd85-d1b736ab7547",
+          "type": "Delivery",
+          "start": {
+            "instructions": {
+              "code": "2",
+              "short_desc": "3537",
+              "long_desc": "additional instructions for pickup",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": ".."
+              }
+            },
+            "authorization": {
+              "type": "OTP",
+              "token": "1234",
+              "valid_from": "2025-04-27T11:31:51.100Z",
+              "valid_to": "2025-04-27T11:46:51.100Z"
+            }
+          },
+          "end": {
+            "instructions": {
+              "code": "1",
+              "short_desc": "7466",
+              "long_desc": "additional instructions for pickup",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": ".."
+              }
+            }
+          },
+          "tags": [
+            {
+              "code": "state",
+              "list": [
+                {
+                  "code": "ready_to_ship",
+                  "value": "yes"
+                }
+              ]
+            },
+            {
+              "code": "linked_provider",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "P1"
+                },
+                {
+                  "code": "name",
+                  "value": "Seller1"
+                }
+              ]
+            },
+            {
+              "code": "linked_order",
+              "list": [
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "declared_value",
+                  "value": "1000.00"
+                },
+                {
+                  "code": "category",
+                  "value": "Home & Kitchen"
+                },
+                {
+                  "code": "weight_unit",
+                  "value": "kilogram"
+                },
+                {
+                  "code": "weight_value",
+                  "value": 2
+                },
+                {
+                  "code": "dim_unit",
+                  "value": "centimeter"
+                },
+                {
+                  "code": "length",
+                  "value": 25
+                },
+                {
+                  "code": "breadth",
+                  "value": 24
+                },
+                {
+                  "code": "height",
+                  "value": 40
+                },
+                {
+                  "code": "shipment_type",
+                  "value": "box"
+                },
+                {
+                  "code": "id",
+                  "value": "RO1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "updated_at": "2025-04-27T11:31:51.100Z"
+    }
+  }
+}
