@@ -1,69 +1,88 @@
 {
   "context": {
-    "domain": "ONDC:LOG11",
+    "domain": "ONDC:LOG10",
     "country": "IND",
     "city": "*",
     "core_version": "1.2.5",
-    "action": "on_confirm",
-    "transaction_id": "0a6face5-f61a-4cb3-8481-8bd461983579",
-    "message_id": "d71d8c4f-d8a7-434e-81f4-fde19271c372",
-    "timestamp": "2025-04-27T11:53:09.830Z",
+    "action": "on_status",
+    "transaction_id": "2c9306df-0c33-44d3-b36d-c364febb64d5",
+    "message_id": "29fdf194-e571-4b55-855a-af294cc1d94b",
+    "timestamp": "2025-05-14T05:37:18.487Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
-    "ttl": "PT10M",
+    "ttl": "PT30S",
     "bpp_id": "ondc.sequelstring.com/seller/protocol",
     "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
   },
   "message": {
     "order": {
-      "id": "SS-1745754789376",
-      "state": "Accepted",
+      "id": "SS-1747200997677",
+      "state": "Completed",
       "provider": {
-        "id": "P1",
-        "locations": [
-          {
-            "id": "L1"
-          }
-        ]
+        "id": "P1"
       },
       "items": [
         {
-          "id": "exp_del",
-          "category_id": "Express Delivery",
-          "fulfillment_id": "0b621c48-f6dc-43f1-9204-e3bbddac611f",
+          "id": "I1",
+          "category_id": "Immediate Delivery",
+          "fulfillment_id": "218bd84b-c781-4a69-a973-5eb763b14de5",
           "time": {
             "label": "TAT",
-            "duration": "P1D"
+            "duration": "PT45M",
+            "timestamp": "2025-05-14"
           }
         }
       ],
-      "billing": {
-        "name": "ONDC Pramaan Logistics Buyer NP",
-        "address": {
-          "name": "Sherlock Holmes",
-          "building": "221 B",
-          "locality": "Baker Street",
-          "city": "Baker Street",
-          "state": "Karanataka",
-          "country": "India",
-          "area_code": "560076"
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "42.65"
         },
-        "tax_number": "00ABCDE1234F1Z5",
-        "phone": "9876543210",
-        "email": "sherlock@detective.com",
-        "created_at": "2025-04-27T11:53:02.895Z",
-        "updated_at": "2025-04-27T11:53:02.895Z"
+        "breakup": [
+          {
+            "price": {
+              "currency": "INR",
+              "value": "23.47"
+            },
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "delivery"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "19.18"
+            },
+            "@ondc/org/item_id": "I4",
+            "@ondc/org/title_type": "surge"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "@ondc/org/item_id": "I4",
+            "@ondc/org/title_type": "tax"
+          }
+        ]
       },
       "fulfillments": [
         {
-          "id": "0b621c48-f6dc-43f1-9204-e3bbddac611f",
+          "id": "218bd84b-c781-4a69-a973-5eb763b14de5",
           "type": "Delivery",
           "state": {
             "descriptor": {
-              "code": "Pending"
+              "code": "Order-delivered"
             }
           },
-          "tracking": false,
+          "tracking": true,
           "start": {
             "location": {
               "id": "S1",
@@ -83,13 +102,8 @@
               "email": "sherlock@detective.com"
             },
             "instructions": {
-              "code": "2",
-              "short_desc": "5428",
-              "long_desc": "additional instructions for pickup",
-              "additional_desc": {
-                "content_type": "text/html",
-                "url": ".."
-              }
+              "name": "Proof Of Pickup",
+              "images": ["http://sequelstring-lsp-ondc.com/proof"]
             },
             "person": {
               "name": "Sherlock Holmes"
@@ -97,9 +111,10 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-04-27T09:00:00.000Z",
-                "end": "2025-04-27T23:00:00.000Z"
-              }
+                "start": "2025-05-14T09:00:00.000Z",
+                "end": "2025-05-14T23:00:00.000Z"
+              },
+              "timestamp": "2025-05-14T05:37:10.411Z"
             }
           },
           "end": {
@@ -123,18 +138,15 @@
               "name": "Tony Soprano"
             },
             "instructions": {
-              "code": "1",
-              "short_desc": "4323",
-              "additional_desc": {
-                "content_type": "text/html",
-                "url": ".."
-              }
+              "name": "Proof Of Delivery",
+              "images": ["http://sequelstring-lsp-ondc.com/proof"]
             },
             "time": {
               "range": {
-                "start": "2025-04-27T09:00:00.000Z",
-                "end": "2025-04-27T23:00:00.000Z"
-              }
+                "start": "2025-05-14T05:37:10.411Z",
+                "end": "2025-05-14T19:00:00.000Z"
+              },
+              "timestamp": "2025-05-14T05:37:18.487Z"
             }
           },
           "tags": [
@@ -172,7 +184,7 @@
                 },
                 {
                   "code": "weight_value",
-                  "value": 2
+                  "value": "2"
                 },
                 {
                   "code": "dim_unit",
@@ -180,15 +192,19 @@
                 },
                 {
                   "code": "length",
-                  "value": 25
+                  "value": "25"
                 },
                 {
                   "code": "breadth",
-                  "value": 24
+                  "value": "24"
                 },
                 {
                   "code": "height",
-                  "value": 40
+                  "value": "40"
+                },
+                {
+                  "code": "prep_time",
+                  "value": "PT30M"
                 },
                 {
                   "code": "shipment_type",
@@ -197,24 +213,6 @@
                 {
                   "code": "id",
                   "value": "RO1"
-                }
-              ]
-            },
-            {
-              "code": "state",
-              "list": [
-                {
-                  "code": "ready_to_ship",
-                  "value": "no"
-                }
-              ]
-            },
-            {
-              "code": "rto_action",
-              "list": [
-                {
-                  "code": "return_to_origin",
-                  "value": "yes"
                 }
               ]
             },
@@ -232,43 +230,51 @@
               ]
             },
             {
-              "code": "weather_check",
+              "code": "tracking",
               "list": [
                 {
-                  "code": "raining",
+                  "code": "gps_enabled",
                   "value": "yes"
+                },
+                {
+                  "code": "url_enabled",
+                  "value": "yes"
+                },
+                {
+                  "code": "url",
+                  "value": "http://sequelstring-lsp-ondc.com/track"
                 }
               ]
             }
-          ]
+          ],
+          "agent": {
+            "name": "Tom Hagen",
+            "phone": "9876543210"
+          },
+          "vehicle": {
+            "registration": "3LVJ945"
+          }
         }
       ],
-      "quote": {
-        "price": {
-          "currency": "INR",
-          "value": "23.47"
+      "billing": {
+        "name": "ONDC Pramaan Logistics Buyer NP",
+        "address": {
+          "name": "Sherlock Holmes",
+          "building": "221 B",
+          "locality": "Baker Street",
+          "city": "Baker Street",
+          "state": "Karanataka",
+          "country": "India",
+          "area_code": "560076"
         },
-        "breakup": [
-          {
-            "price": {
-              "currency": "INR",
-              "value": "23.47"
-            },
-            "@ondc/org/item_id": "exp_del",
-            "@ondc/org/title_type": "delivery"
-          },
-          {
-            "price": {
-              "currency": "INR",
-              "value": "0.00"
-            },
-            "@ondc/org/item_id": "exp_del",
-            "@ondc/org/title_type": "tax"
-          }
-        ]
+        "tax_number": "00ABCDE1234F1Z5",
+        "phone": "9876543210",
+        "email": "sherlock@detective.com",
+        "created_at": "2025-05-14T05:35:59.594Z",
+        "updated_at": "2025-05-14T05:35:59.594Z"
       },
       "payment": {
-        "collected_by": "BAP",
+        "collected_by": "BPP",
         "type": "POST-FULFILLMENT",
         "@ondc/org/settlement_basis": "invoicing",
         "@ondc/org/settlement_window": "P15D",
@@ -280,8 +286,32 @@
             "settlement_bank_account_no": "123456789123456",
             "settlement_ifsc_code": "SBI00001234"
           }
-        ]
+        ],
+        "status": "NOT-PAID",
+        "time": {
+          "timestamp": "2025-05-14T05:37:18.487Z"
+        }
       },
+      "tags": [
+        {
+          "code": "bap_terms",
+          "list": [
+            {
+              "code": "accept_bpp_terms",
+              "value": "yes"
+            }
+          ]
+        },
+        {
+          "code": "bpp_terms",
+          "list": [
+            {
+              "code": "static_terms",
+              "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+            }
+          ]
+        }
+      ],
       "cancellation_terms": [
         {
           "fulfillment_state": {
@@ -329,28 +359,7 @@
           }
         }
       ],
-      "tags": [
-        {
-          "code": "bpp_terms",
-          "list": [
-            {
-              "code": "static_terms",
-              "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
-            }
-          ]
-        },
-        {
-          "code": "bap_terms",
-          "list": [
-            {
-              "code": "accept_bpp_terms",
-              "value": "yes"
-            }
-          ]
-        }
-      ],
-      "created_at": "2025-04-27T11:53:09.376Z",
-      "updated_at": "2025-04-27T11:53:09.830Z"
+      "updated_at": "2025-05-14T05:37:18.487Z"
     }
   }
 }

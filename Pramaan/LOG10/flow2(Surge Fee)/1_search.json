@@ -1,13 +1,13 @@
 {
   "context": {
-    "domain": "ONDC:LOG11",
+    "domain": "ONDC:LOG10",
     "country": "IND",
     "city": "*",
     "core_version": "1.2.5",
     "action": "search",
-    "transaction_id": "0a6face5-f61a-4cb3-8481-8bd461983579",
-    "message_id": "377675d3-2dc1-4d6c-a5e5-032ad886cb26",
-    "timestamp": "2025-04-27T11:53:02.207Z",
+    "transaction_id": "2c9306df-0c33-44d3-b36d-c364febb64d5",
+    "message_id": "8503b8a0-ac9a-4cc8-a04b-1d739c92806d",
+    "timestamp": "2025-05-14T05:35:58.818Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S"
@@ -15,7 +15,7 @@
   "message": {
     "intent": {
       "category": {
-        "id": "Express Delivery"
+        "id": "Immediate Delivery"
       },
       "provider": {
         "time": {
@@ -26,7 +26,7 @@
             "end": "2100"
           },
           "schedule": {
-            "holidays": ["2025-05-11", "2025-05-17"]
+            "holidays": ["2025-06-05", "2025-05-24"]
           }
         }
       },
@@ -90,7 +90,7 @@
               },
               {
                 "code": "weight_value",
-                "value": 2
+                "value": "2"
               },
               {
                 "code": "dim_unit",
@@ -98,15 +98,15 @@
               },
               {
                 "code": "length",
-                "value": 25
+                "value": "25"
               },
               {
                 "code": "breadth",
-                "value": 24
+                "value": "24"
               },
               {
                 "code": "height",
-                "value": 40
+                "value": "40"
               }
             ]
           }
@@ -114,6 +114,29 @@
       },
       "payment": {
         "type": "POST-FULFILLMENT"
+      },
+      "@ondc/org/payload_details": {
+        "category": "Home & Kitchen",
+        "value": {
+          "currency": "INR",
+          "value": "1000.00"
+        },
+        "dimensions": {
+          "length": {
+            "value": "25"
+          },
+          "breadth": {
+            "value": "24"
+          },
+          "height": {
+            "value": "40"
+          }
+        },
+        "weight": {
+          "unit": "kilogram",
+          "value": "2"
+        },
+        "dangerous_goods": false
       },
       "tags": [
         {

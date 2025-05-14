@@ -5,18 +5,18 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_cancel",
-    "transaction_id": "44d08fab-11e2-4197-b5ed-d983e07cef75",
-    "message_id": "bb2d583a-4a4d-40fd-9433-135680e954ab",
-    "timestamp": "2025-04-27T07:36:13.649Z",
+    "transaction_id": "559f843c-60f2-4a68-9aae-390474ed23ed",
+    "message_id": "273fc03e-ad7f-43ff-9642-8b5d7c85f15d",
+    "timestamp": "2025-05-14T04:54:36.456Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
-    "ttl": "PT100S",
+    "ttl": "PT30S",
     "bpp_id": "ondc.sequelstring.com/seller/protocol",
     "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
   },
   "message": {
     "order": {
-      "id": "SS-1745739314379",
+      "id": "SS-1747198315771",
       "state": "Cancelled",
       "provider": {
         "id": "P1"
@@ -25,11 +25,11 @@
         {
           "id": "I1",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "d9f9d25a-1635-472d-a0cd-62e7eacdde56",
+          "fulfillment_id": "22d23dbc-db25-4c35-9f90-056fb556a317",
           "time": {
             "label": "TAT",
             "duration": "PT45M",
-            "timestamp": "2025-04-27"
+            "timestamp": "2025-05-14"
           }
         }
       ],
@@ -59,7 +59,7 @@
       },
       "fulfillments": [
         {
-          "id": "d9f9d25a-1635-472d-a0cd-62e7eacdde56",
+          "id": "22d23dbc-db25-4c35-9f90-056fb556a317",
           "type": "Delivery",
           "state": {
             "descriptor": {
@@ -95,9 +95,10 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-04-27T09:00:00.000Z",
-                "end": "2025-04-27T23:00:00.000Z"
-              }
+                "start": "2025-05-14T09:00:00.000Z",
+                "end": "2025-05-14T23:00:00.000Z"
+              },
+              "timestamp": "2025-05-14T04:52:21.002Z"
             }
           },
           "end": {
@@ -121,18 +122,15 @@
               "name": "Tony Soprano"
             },
             "instructions": {
-              "code": "1",
-              "short_desc": "5817",
-              "additional_desc": {
-                "content_type": "text/html",
-                "url": ".."
-              }
+              "name": "Proof Of Delivery",
+              "images": ["http://sequelstring-lsp-ondc.com/proof"]
             },
             "time": {
               "range": {
-                "start": "2025-04-27T07:35:37.726Z",
-                "end": "2025-04-27T19:00:00.000Z"
-              }
+                "start": "2025-05-14T04:52:21.002Z",
+                "end": "2025-05-14T19:00:00.000Z"
+              },
+              "timestamp": "2025-05-14T04:52:30.498Z"
             }
           },
           "tags": [
@@ -150,11 +148,11 @@
               "list": [
                 {
                   "code": "fulfillment_state",
-                  "value": "rider reached delivery location"
+                  "value": "Order-delivered"
                 },
                 {
                   "code": "updated_at",
-                  "value": "2025-04-27T07:36:13.649Z"
+                  "value": "2025-05-14T04:54:36.456Z"
                 }
               ]
             },
@@ -192,7 +190,7 @@
                 },
                 {
                   "code": "weight_value",
-                  "value": 2
+                  "value": "2"
                 },
                 {
                   "code": "dim_unit",
@@ -200,15 +198,15 @@
                 },
                 {
                   "code": "length",
-                  "value": 25
+                  "value": "25"
                 },
                 {
                   "code": "breadth",
-                  "value": 24
+                  "value": "24"
                 },
                 {
                   "code": "height",
-                  "value": 40
+                  "value": "40"
                 },
                 {
                   "code": "prep_time",
@@ -248,11 +246,11 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-04-27T07:34:29.704Z",
-        "updated_at": "2025-04-27T07:34:29.704Z"
+        "created_at": "2025-05-14T04:51:42.921Z",
+        "updated_at": "2025-05-14T04:51:42.921Z"
       },
       "payment": {
-        "collected_by": "BPP",
+        "collected_by": "BAP",
         "type": "POST-FULFILLMENT",
         "@ondc/org/settlement_basis": "invoicing",
         "@ondc/org/settlement_window": "P15D",
@@ -265,9 +263,12 @@
             "settlement_ifsc_code": "SBI00001234"
           }
         ],
-        "status": "NOT-PAID"
+        "status": "NOT-PAID",
+        "time": {
+          "timestamp": "2025-05-14T04:52:30.498Z"
+        }
       },
-      "updated_at": "2025-04-27T07:36:13.649Z",
+      "updated_at": "2025-05-14T04:54:36.456Z",
       "cancellation": {
         "cancelled_by": "ondc.sequelstring.com/buyer/protocol",
         "reason": {

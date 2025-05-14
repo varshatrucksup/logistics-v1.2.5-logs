@@ -5,18 +5,18 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_status",
-    "transaction_id": "e0251dd0-52cf-42b0-b0f5-b480764dad2c",
-    "message_id": "9789f2d7-26f0-4ae4-8837-00a38c2d9fb5",
-    "timestamp": "2025-04-27T12:08:24.340Z",
+    "transaction_id": "fb87ff67-a735-46ea-9d80-7b919e2d23d9",
+    "message_id": "35a2e0cf-fb8e-400f-86cb-214fad453e88",
+    "timestamp": "2025-05-14T06:39:16.234Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
-    "ttl": "PT10M",
+    "ttl": "PT30S",
     "bpp_id": "ondc.sequelstring.com/seller/protocol",
     "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
   },
   "message": {
     "order": {
-      "id": "SS-1745755293418",
+      "id": "SS-1747204455268",
       "state": "Completed",
       "provider": {
         "id": "P1",
@@ -30,10 +30,11 @@
         {
           "id": "exp_del",
           "category_id": "Express Delivery",
-          "fulfillment_id": "40538f20-3c61-4208-8abd-293e64f218d0",
+          "fulfillment_id": "df8448b1-1b59-4649-970a-999d8a40d2f4",
           "time": {
             "label": "TAT",
-            "duration": "P1D"
+            "duration": "PT24H",
+            "timestamp": "2025-05-15"
           }
         }
       ],
@@ -63,15 +64,14 @@
       },
       "fulfillments": [
         {
-          "id": "40538f20-3c61-4208-8abd-293e64f218d0",
+          "id": "df8448b1-1b59-4649-970a-999d8a40d2f4",
           "type": "Delivery",
           "state": {
             "descriptor": {
-              "code": "Order-delivered",
-              "short_desc": "pickup or delivery failed reason code"
+              "code": "Order-delivered"
             }
           },
-          "tracking": false,
+          "tracking": true,
           "start": {
             "location": {
               "id": "S1",
@@ -91,7 +91,7 @@
               "email": "sherlock@detective.com"
             },
             "instructions": {
-              "name": "ONDC order",
+              "name": "Proof Of Pickup",
               "images": ["http://sequelstring-lsp-ondc.com/proof"]
             },
             "person": {
@@ -100,16 +100,10 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-04-27T09:00:00.000Z",
-                "end": "2025-04-27T23:00:00.000Z"
+                "start": "2025-05-14T09:00:00.000Z",
+                "end": "2025-05-14T23:00:00.000Z"
               },
-              "timestamp": "2025-04-27T12:08:24.340Z"
-            },
-            "authorization": {
-              "type": "OTP",
-              "token": "1234",
-              "valid_from": "2025-04-27T12:01:36.260Z",
-              "valid_to": "2025-04-27T12:16:36.260Z"
+              "timestamp": "2025-05-14T06:36:33.520Z"
             }
           },
           "end": {
@@ -133,22 +127,15 @@
               "name": "Tony Soprano"
             },
             "instructions": {
-              "name": "ONDC order",
-              "images": ["http://sequelstring-lsp-ondc.com/proof"],
-              "long_desc": "additional instructions for delivery"
+              "name": "Proof Of Delivery",
+              "images": ["http://sequelstring-lsp-ondc.com/proof"]
             },
             "time": {
               "range": {
-                "start": "2025-04-28T09:30:00.000Z",
-                "end": "2025-04-28T19:00:00.000Z"
+                "start": "2025-05-15T09:30:00.000Z",
+                "end": "2025-05-15T19:00:00.000Z"
               },
-              "timestamp": "2025-04-27T12:08:24.340Z"
-            },
-            "authorization": {
-              "type": "OTP",
-              "token": "1234",
-              "valid_from": "2025-04-27T12:01:36.260Z",
-              "valid_to": "2025-04-27T12:16:36.260Z"
+              "timestamp": "2025-05-14T06:39:16.234Z"
             }
           },
           "tags": [
@@ -165,7 +152,7 @@
                 },
                 {
                   "code": "timestamp",
-                  "value": "2025-04-27T12:01:59.641Z"
+                  "value": "2025-05-14T06:38:25.293Z"
                 },
                 {
                   "code": "attempt",
@@ -186,41 +173,11 @@
                 },
                 {
                   "code": "timestamp",
-                  "value": "2025-04-28T12:01:59.641Z"
+                  "value": "2025-05-15T06:38:25.293Z"
                 },
                 {
                   "code": "attempt",
                   "value": "yes"
-                }
-              ]
-            },
-            {
-              "code": "tracking",
-              "list": [
-                {
-                  "code": "gps_enabled",
-                  "value": "yes"
-                },
-                {
-                  "code": "url_enabled",
-                  "value": "no"
-                },
-                {
-                  "code": "url",
-                  "value": ".."
-                }
-              ]
-            },
-            {
-              "code": "shipping_label",
-              "list": [
-                {
-                  "code": "type",
-                  "value": "pdf"
-                },
-                {
-                  "code": "url",
-                  "value": "public link to pdf"
                 }
               ]
             }
@@ -231,9 +188,7 @@
           },
           "vehicle": {
             "registration": "3LVJ945"
-          },
-          "@ondc/org/ewaybillno": "EBN1",
-          "@ondc/org/ebnexpirydate": "2025-04-27T12:08:24.340Z"
+          }
         }
       ],
       "billing": {
@@ -249,7 +204,9 @@
         },
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
-        "email": "sherlock@detective.com"
+        "email": "sherlock@detective.com",
+        "created_at": "2025-05-14T06:33:54.202Z",
+        "updated_at": "2025-05-14T06:33:54.202Z"
       },
       "payment": {
         "collected_by": "BPP",
@@ -265,12 +222,79 @@
             "settlement_ifsc_code": "SBI00001234"
           }
         ],
-        "status": "PAID",
+        "status": "NOT-PAID",
         "time": {
-          "timestamp": "2025-04-27T12:08:24.340Z"
+          "timestamp": "2025-05-14T06:39:16.234Z"
         }
       },
-      "updated_at": "2025-04-27T12:08:24.340Z"
+      "tags": [
+        {
+          "code": "bap_terms",
+          "list": [
+            {
+              "code": "accept_bpp_terms",
+              "value": "yes"
+            }
+          ]
+        },
+        {
+          "code": "bpp_terms",
+          "list": [
+            {
+              "code": "static_terms",
+              "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+            }
+          ]
+        }
+      ],
+      "cancellation_terms": [
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Pending",
+              "short_desc": "008"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "0.00",
+            "amount": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          }
+        },
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Agent-assigned",
+              "short_desc": "001,003"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "100.00",
+            "amount": {
+              "currency": "INR",
+              "value": "50.00"
+            }
+          }
+        },
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Order-picked-up",
+              "short_desc": "001,003"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "100.00",
+            "amount": {
+              "currency": "INR",
+              "value": "50.00"
+            }
+          }
+        }
+      ],
+      "updated_at": "2025-05-14T06:39:16.234Z"
     }
   }
 }

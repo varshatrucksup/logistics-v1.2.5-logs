@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "confirm",
-    "transaction_id": "c38e38fb-abef-48db-b356-ebc576243490",
-    "message_id": "cf84ceda-7d4c-4394-9254-e4f3a8dc19f1",
-    "timestamp": "2025-04-27T11:31:47.922Z",
+    "transaction_id": "a9cba7de-6761-4007-a4af-1d35fdc596f4",
+    "message_id": "80e115f2-b73a-4bfc-bb16-f7e89e3ecda5",
+    "timestamp": "2025-05-14T06:56:09.220Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "SS-1745753507922",
+      "id": "SS-1747205769220",
       "state": "Created",
       "provider": {
         "id": "P1",
@@ -29,11 +29,12 @@
       "items": [
         {
           "id": "exp_del",
-          "fulfillment_id": "4c6abf2b-db0d-45e2-bd85-d1b736ab7547",
+          "fulfillment_id": "a7e72c0a-f320-49f8-a263-476eb66053c2",
           "category_id": "Express Delivery",
           "time": {
             "label": "TAT",
-            "duration": "P1D"
+            "duration": "PT24H",
+            "timestamp": "2025-05-15"
           }
         }
       ],
@@ -75,12 +76,12 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-04-27T11:31:41.051Z",
-        "updated_at": "2025-04-27T11:31:41.051Z"
+        "created_at": "2025-05-14T06:55:56.325Z",
+        "updated_at": "2025-05-14T06:55:56.325Z"
       },
       "fulfillments": [
         {
-          "id": "4c6abf2b-db0d-45e2-bd85-d1b736ab7547",
+          "id": "a7e72c0a-f320-49f8-a263-476eb66053c2",
           "type": "Delivery",
           "start": {
             "location": {
@@ -102,7 +103,7 @@
             },
             "instructions": {
               "code": "2",
-              "short_desc": "3537",
+              "short_desc": "1256",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
@@ -138,7 +139,7 @@
             },
             "instructions": {
               "code": "1",
-              "short_desc": "7466",
+              "short_desc": "1301",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
@@ -181,7 +182,7 @@
                 },
                 {
                   "code": "weight_value",
-                  "value": 2
+                  "value": "2"
                 },
                 {
                   "code": "dim_unit",
@@ -189,15 +190,15 @@
                 },
                 {
                   "code": "length",
-                  "value": 25
+                  "value": "25"
                 },
                 {
                   "code": "breadth",
-                  "value": 24
+                  "value": "24"
                 },
                 {
                   "code": "height",
-                  "value": 40
+                  "value": "40"
                 },
                 {
                   "code": "shipment_type",
@@ -256,10 +257,72 @@
               "value": "yes"
             }
           ]
+        },
+        {
+          "code": "bpp_terms",
+          "list": [
+            {
+              "code": "static_terms",
+              "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+            }
+          ]
         }
       ],
-      "created_at": "2025-04-27T11:31:47.922Z",
-      "updated_at": "2025-04-27T11:31:47.922Z"
+      "@ondc/org/linked_order": {
+        "items": [
+          {
+            "category_id": "Home & Kitchen",
+            "descriptor": {
+              "name": "Home & Kitchen"
+            },
+            "quantity": {
+              "count": "1",
+              "measure": {
+                "unit": "kilogram",
+                "value": "2"
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "1000.00"
+            }
+          }
+        ],
+        "provider": {
+          "descriptor": {
+            "name": "KitchenAura"
+          },
+          "address": {
+            "name": "Sherlock Holmes",
+            "building": "221 B",
+            "locality": "Baker Street",
+            "city": "Baker Street",
+            "state": "Karanataka",
+            "country": "India",
+            "area_code": "560076"
+          }
+        },
+        "order": {
+          "id": "44818550-810d-4210-bc30-286e062edfc5",
+          "weight": {
+            "unit": "kilogram",
+            "value": "2"
+          },
+          "dimensions": {
+            "length": {
+              "value": "25"
+            },
+            "breadth": {
+              "value": "24"
+            },
+            "height": {
+              "value": "40"
+            }
+          }
+        }
+      },
+      "created_at": "2025-05-14T06:56:09.220Z",
+      "updated_at": "2025-05-14T06:56:09.220Z"
     }
   }
 }

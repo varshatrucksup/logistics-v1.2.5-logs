@@ -1,38 +1,33 @@
 {
   "context": {
-    "domain": "ONDC:LOG11",
+    "domain": "ONDC:LOG10",
     "country": "IND",
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_init",
-    "transaction_id": "0a6face5-f61a-4cb3-8481-8bd461983579",
-    "message_id": "c73fe483-7554-46ea-b4e7-2a8dbe6b765a",
-    "timestamp": "2025-04-27T11:53:06.361Z",
+    "transaction_id": "2c9306df-0c33-44d3-b36d-c364febb64d5",
+    "message_id": "412ca6d8-25cd-470d-b49e-f1ad5fbdc48f",
+    "timestamp": "2025-05-14T05:36:33.018Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
-    "ttl": "PT10M",
+    "ttl": "PT30S",
     "bpp_id": "ondc.sequelstring.com/seller/protocol",
     "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
   },
   "message": {
     "order": {
       "provider": {
-        "id": "P1",
-        "locations": [
-          {
-            "id": "L1"
-          }
-        ]
+        "id": "P1"
       },
       "items": [
         {
-          "id": "exp_del",
-          "fulfillment_id": "0b621c48-f6dc-43f1-9204-e3bbddac611f"
+          "id": "I1",
+          "fulfillment_id": "218bd84b-c781-4a69-a973-5eb763b14de5"
         }
       ],
       "fulfillments": [
         {
-          "id": "0b621c48-f6dc-43f1-9204-e3bbddac611f",
+          "id": "218bd84b-c781-4a69-a973-5eb763b14de5",
           "type": "Delivery",
           "start": {
             "location": {
@@ -115,7 +110,7 @@
                 },
                 {
                   "code": "weight_value",
-                  "value": 2
+                  "value": "2"
                 },
                 {
                   "code": "dim_unit",
@@ -123,15 +118,15 @@
                 },
                 {
                   "code": "length",
-                  "value": 25
+                  "value": "25"
                 },
                 {
                   "code": "breadth",
-                  "value": 24
+                  "value": "24"
                 },
                 {
                   "code": "height",
-                  "value": 40
+                  "value": "40"
                 }
               ]
             }
@@ -155,7 +150,7 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "23.47"
+          "value": "42.65"
         },
         "breakup": [
           {
@@ -163,7 +158,7 @@
               "currency": "INR",
               "value": "23.47"
             },
-            "@ondc/org/item_id": "exp_del",
+            "@ondc/org/item_id": "I1",
             "@ondc/org/title_type": "delivery"
           },
           {
@@ -171,11 +166,27 @@
               "currency": "INR",
               "value": "0.00"
             },
-            "@ondc/org/item_id": "exp_del",
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "19.18"
+            },
+            "@ondc/org/item_id": "I4",
+            "@ondc/org/title_type": "surge"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "@ondc/org/item_id": "I4",
             "@ondc/org/title_type": "tax"
           }
         ],
-        "ttl": "PT15"
+        "ttl": "PT15M"
       },
       "tags": [
         {

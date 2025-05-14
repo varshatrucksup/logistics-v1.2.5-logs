@@ -1,0 +1,94 @@
+{
+  "context": {
+    "domain": "ONDC:LOG10",
+    "country": "IND",
+    "city": "*",
+    "core_version": "1.2.5",
+    "action": "on_track",
+    "transaction_id": "31dd80ca-3996-422d-9d0e-c03f4e67023c",
+    "message_id": "3e997057-470a-43dd-a3af-aa693c704a8c",
+    "timestamp": "2025-05-14T06:18:10.090Z",
+    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
+    "bap_id": "ondc.sequelstring.com/buyer/protocol",
+    "ttl": "PT30S",
+    "bpp_id": "ondc.sequelstring.com/seller/protocol",
+    "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
+  },
+  "message": {
+    "tracking": {
+      "id": "bffa6967-eea1-48e4-bf2c-b9e0b9ec524f",
+      "url": "http://sequelstring-lsp-ondc.com/track",
+      "location": {
+        "gps": "12.974002,77.613458",
+        "time": {
+          "timestamp": "2025-05-14T06:18:10.513Z"
+        },
+        "updated_at": "2025-05-14T06:18:10.513Z"
+      },
+      "status": "active",
+      "tags": [
+        {
+          "code": "order",
+          "list": [
+            {
+              "code": "id",
+              "value": "SS-1747203376226"
+            }
+          ]
+        },
+        {
+          "code": "config",
+          "list": [
+            {
+              "code": "attr",
+              "value": "tracking.location.gps"
+            },
+            {
+              "code": "type",
+              "value": "live_poll"
+            }
+          ]
+        },
+        {
+          "code": "path",
+          "list": [
+            {
+              "code": "lat_lng",
+              "value": "12.9740,77.6134"
+            },
+            {
+              "code": "sequence",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "code": "path",
+          "list": [
+            {
+              "code": "lat_lng",
+              "value": "12.9740,77.6136"
+            },
+            {
+              "code": "sequence",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "code": "path",
+          "list": [
+            {
+              "code": "lat_lng",
+              "value": "12.9740,77.6137"
+            },
+            {
+              "code": "sequence",
+              "value": "3"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -5,18 +5,18 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_status",
-    "transaction_id": "202303cb-734a-427e-8e61-dc1ee1f0dafd",
-    "message_id": "13c83c72-4e5b-4bcd-803a-46049879729c",
-    "timestamp": "2025-04-27T07:56:35.407Z",
+    "transaction_id": "a9e024d7-c8ba-4631-a717-5ed4825ffb0d",
+    "message_id": "082ab514-2d12-42f9-b533-2638ab7275f5",
+    "timestamp": "2025-05-14T05:12:00.774Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
-    "ttl": "PT50S",
+    "ttl": "PT30S",
     "bpp_id": "ondc.sequelstring.com/seller/protocol",
     "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
   },
   "message": {
     "order": {
-      "id": "SS-1745740556258",
+      "id": "SS-1747199492380",
       "state": "In-progress",
       "provider": {
         "id": "P1"
@@ -25,11 +25,11 @@
         {
           "id": "I1",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "7b343c8f-269f-49d7-94d7-445630866393",
+          "fulfillment_id": "4c1d5b24-60a4-4a8c-8058-538df8234f94",
           "time": {
             "label": "TAT",
             "duration": "PT45M",
-            "timestamp": "2025-04-27"
+            "timestamp": "2025-05-14"
           }
         }
       ],
@@ -59,7 +59,7 @@
       },
       "fulfillments": [
         {
-          "id": "7b343c8f-269f-49d7-94d7-445630866393",
+          "id": "4c1d5b24-60a4-4a8c-8058-538df8234f94",
           "type": "Delivery",
           "state": {
             "descriptor": {
@@ -95,10 +95,10 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-04-27T09:00:00.000Z",
-                "end": "2025-04-27T23:00:00.000Z"
+                "start": "2025-05-14T09:00:00.000Z",
+                "end": "2025-05-14T23:00:00.000Z"
               },
-              "timestamp": "2025-04-27T07:56:35.407Z"
+              "timestamp": "2025-05-14T05:12:00.774Z"
             }
           },
           "end": {
@@ -123,7 +123,7 @@
             },
             "instructions": {
               "code": "1",
-              "short_desc": "2736",
+              "short_desc": "8288",
               "additional_desc": {
                 "content_type": "text/html",
                 "url": ".."
@@ -131,8 +131,8 @@
             },
             "time": {
               "range": {
-                "start": "2025-04-27T07:56:35.407Z",
-                "end": "2025-04-27T19:00:00.000Z"
+                "start": "2025-05-14T05:12:00.774Z",
+                "end": "2025-05-14T19:00:00.000Z"
               }
             }
           },
@@ -171,7 +171,7 @@
                 },
                 {
                   "code": "weight_value",
-                  "value": 2
+                  "value": "2"
                 },
                 {
                   "code": "dim_unit",
@@ -179,15 +179,15 @@
                 },
                 {
                   "code": "length",
-                  "value": 25
+                  "value": "25"
                 },
                 {
                   "code": "breadth",
-                  "value": 24
+                  "value": "24"
                 },
                 {
                   "code": "height",
-                  "value": 40
+                  "value": "40"
                 },
                 {
                   "code": "prep_time",
@@ -257,8 +257,8 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-04-27T07:55:47.156Z",
-        "updated_at": "2025-04-27T07:55:47.156Z"
+        "created_at": "2025-05-14T05:11:21.758Z",
+        "updated_at": "2025-05-14T05:11:21.758Z"
       },
       "payment": {
         "collected_by": "BPP",
@@ -276,6 +276,26 @@
         ],
         "status": "NOT-PAID"
       },
+      "tags": [
+        {
+          "code": "bap_terms",
+          "list": [
+            {
+              "code": "accept_bpp_terms",
+              "value": "yes"
+            }
+          ]
+        },
+        {
+          "code": "bpp_terms",
+          "list": [
+            {
+              "code": "static_terms",
+              "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+            }
+          ]
+        }
+      ],
       "cancellation_terms": [
         {
           "fulfillment_state": {
@@ -323,7 +343,7 @@
           }
         }
       ],
-      "updated_at": "2025-04-27T07:56:35.407Z"
+      "updated_at": "2025-05-14T05:12:00.774Z"
     }
   }
 }

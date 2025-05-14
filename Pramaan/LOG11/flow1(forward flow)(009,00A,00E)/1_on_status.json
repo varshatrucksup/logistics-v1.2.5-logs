@@ -5,18 +5,18 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_status",
-    "transaction_id": "e0251dd0-52cf-42b0-b0f5-b480764dad2c",
-    "message_id": "d7653113-3563-49e8-9e5a-cbb84838b5fe",
-    "timestamp": "2025-04-27T12:01:39.729Z",
+    "transaction_id": "fb87ff67-a735-46ea-9d80-7b919e2d23d9",
+    "message_id": "f0a9d58b-3b2d-46aa-8ac7-ce536476bc62",
+    "timestamp": "2025-05-14T06:34:35.163Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
-    "ttl": "PT50S",
+    "ttl": "PT30S",
     "bpp_id": "ondc.sequelstring.com/seller/protocol",
     "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
   },
   "message": {
     "order": {
-      "id": "SS-1745755293418",
+      "id": "SS-1747204455268",
       "state": "In-progress",
       "provider": {
         "id": "P1",
@@ -30,10 +30,11 @@
         {
           "id": "exp_del",
           "category_id": "Express Delivery",
-          "fulfillment_id": "40538f20-3c61-4208-8abd-293e64f218d0",
+          "fulfillment_id": "df8448b1-1b59-4649-970a-999d8a40d2f4",
           "time": {
             "label": "TAT",
-            "duration": "P1D"
+            "duration": "PT24H",
+            "timestamp": "2025-05-15"
           }
         }
       ],
@@ -63,14 +64,14 @@
       },
       "fulfillments": [
         {
-          "id": "40538f20-3c61-4208-8abd-293e64f218d0",
+          "id": "df8448b1-1b59-4649-970a-999d8a40d2f4",
           "type": "Delivery",
           "state": {
             "descriptor": {
               "code": "Agent-assigned"
             }
           },
-          "tracking": false,
+          "tracking": true,
           "start": {
             "location": {
               "id": "S1",
@@ -91,7 +92,7 @@
             },
             "instructions": {
               "code": "2",
-              "short_desc": "8355",
+              "short_desc": "6721",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
@@ -104,10 +105,9 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-04-27T09:00:00.000Z",
-                "end": "2025-04-27T23:00:00.000Z"
-              },
-              "timestamp": "2025-04-27T12:01:36.669Z"
+                "start": "2025-05-14T09:00:00.000Z",
+                "end": "2025-05-14T23:00:00.000Z"
+              }
             }
           },
           "end": {
@@ -132,7 +132,7 @@
             },
             "instructions": {
               "code": "1",
-              "short_desc": "9048",
+              "short_desc": "5632",
               "additional_desc": {
                 "content_type": "text/html",
                 "url": ".."
@@ -140,8 +140,8 @@
             },
             "time": {
               "range": {
-                "start": "2025-04-28T09:30:00.000Z",
-                "end": "2025-04-28T19:00:00.000Z"
+                "start": "2025-05-15T09:30:00.000Z",
+                "end": "2025-05-15T19:00:00.000Z"
               }
             }
           },
@@ -180,7 +180,7 @@
                 },
                 {
                   "code": "weight_value",
-                  "value": 2
+                  "value": "2"
                 },
                 {
                   "code": "dim_unit",
@@ -188,15 +188,15 @@
                 },
                 {
                   "code": "length",
-                  "value": 25
+                  "value": "25"
                 },
                 {
                   "code": "breadth",
-                  "value": 24
+                  "value": "24"
                 },
                 {
                   "code": "height",
-                  "value": 40
+                  "value": "40"
                 },
                 {
                   "code": "shipment_type",
@@ -245,8 +245,8 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-04-27T12:01:27.024Z",
-        "updated_at": "2025-04-27T12:01:27.024Z"
+        "created_at": "2025-05-14T06:33:54.202Z",
+        "updated_at": "2025-05-14T06:33:54.202Z"
       },
       "payment": {
         "collected_by": "BPP",
@@ -263,6 +263,26 @@
           }
         ]
       },
+      "tags": [
+        {
+          "code": "bap_terms",
+          "list": [
+            {
+              "code": "accept_bpp_terms",
+              "value": "yes"
+            }
+          ]
+        },
+        {
+          "code": "bpp_terms",
+          "list": [
+            {
+              "code": "static_terms",
+              "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+            }
+          ]
+        }
+      ],
       "cancellation_terms": [
         {
           "fulfillment_state": {
@@ -310,7 +330,7 @@
           }
         }
       ],
-      "updated_at": "2025-04-27T12:01:39.729Z"
+      "updated_at": "2025-05-14T06:34:35.163Z"
     }
   }
 }
