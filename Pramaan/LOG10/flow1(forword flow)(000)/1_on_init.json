@@ -5,12 +5,12 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_init",
-    "transaction_id": "013b4cda-8a48-4ff6-92fd-8cb6ff1aa5be",
-    "message_id": "92d28b04-0477-4bda-815c-2a74d1d15432",
-    "timestamp": "2025-04-27T06:54:26.566Z",
+    "transaction_id": "a1b1c668-7a8d-4bb7-84d5-5d32430d3d64",
+    "message_id": "9171ebb1-83ca-4989-9b84-952ee0d82aec",
+    "timestamp": "2025-05-14T04:34:50.924Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
-    "ttl": "PT10M",
+    "ttl": "PT30S",
     "bpp_id": "ondc.sequelstring.com/seller/protocol",
     "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
   },
@@ -22,12 +22,12 @@
       "items": [
         {
           "id": "I1",
-          "fulfillment_id": "ca585cdb-0cd6-447f-a9d5-bf26bee639db"
+          "fulfillment_id": "41e54c65-95b9-4f43-8014-c49399ec62c8"
         }
       ],
       "fulfillments": [
         {
-          "id": "ca585cdb-0cd6-447f-a9d5-bf26bee639db",
+          "id": "41e54c65-95b9-4f43-8014-c49399ec62c8",
           "type": "Delivery",
           "start": {
             "location": {
@@ -110,7 +110,7 @@
                 },
                 {
                   "code": "weight_value",
-                  "value": 2
+                  "value": "2"
                 },
                 {
                   "code": "dim_unit",
@@ -118,15 +118,15 @@
                 },
                 {
                   "code": "length",
-                  "value": 25
+                  "value": "25"
                 },
                 {
                   "code": "breadth",
-                  "value": 24
+                  "value": "24"
                 },
                 {
                   "code": "height",
-                  "value": 40
+                  "value": "40"
                 }
               ]
             }
@@ -170,7 +170,7 @@
             "@ondc/org/title_type": "tax"
           }
         ],
-        "ttl": "PT15"
+        "ttl": "PT15M"
       },
       "tags": [
         {

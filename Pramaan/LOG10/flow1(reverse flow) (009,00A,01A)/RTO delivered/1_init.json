@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "init",
-    "transaction_id": "44d08fab-11e2-4197-b5ed-d983e07cef75",
-    "message_id": "25cb78d7-4161-4738-abc8-5c91f82117c4",
-    "timestamp": "2025-04-27T07:34:40.470Z",
+    "transaction_id": "559f843c-60f2-4a68-9aae-390474ed23ed",
+    "message_id": "c70cc98d-b5ab-4327-8541-323c2c4a946f",
+    "timestamp": "2025-05-14T04:51:47.652Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -22,13 +22,13 @@
       "items": [
         {
           "id": "I1",
-          "fulfillment_id": "d9f9d25a-1635-472d-a0cd-62e7eacdde56",
+          "fulfillment_id": "22d23dbc-db25-4c35-9f90-056fb556a317",
           "category_id": "Immediate Delivery"
         }
       ],
       "fulfillments": [
         {
-          "id": "d9f9d25a-1635-472d-a0cd-62e7eacdde56",
+          "id": "22d23dbc-db25-4c35-9f90-056fb556a317",
           "type": "Delivery",
           "start": {
             "location": {
@@ -102,7 +102,7 @@
                 },
                 {
                   "code": "weight_value",
-                  "value": 2
+                  "value": "2"
                 },
                 {
                   "code": "dim_unit",
@@ -110,15 +110,15 @@
                 },
                 {
                   "code": "length",
-                  "value": 25
+                  "value": "25"
                 },
                 {
                   "code": "breadth",
-                  "value": 24
+                  "value": "24"
                 },
                 {
                   "code": "height",
-                  "value": 40
+                  "value": "40"
                 }
               ]
             }
@@ -139,8 +139,8 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-04-27T07:34:29.704Z",
-        "updated_at": "2025-04-27T07:34:29.704Z"
+        "created_at": "2025-05-14T04:51:42.921Z",
+        "updated_at": "2025-05-14T04:51:42.921Z"
       },
       "payment": {
         "collected_by": "BAP",

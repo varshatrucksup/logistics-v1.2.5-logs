@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "search",
-    "transaction_id": "e0251dd0-52cf-42b0-b0f5-b480764dad2c",
-    "message_id": "f17fc3f9-673c-4b6f-beb1-db2c838ede8b",
-    "timestamp": "2025-04-27T12:01:26.722Z",
+    "transaction_id": "fb87ff67-a735-46ea-9d80-7b919e2d23d9",
+    "message_id": "c3cf2c94-4ba9-4c07-ac65-004b9d6d8d9c",
+    "timestamp": "2025-05-14T06:33:53.383Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S"
@@ -26,7 +26,7 @@
             "end": "2100"
           },
           "schedule": {
-            "holidays": ["2025-05-04", "2025-05-14"]
+            "holidays": ["2025-05-28", "2025-05-19"]
           }
         }
       },
@@ -90,7 +90,7 @@
               },
               {
                 "code": "weight_value",
-                "value": 2
+                "value": "2"
               },
               {
                 "code": "dim_unit",
@@ -98,15 +98,15 @@
               },
               {
                 "code": "length",
-                "value": 25
+                "value": "25"
               },
               {
                 "code": "breadth",
-                "value": 24
+                "value": "24"
               },
               {
                 "code": "height",
-                "value": 40
+                "value": "40"
               }
             ]
           }
@@ -114,6 +114,29 @@
       },
       "payment": {
         "type": "POST-FULFILLMENT"
+      },
+      "@ondc/org/payload_details": {
+        "category": "Home & Kitchen",
+        "value": {
+          "currency": "INR",
+          "value": "1000.00"
+        },
+        "dimensions": {
+          "length": {
+            "value": "25"
+          },
+          "breadth": {
+            "value": "24"
+          },
+          "height": {
+            "value": "40"
+          }
+        },
+        "weight": {
+          "unit": "kilogram",
+          "value": "2"
+        },
+        "dangerous_goods": false
       },
       "tags": [
         {

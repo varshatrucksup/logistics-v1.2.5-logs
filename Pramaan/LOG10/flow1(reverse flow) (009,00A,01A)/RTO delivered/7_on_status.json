@@ -1,46 +1,62 @@
 {
   "context": {
-    "domain": "ONDC:LOG11",
+    "domain": "ONDC:LOG10",
     "country": "IND",
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_status",
-    "transaction_id": "0a6face5-f61a-4cb3-8481-8bd461983579",
-    "message_id": "16aa9225-a386-4fd2-bd05-231d0b801fcc",
-    "timestamp": "2025-04-27T11:53:58.340Z",
+    "transaction_id": "559f843c-60f2-4a68-9aae-390474ed23ed",
+    "message_id": "7ad1c999-62f0-4b50-a112-4d60df51eca1",
+    "timestamp": "2025-05-14T04:56:18.826Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
-    "ttl": "PT50S",
+    "ttl": "PT30S",
     "bpp_id": "ondc.sequelstring.com/seller/protocol",
     "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
   },
   "message": {
     "order": {
-      "id": "SS-1745754789376",
-      "state": "Completed",
+      "id": "SS-1747198315771",
+      "state": "Cancelled",
       "provider": {
-        "id": "P1",
-        "locations": [
-          {
-            "id": "L1"
-          }
-        ]
+        "id": "P1"
       },
       "items": [
         {
-          "id": "exp_del",
-          "category_id": "Express Delivery",
-          "fulfillment_id": "0b621c48-f6dc-43f1-9204-e3bbddac611f",
+          "id": "I2",
+          "parent_item_id": "I1",
+          "category_id": "Immediate Delivery",
+          "descriptor": {
+            "name": "RTO quote",
+            "short_desc": "RTO quote",
+            "long_desc": "RTO quote"
+          },
+          "fulfillment_id": "4bc4be18-07c1-4f63-81c8-23cca7540b2c",
           "time": {
             "label": "TAT",
-            "duration": "P1D"
+            "duration": "PT60M",
+            "timestamp": "2025-05-14"
+          },
+          "price": {
+            "currency": "INR",
+            "value": "35.20"
+          }
+        },
+        {
+          "id": "I1",
+          "category_id": "Immediate Delivery",
+          "fulfillment_id": "22d23dbc-db25-4c35-9f90-056fb556a317",
+          "time": {
+            "label": "TAT",
+            "duration": "PT45M",
+            "timestamp": "2025-05-14"
           }
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "48.47"
+          "value": 58.67
         },
         "breakup": [
           {
@@ -48,7 +64,7 @@
               "currency": "INR",
               "value": "23.47"
             },
-            "@ondc/org/item_id": "exp_del",
+            "@ondc/org/item_id": "I1",
             "@ondc/org/title_type": "delivery"
           },
           {
@@ -56,38 +72,38 @@
               "currency": "INR",
               "value": "0.00"
             },
-            "@ondc/org/item_id": "exp_del",
+            "@ondc/org/item_id": "I1",
             "@ondc/org/title_type": "tax"
           },
           {
-            "@ondc/org/item_id": "exp_del",
-            "@ondc/org/title_type": "diff",
             "price": {
               "currency": "INR",
-              "value": "25.0"
-            }
+              "value": "35.20"
+            },
+            "@ondc/org/item_id": "I2",
+            "@ondc/org/title_type": "rto"
           },
           {
-            "@ondc/org/item_id": "exp_del",
-            "@ondc/org/title_type": "tax_diff",
+            "title": "tax",
             "price": {
               "currency": "INR",
               "value": "0.00"
-            }
+            },
+            "@ondc/org/item_id": "I2",
+            "@ondc/org/title_type": "tax"
           }
-        ],
-        "ttl": "PT15"
+        ]
       },
       "fulfillments": [
         {
-          "id": "0b621c48-f6dc-43f1-9204-e3bbddac611f",
+          "id": "22d23dbc-db25-4c35-9f90-056fb556a317",
           "type": "Delivery",
           "state": {
             "descriptor": {
-              "code": "Order-delivered"
+              "code": "RTO-Initiated"
             }
           },
-          "tracking": false,
+          "tracking": true,
           "start": {
             "location": {
               "id": "S1",
@@ -116,10 +132,10 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-04-27T09:00:00.000Z",
-                "end": "2025-04-27T23:00:00.000Z"
+                "start": "2025-05-14T09:00:00.000Z",
+                "end": "2025-05-14T23:00:00.000Z"
               },
-              "timestamp": "2025-04-27T11:53:34.509Z"
+              "timestamp": "2025-05-14T04:52:21.002Z"
             }
           },
           "end": {
@@ -148,13 +164,34 @@
             },
             "time": {
               "range": {
-                "start": "2025-04-28T09:30:00.000Z",
-                "end": "2025-04-28T19:00:00.000Z"
-              },
-              "timestamp": "2025-04-27T11:53:58.340Z"
+                "start": "2025-05-15T09:30:00.000Z",
+                "end": "2025-05-15T19:00:00.000Z"
+              }
             }
           },
           "tags": [
+            {
+              "code": "igm_request",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "Issue1"
+                }
+              ]
+            },
+            {
+              "code": "precancel_state",
+              "list": [
+                {
+                  "code": "fulfillment_state",
+                  "value": "Order-delivered"
+                },
+                {
+                  "code": "updated_at",
+                  "value": "2025-05-14T04:54:36.456Z"
+                }
+              ]
+            },
             {
               "code": "linked_provider",
               "list": [
@@ -189,7 +226,7 @@
                 },
                 {
                   "code": "weight_value",
-                  "value": 2
+                  "value": "2"
                 },
                 {
                   "code": "dim_unit",
@@ -197,15 +234,19 @@
                 },
                 {
                   "code": "length",
-                  "value": 25
+                  "value": "25"
                 },
                 {
                   "code": "breadth",
-                  "value": 24
+                  "value": "24"
                 },
                 {
                   "code": "height",
-                  "value": 40
+                  "value": "40"
+                },
+                {
+                  "code": "prep_time",
+                  "value": "PT30M"
                 },
                 {
                   "code": "shipment_type",
@@ -218,28 +259,36 @@
               ]
             },
             {
-              "code": "shipping_label",
+              "code": "precancel_state",
               "list": [
                 {
-                  "code": "type",
-                  "value": "pdf"
+                  "code": "fulfillment_state",
+                  "value": "Cancelled"
                 },
                 {
-                  "code": "url",
-                  "value": "public link to pdf"
+                  "code": "updated_at",
+                  "value": "2025-05-14T04:54:36.456Z"
                 }
               ]
             },
             {
-              "code": "linked_order_diff_proof",
+              "code": "rto_event",
               "list": [
                 {
-                  "code": "type",
-                  "value": "image"
+                  "code": "rto_id",
+                  "value": "4bc4be18-07c1-4f63-81c8-23cca7540b2c"
                 },
                 {
-                  "code": "url",
-                  "value": "https://lsp.com/sorter/images1.png"
+                  "code": "cancellation_reason_id",
+                  "value": "007"
+                },
+                {
+                  "code": "cancelled_by",
+                  "value": "ondc.sequelstring.com/seller/protocol"
+                },
+                {
+                  "code": "retry_count",
+                  "value": "2"
                 }
               ]
             }
@@ -250,6 +299,80 @@
           },
           "vehicle": {
             "registration": "3LVJ945"
+          }
+        },
+        {
+          "id": "4bc4be18-07c1-4f63-81c8-23cca7540b2c",
+          "type": "RTO",
+          "state": {
+            "descriptor": {
+              "code": "RTO-Initiated"
+            }
+          },
+          "tracking": true,
+          "start": {
+            "time": {
+              "range": {
+                "start": "2025-05-14T04:54:47.367Z",
+                "end": "2025-05-14T04:54:47.367Z"
+              },
+              "timestamp": "2025-05-14T04:54:47.367Z"
+            },
+            "location": {
+              "gps": "12.930800,77.583900",
+              "address": {
+                "name": "Tony Soprano",
+                "building": "633 Stagtrail Rd",
+                "locality": "N. Caldwell",
+                "city": "N. Caldwell",
+                "state": "Karanataka",
+                "country": "India",
+                "area_code": "560076"
+              }
+            },
+            "contact": {
+              "phone": "9876543210",
+              "email": "tony@soprano.com"
+            },
+            "person": {
+              "name": "Tony Soprano"
+            },
+            "instructions": {
+              "code": "5",
+              "short_desc": "8842"
+            }
+          },
+          "end": {
+            "location": {
+              "id": "S1",
+              "gps": "12.921200,77.588000",
+              "address": {
+                "name": "Sherlock Holmes",
+                "building": "221 B",
+                "locality": "Baker Street",
+                "city": "Baker Street",
+                "state": "Karanataka",
+                "country": "India",
+                "area_code": "560076"
+              }
+            },
+            "contact": {
+              "phone": "9876543210",
+              "email": "sherlock@detective.com"
+            },
+            "person": {
+              "name": "Sherlock Holmes"
+            },
+            "instructions": {
+              "code": "6",
+              "short_desc": "7693"
+            },
+            "time": {
+              "range": {
+                "start": "2025-05-15T09:30:00.000Z",
+                "end": "2025-05-15T19:00:00.000Z"
+              }
+            }
           }
         }
       ],
@@ -267,11 +390,11 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-04-27T11:53:02.895Z",
-        "updated_at": "2025-04-27T11:53:02.895Z"
+        "created_at": "2025-05-14T04:51:42.921Z",
+        "updated_at": "2025-05-14T04:51:42.921Z"
       },
       "payment": {
-        "collected_by": "BPP",
+        "collected_by": "BAP",
         "type": "POST-FULFILLMENT",
         "@ondc/org/settlement_basis": "invoicing",
         "@ondc/org/settlement_window": "P15D",
@@ -286,57 +409,17 @@
         ],
         "status": "NOT-PAID",
         "time": {
-          "timestamp": "2025-04-27T11:53:58.340Z"
+          "timestamp": "2025-05-14T04:52:30.498Z"
         }
       },
-      "cancellation_terms": [
-        {
-          "fulfillment_state": {
-            "descriptor": {
-              "code": "Pending",
-              "short_desc": "008"
-            }
-          },
-          "cancellation_fee": {
-            "percentage": "0.00",
-            "amount": {
-              "currency": "INR",
-              "value": "0.00"
-            }
-          }
-        },
-        {
-          "fulfillment_state": {
-            "descriptor": {
-              "code": "Agent-assigned",
-              "short_desc": "001,003"
-            }
-          },
-          "cancellation_fee": {
-            "percentage": "100.00",
-            "amount": {
-              "currency": "INR",
-              "value": "50.00"
-            }
-          }
-        },
-        {
-          "fulfillment_state": {
-            "descriptor": {
-              "code": "Order-picked-up",
-              "short_desc": "001,003"
-            }
-          },
-          "cancellation_fee": {
-            "percentage": "100.00",
-            "amount": {
-              "currency": "INR",
-              "value": "50.00"
-            }
-          }
+      "updated_at": "2025-05-14T04:54:47.367Z",
+      "cancellation": {
+        "cancelled_by": "ondc.sequelstring.com/seller/protocol",
+        "reason": {
+          "id": "007"
         }
-      ],
-      "updated_at": "2025-04-27T11:53:58.340Z"
+      },
+      "created_at": "2025-05-14T04:51:55.771Z"
     }
   }
 }

@@ -5,18 +5,18 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_status",
-    "transaction_id": "c38e38fb-abef-48db-b356-ebc576243490",
-    "message_id": "b98a126a-08fe-4e67-bc24-10bc26c500b1",
-    "timestamp": "2025-04-27T11:32:18.590Z",
+    "transaction_id": "a9cba7de-6761-4007-a4af-1d35fdc596f4",
+    "message_id": "8567fada-5dc9-4b69-954b-eec5be2ea171",
+    "timestamp": "2025-05-14T06:57:26.131Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
-    "ttl": "PT50S",
+    "ttl": "PT30S",
     "bpp_id": "ondc.sequelstring.com/seller/protocol",
     "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
   },
   "message": {
     "order": {
-      "id": "SS-1745753507922",
+      "id": "SS-1747205769220",
       "state": "In-progress",
       "provider": {
         "id": "P1",
@@ -30,10 +30,11 @@
         {
           "id": "exp_del",
           "category_id": "Express Delivery",
-          "fulfillment_id": "4c6abf2b-db0d-45e2-bd85-d1b736ab7547",
+          "fulfillment_id": "a7e72c0a-f320-49f8-a263-476eb66053c2",
           "time": {
             "label": "TAT",
-            "duration": "P1D"
+            "duration": "PT24H",
+            "timestamp": "2025-05-15"
           }
         }
       ],
@@ -63,14 +64,14 @@
       },
       "fulfillments": [
         {
-          "id": "4c6abf2b-db0d-45e2-bd85-d1b736ab7547",
+          "id": "a7e72c0a-f320-49f8-a263-476eb66053c2",
           "type": "Delivery",
           "state": {
             "descriptor": {
-              "code": "Order_delay"
+              "code": "weightDifference"
             }
           },
-          "tracking": false,
+          "tracking": true,
           "start": {
             "location": {
               "id": "S1",
@@ -99,10 +100,10 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-04-27T09:00:00.000Z",
-                "end": "2025-04-27T23:00:00.000Z"
+                "start": "2025-05-14T09:00:00.000Z",
+                "end": "2025-05-14T23:00:00.000Z"
               },
-              "timestamp": "2025-04-27T11:32:15.042Z"
+              "timestamp": "2025-05-14T06:57:19.689Z"
             }
           },
           "end": {
@@ -127,7 +128,7 @@
             },
             "instructions": {
               "code": "1",
-              "short_desc": "7466",
+              "short_desc": "1301",
               "additional_desc": {
                 "content_type": "text/html",
                 "url": ".."
@@ -135,51 +136,114 @@
             },
             "time": {
               "range": {
-                "start": "2025-04-28T09:30:00.000Z",
-                "end": "2025-04-28T19:00:00.000Z"
+                "start": "2025-05-15T09:30:00.000Z",
+                "end": "2025-05-15T19:00:00.000Z"
               }
             }
           },
           "tags": [
             {
-              "code": "fulfillment_delay",
+              "code": "linked_provider",
               "list": [
                 {
-                  "code": "state",
-                  "value": "Order-picked-up"
+                  "code": "id",
+                  "value": "P1"
                 },
                 {
-                  "code": "reason_id",
-                  "value": "004"
-                },
-                {
-                  "code": "timestamp",
-                  "value": "2025-04-27T11:32:18.590Z"
-                },
-                {
-                  "code": "attempt",
-                  "value": "yes"
+                  "code": "name",
+                  "value": "Seller1"
                 }
               ]
             },
             {
-              "code": "fulfillment_delay",
+              "code": "linked_order",
               "list": [
                 {
-                  "code": "state",
-                  "value": "Order-delivered"
+                  "code": "currency",
+                  "value": "INR"
                 },
                 {
-                  "code": "reason_id",
-                  "value": "005"
+                  "code": "declared_value",
+                  "value": "1000.00"
                 },
                 {
-                  "code": "timestamp",
-                  "value": "2025-04-28T11:32:18.590Z"
+                  "code": "category",
+                  "value": "Home & Kitchen"
                 },
                 {
-                  "code": "attempt",
+                  "code": "weight_unit",
+                  "value": "kilogram"
+                },
+                {
+                  "code": "weight_value",
+                  "value": "2"
+                },
+                {
+                  "code": "dim_unit",
+                  "value": "centimeter"
+                },
+                {
+                  "code": "length",
+                  "value": "25"
+                },
+                {
+                  "code": "breadth",
+                  "value": "24"
+                },
+                {
+                  "code": "height",
+                  "value": "40"
+                },
+                {
+                  "code": "shipment_type",
+                  "value": "box"
+                },
+                {
+                  "code": "id",
+                  "value": "RO1"
+                }
+              ]
+            },
+            {
+              "code": "shipping_label",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "pdf"
+                },
+                {
+                  "code": "url",
+                  "value": "public link to pdf"
+                }
+              ]
+            },
+            {
+              "code": "tracking",
+              "list": [
+                {
+                  "code": "gps_enabled",
                   "value": "yes"
+                },
+                {
+                  "code": "url_enabled",
+                  "value": "yes"
+                },
+                {
+                  "code": "url",
+                  "value": "http://sequelstring-lsp-ondc.com/track"
+                }
+              ]
+            },
+            {
+              "code": "linked_order_diff_proof",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "image"
+                },
+                {
+                  "code": "url",
+                  "value": "https://lsp.com/sorter/images1.png"
                 }
               ]
             }
@@ -207,8 +271,8 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-04-27T11:31:41.051Z",
-        "updated_at": "2025-04-27T11:31:41.051Z"
+        "created_at": "2025-05-14T06:55:56.325Z",
+        "updated_at": "2025-05-14T06:55:56.325Z"
       },
       "payment": {
         "collected_by": "BPP",
@@ -226,6 +290,26 @@
         ],
         "status": "NOT-PAID"
       },
+      "tags": [
+        {
+          "code": "bap_terms",
+          "list": [
+            {
+              "code": "accept_bpp_terms",
+              "value": "yes"
+            }
+          ]
+        },
+        {
+          "code": "bpp_terms",
+          "list": [
+            {
+              "code": "static_terms",
+              "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+            }
+          ]
+        }
+      ],
       "cancellation_terms": [
         {
           "fulfillment_state": {
@@ -273,7 +357,7 @@
           }
         }
       ],
-      "updated_at": "2025-04-27T11:32:18.590Z"
+      "updated_at": "2025-05-14T06:57:26.131Z"
     }
   }
 }

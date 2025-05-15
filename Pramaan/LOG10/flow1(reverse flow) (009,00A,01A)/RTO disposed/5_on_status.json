@@ -5,58 +5,38 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_status",
-    "transaction_id": "202303cb-734a-427e-8e61-dc1ee1f0dafd",
-    "message_id": "77ff60b5-6cb6-45e8-b2e5-aeb471b2d309",
-    "timestamp": "2025-04-27T08:00:04.633Z",
+    "transaction_id": "a9e024d7-c8ba-4631-a717-5ed4825ffb0d",
+    "message_id": "4a13552f-2dd5-493a-a7a5-94bcda7875a1",
+    "timestamp": "2025-05-14T05:12:08.311Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
-    "ttl": "PT100S",
+    "ttl": "PT30S",
     "bpp_id": "ondc.sequelstring.com/seller/protocol",
     "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
   },
   "message": {
     "order": {
-      "id": "SS-1745740556258",
+      "id": "SS-1747199492380",
       "state": "Completed",
       "provider": {
         "id": "P1"
       },
       "items": [
         {
-          "id": "I2",
-          "parent_item_id": "I1",
-          "category_id": "Immediate Delivery",
-          "descriptor": {
-            "name": "RTO quote",
-            "short_desc": "RTO quote",
-            "long_desc": "RTO quote"
-          },
-          "fulfillment_id": "68b580c9-f738-4da9-b9eb-0c1980ef8eba",
-          "time": {
-            "label": "TAT",
-            "duration": "PT60M",
-            "timestamp": "2025-04-27"
-          },
-          "price": {
-            "currency": "INR",
-            "value": "35.20"
-          }
-        },
-        {
           "id": "I1",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "7b343c8f-269f-49d7-94d7-445630866393",
+          "fulfillment_id": "4c1d5b24-60a4-4a8c-8058-538df8234f94",
           "time": {
             "label": "TAT",
             "duration": "PT45M",
-            "timestamp": "2025-04-27"
+            "timestamp": "2025-05-14"
           }
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "59"
+          "value": "23.47"
         },
         "breakup": [
           {
@@ -74,33 +54,16 @@
             },
             "@ondc/org/item_id": "I1",
             "@ondc/org/title_type": "tax"
-          },
-          {
-            "price": {
-              "currency": "INR",
-              "value": "35.20"
-            },
-            "@ondc/org/item_id": "I2",
-            "@ondc/org/title_type": "rto"
-          },
-          {
-            "title": "tax",
-            "price": {
-              "currency": "INR",
-              "value": "0.00"
-            },
-            "@ondc/org/item_id": "I2",
-            "@ondc/org/title_type": "tax"
           }
         ]
       },
       "fulfillments": [
         {
-          "id": "7b343c8f-269f-49d7-94d7-445630866393",
+          "id": "4c1d5b24-60a4-4a8c-8058-538df8234f94",
           "type": "Delivery",
           "state": {
             "descriptor": {
-              "code": "RTO-Initiated"
+              "code": "Order-delivered"
             }
           },
           "tracking": true,
@@ -132,9 +95,10 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-04-27T09:00:00.000Z",
-                "end": "2025-04-27T23:00:00.000Z"
-              }
+                "start": "2025-05-14T09:00:00.000Z",
+                "end": "2025-05-14T23:00:00.000Z"
+              },
+              "timestamp": "2025-05-14T05:12:00.774Z"
             }
           },
           "end": {
@@ -158,43 +122,18 @@
               "name": "Tony Soprano"
             },
             "instructions": {
-              "code": "1",
-              "short_desc": "2736",
-              "additional_desc": {
-                "content_type": "text/html",
-                "url": ".."
-              }
+              "name": "Proof Of Delivery",
+              "images": ["http://sequelstring-lsp-ondc.com/proof"]
             },
             "time": {
               "range": {
-                "start": "2025-04-28T09:30:00.000Z",
-                "end": "2025-04-28T19:00:00.000Z"
-              }
+                "start": "2025-05-14T05:12:00.774Z",
+                "end": "2025-05-14T19:00:00.000Z"
+              },
+              "timestamp": "2025-05-14T05:12:08.311Z"
             }
           },
           "tags": [
-            {
-              "code": "igm_request",
-              "list": [
-                {
-                  "code": "id",
-                  "value": "Issue1"
-                }
-              ]
-            },
-            {
-              "code": "precancel_state",
-              "list": [
-                {
-                  "code": "fulfillment_state",
-                  "value": "rider reached delivery location"
-                },
-                {
-                  "code": "updated_at",
-                  "value": "2025-04-27T07:57:33.795Z"
-                }
-              ]
-            },
             {
               "code": "linked_provider",
               "list": [
@@ -229,7 +168,7 @@
                 },
                 {
                   "code": "weight_value",
-                  "value": 2
+                  "value": "2"
                 },
                 {
                   "code": "dim_unit",
@@ -237,15 +176,15 @@
                 },
                 {
                   "code": "length",
-                  "value": 25
+                  "value": "25"
                 },
                 {
                   "code": "breadth",
-                  "value": 24
+                  "value": "24"
                 },
                 {
                   "code": "height",
-                  "value": 40
+                  "value": "40"
                 },
                 {
                   "code": "prep_time",
@@ -262,36 +201,32 @@
               ]
             },
             {
-              "code": "precancel_state",
+              "code": "shipping_label",
               "list": [
                 {
-                  "code": "fulfillment_state",
-                  "value": "RTO-Initiated"
+                  "code": "type",
+                  "value": "pdf"
                 },
                 {
-                  "code": "updated_at",
-                  "value": "2025-04-27T07:57:33.795Z"
+                  "code": "url",
+                  "value": "public link to pdf"
                 }
               ]
             },
             {
-              "code": "rto_event",
+              "code": "tracking",
               "list": [
                 {
-                  "code": "rto_id",
-                  "value": "68b580c9-f738-4da9-b9eb-0c1980ef8eba"
+                  "code": "gps_enabled",
+                  "value": "yes"
                 },
                 {
-                  "code": "cancellation_reason_id",
-                  "value": "016"
+                  "code": "url_enabled",
+                  "value": "yes"
                 },
                 {
-                  "code": "cancelled_by",
-                  "value": "ondc.sequelstring.com/seller/protocol"
-                },
-                {
-                  "code": "retry_count",
-                  "value": "2"
+                  "code": "url",
+                  "value": "http://sequelstring-lsp-ondc.com/track"
                 }
               ]
             }
@@ -302,80 +237,6 @@
           },
           "vehicle": {
             "registration": "3LVJ945"
-          }
-        },
-        {
-          "id": "68b580c9-f738-4da9-b9eb-0c1980ef8eba",
-          "type": "RTO",
-          "state": {
-            "descriptor": {
-              "code": "RTO-Initiated"
-            }
-          },
-          "tracking": true,
-          "start": {
-            "time": {
-              "range": {
-                "start": "2025-04-27T07:59:03.018Z",
-                "end": "2025-04-27T07:59:03.018Z"
-              },
-              "timestamp": "2025-04-27T07:59:03.018Z"
-            },
-            "location": {
-              "gps": "12.930800,77.583900",
-              "address": {
-                "name": "Tony Soprano",
-                "building": "633 Stagtrail Rd",
-                "locality": "N. Caldwell",
-                "city": "N. Caldwell",
-                "state": "Karanataka",
-                "country": "India",
-                "area_code": "560076"
-              }
-            },
-            "contact": {
-              "phone": "9876543210",
-              "email": "tony@soprano.com"
-            },
-            "person": {
-              "name": "Tony Soprano"
-            },
-            "instructions": {
-              "code": "5",
-              "short_desc": "4123"
-            }
-          },
-          "end": {
-            "location": {
-              "id": "S1",
-              "gps": "12.921200,77.588000",
-              "address": {
-                "name": "Sherlock Holmes",
-                "building": "221 B",
-                "locality": "Baker Street",
-                "city": "Baker Street",
-                "state": "Karanataka",
-                "country": "India",
-                "area_code": "560076"
-              }
-            },
-            "contact": {
-              "phone": "9876543210",
-              "email": "sherlock@detective.com"
-            },
-            "person": {
-              "name": "Sherlock Holmes"
-            },
-            "instructions": {
-              "code": "6",
-              "short_desc": "3965"
-            },
-            "time": {
-              "range": {
-                "start": "2025-04-28T09:30:00.000Z",
-                "end": "2025-04-28T19:00:00.000Z"
-              }
-            }
           }
         }
       ],
@@ -393,8 +254,8 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-04-27T07:55:47.156Z",
-        "updated_at": "2025-04-27T07:55:47.156Z"
+        "created_at": "2025-05-14T05:11:21.758Z",
+        "updated_at": "2025-05-14T05:11:21.758Z"
       },
       "payment": {
         "collected_by": "BPP",
@@ -410,16 +271,79 @@
             "settlement_ifsc_code": "SBI00001234"
           }
         ],
-        "status": "NOT-PAID"
-      },
-      "updated_at": "2025-04-27T07:59:03.018Z",
-      "cancellation": {
-        "cancelled_by": "ondc.sequelstring.com/seller/protocol",
-        "reason": {
-          "id": "016"
+        "status": "NOT-PAID",
+        "time": {
+          "timestamp": "2025-05-14T05:12:08.311Z"
         }
       },
-      "created_at": "2025-04-27T07:59:03.018Z"
+      "tags": [
+        {
+          "code": "bap_terms",
+          "list": [
+            {
+              "code": "accept_bpp_terms",
+              "value": "yes"
+            }
+          ]
+        },
+        {
+          "code": "bpp_terms",
+          "list": [
+            {
+              "code": "static_terms",
+              "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+            }
+          ]
+        }
+      ],
+      "cancellation_terms": [
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Pending",
+              "short_desc": "008"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "0.00",
+            "amount": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          }
+        },
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Agent-assigned",
+              "short_desc": "001,003"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "100.00",
+            "amount": {
+              "currency": "INR",
+              "value": "50.00"
+            }
+          }
+        },
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Order-picked-up",
+              "short_desc": "001,003"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "100.00",
+            "amount": {
+              "currency": "INR",
+              "value": "50.00"
+            }
+          }
+        }
+      ],
+      "updated_at": "2025-05-14T05:12:08.311Z"
     }
   }
 }

@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "update",
-    "transaction_id": "e0251dd0-52cf-42b0-b0f5-b480764dad2c",
-    "message_id": "e763bd01-f450-4e8e-86d4-f820da35b7ee",
-    "timestamp": "2025-04-27T12:01:36.260Z",
+    "transaction_id": "fb87ff67-a735-46ea-9d80-7b919e2d23d9",
+    "message_id": "47188d36-20b5-4948-bd53-cd2b64beb21d",
+    "timestamp": "2025-05-14T06:34:20.846Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -17,7 +17,7 @@
   "message": {
     "update_target": "fulfillment",
     "order": {
-      "id": "SS-1745755293418",
+      "id": "SS-1747204455268",
       "items": [
         {
           "id": "exp_del",
@@ -26,12 +26,12 @@
       ],
       "fulfillments": [
         {
-          "id": "40538f20-3c61-4208-8abd-293e64f218d0",
+          "id": "df8448b1-1b59-4649-970a-999d8a40d2f4",
           "type": "Delivery",
           "start": {
             "instructions": {
               "code": "2",
-              "short_desc": "8355",
+              "short_desc": "6721",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
@@ -41,14 +41,14 @@
             "authorization": {
               "type": "OTP",
               "token": "1234",
-              "valid_from": "2025-04-27T12:01:36.260Z",
-              "valid_to": "2025-04-27T12:16:36.260Z"
+              "valid_from": "2025-05-14T06:34:20.846Z",
+              "valid_to": "2025-05-14T06:49:20.846Z"
             }
           },
           "end": {
             "instructions": {
               "code": "1",
-              "short_desc": "9048",
+              "short_desc": "5632",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
@@ -100,7 +100,7 @@
                 },
                 {
                   "code": "weight_value",
-                  "value": 2
+                  "value": "2"
                 },
                 {
                   "code": "dim_unit",
@@ -108,15 +108,15 @@
                 },
                 {
                   "code": "length",
-                  "value": 25
+                  "value": "25"
                 },
                 {
                   "code": "breadth",
-                  "value": 24
+                  "value": "24"
                 },
                 {
                   "code": "height",
-                  "value": 40
+                  "value": "40"
                 },
                 {
                   "code": "shipment_type",
@@ -131,7 +131,7 @@
           ]
         }
       ],
-      "updated_at": "2025-04-27T12:01:36.260Z"
+      "updated_at": "2025-05-14T06:34:20.846Z"
     }
   }
 }

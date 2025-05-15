@@ -1,0 +1,171 @@
+{
+  "context": {
+    "domain": "ONDC:LOG10",
+    "country": "IND",
+    "city": "*",
+    "core_version": "1.2.5",
+    "action": "search",
+    "transaction_id": "31dd80ca-3996-422d-9d0e-c03f4e67023c",
+    "message_id": "8666da1e-0d27-405e-96c2-b1048890d27e",
+    "timestamp": "2025-05-14T06:14:36.955Z",
+    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
+    "bap_id": "ondc.sequelstring.com/buyer/protocol",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "category": {
+        "id": "Immediate Delivery"
+      },
+      "provider": {
+        "time": {
+          "days": "1,2,3,4,5,6,7",
+          "duration": "PT30M",
+          "range": {
+            "start": "1100",
+            "end": "2100"
+          },
+          "schedule": {
+            "holidays": ["2025-05-18", "2025-06-11"]
+          }
+        }
+      },
+      "fulfillment": {
+        "type": "Delivery",
+        "start": {
+          "location": {
+            "gps": "12.921200,77.588000",
+            "address": {
+              "area_code": "560041"
+            },
+            "id": "S1"
+          },
+          "authorization": {
+            "type": "OTP"
+          }
+        },
+        "end": {
+          "location": {
+            "gps": "12.930800,77.583900",
+            "address": {
+              "area_code": "560001"
+            }
+          },
+          "authorization": {
+            "type": "OTP"
+          }
+        },
+        "tags": [
+          {
+            "code": "linked_provider",
+            "list": [
+              {
+                "code": "id",
+                "value": "P1"
+              },
+              {
+                "code": "name",
+                "value": "Seller1"
+              }
+            ]
+          },
+          {
+            "code": "linked_order",
+            "list": [
+              {
+                "code": "currency",
+                "value": "INR"
+              },
+              {
+                "code": "declared_value",
+                "value": "1000.00"
+              },
+              {
+                "code": "category",
+                "value": "Home & Kitchen"
+              },
+              {
+                "code": "weight_unit",
+                "value": "kilogram"
+              },
+              {
+                "code": "weight_value",
+                "value": "2"
+              },
+              {
+                "code": "dim_unit",
+                "value": "centimeter"
+              },
+              {
+                "code": "length",
+                "value": "25"
+              },
+              {
+                "code": "breadth",
+                "value": "24"
+              },
+              {
+                "code": "height",
+                "value": "40"
+              },
+              {
+                "code": "cod_order",
+                "value": "yes"
+              },
+              {
+                "code": "collection_amount",
+                "value": "1050"
+              }
+            ]
+          }
+        ]
+      },
+      "payment": {
+        "type": "ON-FULFILLMENT"
+      },
+      "@ondc/org/payload_details": {
+        "category": "Home & Kitchen",
+        "collection_amount": "1050",
+        "value": {
+          "currency": "INR",
+          "value": "1000.00"
+        },
+        "dimensions": {
+          "length": {
+            "value": "25"
+          },
+          "breadth": {
+            "value": "24"
+          },
+          "height": {
+            "value": "40"
+          }
+        },
+        "weight": {
+          "unit": "kilogram",
+          "value": "2"
+        },
+        "dangerous_goods": false
+      },
+      "tags": [
+        {
+          "code": "lbnp_features",
+          "list": [
+            {
+              "code": "00B",
+              "value": "yes"
+            },
+            {
+              "code": "00E",
+              "value": "yes"
+            },
+            {
+              "code": "01D",
+              "value": "yes"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
