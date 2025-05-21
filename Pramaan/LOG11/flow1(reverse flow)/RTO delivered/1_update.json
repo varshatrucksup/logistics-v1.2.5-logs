@@ -1,13 +1,13 @@
 {
   "context": {
-    "domain": "ONDC:LOG11",
+    "domain": "ONDC:LOG10",
     "country": "IND",
     "city": "*",
     "core_version": "1.2.5",
     "action": "update",
-    "transaction_id": "a9cba7de-6761-4007-a4af-1d35fdc596f4",
-    "message_id": "2e56332f-33bf-456e-86b3-fcd8daaa2b94",
-    "timestamp": "2025-05-14T06:56:17.938Z",
+    "transaction_id": "f2dd16c4-bdf6-4224-9acd-a6330bdbc972",
+    "message_id": "c3eba39e-126e-4041-a960-1222da4f8042",
+    "timestamp": "2025-05-21T09:37:09.858Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -17,21 +17,21 @@
   "message": {
     "update_target": "fulfillment",
     "order": {
-      "id": "SS-1747205769220",
+      "id": "SS-1747820218590",
       "items": [
         {
-          "id": "exp_del",
-          "category_id": "Express Delivery"
+          "id": "I1",
+          "category_id": "Immediate Delivery"
         }
       ],
       "fulfillments": [
         {
-          "id": "a7e72c0a-f320-49f8-a263-476eb66053c2",
+          "id": "03effeea-38d7-4ad1-9a37-d343685f15b8",
           "type": "Delivery",
           "start": {
             "instructions": {
               "code": "2",
-              "short_desc": "1256",
+              "short_desc": "6437",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
@@ -41,14 +41,14 @@
             "authorization": {
               "type": "OTP",
               "token": "1234",
-              "valid_from": "2025-05-14T06:56:17.938Z",
-              "valid_to": "2025-05-14T07:11:17.938Z"
+              "valid_from": "2025-05-21T09:37:09.858Z",
+              "valid_to": "2025-05-21T09:52:09.858Z"
             }
           },
           "end": {
             "instructions": {
               "code": "1",
-              "short_desc": "1301",
+              "short_desc": "8275",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
@@ -119,6 +119,10 @@
                   "value": "40"
                 },
                 {
+                  "code": "prep_time",
+                  "value": "PT30M"
+                },
+                {
                   "code": "shipment_type",
                   "value": "box"
                 },
@@ -131,7 +135,7 @@
           ]
         }
       ],
-      "updated_at": "2025-05-14T06:56:17.938Z"
+      "updated_at": "2025-05-21T09:37:09.858Z"
     }
   }
 }

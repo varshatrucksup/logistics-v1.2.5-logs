@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "update",
-    "transaction_id": "559f843c-60f2-4a68-9aae-390474ed23ed",
-    "message_id": "a18a650a-7f0e-4cde-98bb-f3e8ad8bdc1f",
-    "timestamp": "2025-05-14T04:52:01.479Z",
+    "transaction_id": "dd93f54a-c7d8-4bb1-9614-31e37bbc80c0",
+    "message_id": "2dce2fe3-860f-4399-a72e-9dacb3b0444f",
+    "timestamp": "2025-05-21T07:35:08.696Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -17,7 +17,7 @@
   "message": {
     "update_target": "fulfillment",
     "order": {
-      "id": "SS-1747198315771",
+      "id": "SS-1747812870043",
       "items": [
         {
           "id": "I1",
@@ -26,12 +26,12 @@
       ],
       "fulfillments": [
         {
-          "id": "22d23dbc-db25-4c35-9f90-056fb556a317",
+          "id": "acce8bd3-a4c6-41ed-bbd0-79e0962091cd",
           "type": "Delivery",
           "start": {
             "instructions": {
               "code": "2",
-              "short_desc": "2505",
+              "short_desc": "7062",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
@@ -41,14 +41,14 @@
             "authorization": {
               "type": "OTP",
               "token": "1234",
-              "valid_from": "2025-05-14T04:52:01.479Z",
-              "valid_to": "2025-05-14T05:07:01.479Z"
+              "valid_from": "2025-05-21T07:35:08.696Z",
+              "valid_to": "2025-05-21T07:50:08.696Z"
             }
           },
           "end": {
             "instructions": {
               "code": "1",
-              "short_desc": "8923",
+              "short_desc": "1275",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
@@ -135,7 +135,7 @@
           ]
         }
       ],
-      "updated_at": "2025-05-14T04:52:01.479Z"
+      "updated_at": "2025-05-21T07:35:08.696Z"
     }
   }
 }

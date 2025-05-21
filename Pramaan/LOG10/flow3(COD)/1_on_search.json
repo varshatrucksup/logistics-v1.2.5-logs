@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_search",
-    "transaction_id": "31dd80ca-3996-422d-9d0e-c03f4e67023c",
-    "message_id": "8666da1e-0d27-405e-96c2-b1048890d27e",
-    "timestamp": "2025-05-14T06:14:37.523Z",
+    "transaction_id": "53ba38e6-37cc-488b-aca5-f4dc52f6042b",
+    "message_id": "847e773f-d8e4-40ce-8009-fa325c644be1",
+    "timestamp": "2025-05-21T08:50:51.378Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -52,13 +52,13 @@
               "time": {
                 "label": "TAT",
                 "duration": "PT60M",
-                "timestamp": "2025-05-14"
+                "timestamp": "2025-05-21"
               }
             }
           ],
           "fulfillments": [
             {
-              "id": "bffa6967-eea1-48e4-bf2c-b9e0b9ec524f",
+              "id": "e2d69439-760f-4c60-8a9f-63a8685c3f16",
               "type": "Delivery",
               "start": {
                 "time": {
@@ -82,8 +82,12 @@
               ]
             },
             {
-              "id": "ffec984f-a791-44f8-9ecd-ef7af34cc7ee",
+              "id": "4cb527f1-4e9d-492d-bece-81be5bf29947",
               "type": "RTO"
+            },
+            {
+              "id": "c8e39674-6c1e-4f95-bcc0-120d61e7d52c",
+              "type": "cod"
             }
           ],
           "items": [
@@ -96,7 +100,7 @@
                 "long_desc": "60 min delivery for F&B"
               },
               "category_id": "Immediate Delivery",
-              "fulfillment_id": "bffa6967-eea1-48e4-bf2c-b9e0b9ec524f",
+              "fulfillment_id": "e2d69439-760f-4c60-8a9f-63a8685c3f16",
               "price": {
                 "currency": "INR",
                 "value": "23.47"
@@ -104,7 +108,7 @@
               "time": {
                 "label": "TAT",
                 "duration": "PT45M",
-                "timestamp": "2025-05-14"
+                "timestamp": "2025-05-21"
               },
               "tags": [
                 {
@@ -127,11 +131,11 @@
                 "short_desc": "RTO quote",
                 "long_desc": "RTO quote"
               },
-              "fulfillment_id": "ffec984f-a791-44f8-9ecd-ef7af34cc7ee",
+              "fulfillment_id": "4cb527f1-4e9d-492d-bece-81be5bf29947",
               "time": {
                 "label": "TAT",
                 "duration": "PT60M",
-                "timestamp": "2025-05-14"
+                "timestamp": "2025-05-21"
               },
               "price": {
                 "currency": "INR",
@@ -142,10 +146,15 @@
               "id": "I3",
               "parent_item_id": "I1",
               "category_id": "Immediate Delivery",
-              "fulfillment_id": "511dec1b-14cd-4409-99a2-7bdf48fc979a",
+              "fulfillment_id": "c8e39674-6c1e-4f95-bcc0-120d61e7d52c",
               "price": {
                 "currency": "INR",
                 "value": "19.18"
+              },
+              "time": {
+                "label": "TAT",
+                "duration": "PT45M",
+                "timestamp": "2025-05-21"
               },
               "tags": [
                 {

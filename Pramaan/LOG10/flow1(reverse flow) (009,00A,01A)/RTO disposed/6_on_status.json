@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_status",
-    "transaction_id": "a9e024d7-c8ba-4631-a717-5ed4825ffb0d",
-    "message_id": "76a2df92-d953-4337-a100-32875b9dab32",
-    "timestamp": "2025-05-14T05:14:17.634Z",
+    "transaction_id": "dd93f54a-c7d8-4bb1-9614-31e37bbc80c0",
+    "message_id": "ffe90d63-7a06-491d-a008-d1848d0cb806",
+    "timestamp": "2025-05-21T07:36:33.112Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,12 +16,12 @@
   },
   "message": {
     "order": {
-      "id": "SS-1747199492380",
-      "state": "Completed",
+      "id": "SS-1747812870043",
+      "state": "Cancelled",
       "cancellation": {
         "cancelled_by": "ondc.sequelstring.com/seller/protocol",
         "reason": {
-          "id": "007"
+          "id": "008"
         }
       },
       "provider": {
@@ -31,46 +31,30 @@
         {
           "id": "I1",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "4c1d5b24-60a4-4a8c-8058-538df8234f94",
+          "fulfillment_id": "acce8bd3-a4c6-41ed-bbd0-79e0962091cd",
           "time": {
             "label": "TAT",
             "duration": "PT45M",
-            "timestamp": "2025-05-14"
+            "timestamp": "2025-05-21"
           }
         },
         {
           "id": "I2",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "45a9ace1-0005-4d07-8927-3550e0a81363",
+          "fulfillment_id": "ce7cbd26-00cc-4db7-a737-442dd2f5d20d",
           "time": {
             "label": "TAT",
             "duration": "PT60M",
-            "timestamp": "2025-05-14"
+            "timestamp": "2025-05-21"
           }
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": 58.67
+          "value": "35.20"
         },
         "breakup": [
-          {
-            "price": {
-              "currency": "INR",
-              "value": "23.47"
-            },
-            "@ondc/org/item_id": "I1",
-            "@ondc/org/title_type": "delivery"
-          },
-          {
-            "price": {
-              "currency": "INR",
-              "value": "0.00"
-            },
-            "@ondc/org/item_id": "I1",
-            "@ondc/org/title_type": "tax"
-          },
           {
             "price": {
               "currency": "INR",
@@ -92,7 +76,7 @@
       },
       "fulfillments": [
         {
-          "id": "4c1d5b24-60a4-4a8c-8058-538df8234f94",
+          "id": "acce8bd3-a4c6-41ed-bbd0-79e0962091cd",
           "type": "Delivery",
           "state": {
             "descriptor": {
@@ -109,7 +93,7 @@
                 "name": "Sherlock Holmes",
                 "building": "221 B",
                 "locality": "Baker Street",
-                "city": "Baker Street",
+                "city": "Bangalore",
                 "state": "Karanataka",
                 "country": "India",
                 "area_code": "560076"
@@ -129,16 +113,16 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-05-14T09:00:00.000Z",
-                "end": "2025-05-14T23:00:00.000Z"
+                "start": "2025-05-21T09:00:00.000Z",
+                "end": "2025-05-21T23:00:00.000Z"
               },
-              "timestamp": "2025-05-14T05:12:00.774Z"
+              "timestamp": "2025-05-21T07:35:22.424Z"
             },
             "authorization": {
               "type": "OTP",
               "token": "1234",
-              "valid_from": "2025-05-14T05:11:37.525Z",
-              "valid_to": "2025-05-14T05:26:37.525Z"
+              "valid_from": "2025-05-21T07:35:08.696Z",
+              "valid_to": "2025-05-21T07:50:08.696Z"
             }
           },
           "end": {
@@ -148,7 +132,7 @@
                 "name": "Tony Soprano",
                 "building": "633 Stagtrail Rd",
                 "locality": "N. Caldwell",
-                "city": "N. Caldwell",
+                "city": "Bangalore",
                 "state": "Karanataka",
                 "country": "India",
                 "area_code": "560076"
@@ -168,16 +152,16 @@
             },
             "time": {
               "range": {
-                "start": "2025-05-14T05:12:00.774Z",
-                "end": "2025-05-14T19:00:00.000Z"
+                "start": "2025-05-21T07:35:22.424Z",
+                "end": "2025-05-21T19:00:00.000Z"
               },
-              "timestamp": "2025-05-14T05:12:08.311Z"
+              "timestamp": "2025-05-21T07:35:31.850Z"
             },
             "authorization": {
               "type": "OTP",
               "token": "1234",
-              "valid_from": "2025-05-14T05:11:37.525Z",
-              "valid_to": "2025-05-14T05:26:37.525Z"
+              "valid_from": "2025-05-21T07:35:08.696Z",
+              "valid_to": "2025-05-21T07:50:08.696Z"
             }
           },
           "tags": [
@@ -286,10 +270,10 @@
             "registration": "3LVJ945"
           },
           "@ondc/org/ewaybillno": "EBN1",
-          "@ondc/org/ebnexpirydate": "2025-05-14T05:14:17.633Z"
+          "@ondc/org/ebnexpirydate": "2025-05-21T07:36:33.112Z"
         },
         {
-          "id": "45a9ace1-0005-4d07-8927-3550e0a81363",
+          "id": "ce7cbd26-00cc-4db7-a737-442dd2f5d20d",
           "state": {
             "descriptor": {
               "code": "RTO-Initiated"
@@ -299,10 +283,10 @@
           "start": {
             "time": {
               "range": {
-                "start": "2025-05-14T05:13:52.141Z",
-                "end": "2025-05-14T05:13:52.141Z"
+                "start": "2025-05-21T07:36:10.909Z",
+                "end": "2025-05-21T07:36:10.909Z"
               },
-              "timestamp": "2025-05-14T05:14:17.634Z"
+              "timestamp": "2025-05-21T07:36:33.112Z"
             }
           },
           "agent": {
@@ -333,21 +317,21 @@
         "@ondc/org/settlement_window": "P15D",
         "@ondc/org/settlement_details": [
           {
-            "settlement_counterparty": "seller-app",
+            "settlement_counterparty": "lbnp",
             "settlement_type": "upi",
             "upi_address": "gft@oksbi",
             "settlement_bank_account_no": "123456789123456",
             "settlement_ifsc_code": "SBI00001234",
             "settlement_status": "PAID",
-            "settlement_timestamp": "2025-05-14T05:14:17.634Z"
+            "settlement_timestamp": "2025-05-21T07:36:33.112Z"
           }
         ],
         "status": "PAID",
         "time": {
-          "timestamp": "2025-05-14T05:14:17.634Z"
+          "timestamp": "2025-05-21T07:36:33.112Z"
         }
       },
-      "updated_at": "2025-05-14T05:14:17.634Z"
+      "updated_at": "2025-05-21T07:36:33.112Z"
     }
   }
 }

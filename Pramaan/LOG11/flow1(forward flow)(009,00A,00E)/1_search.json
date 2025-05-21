@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "search",
-    "transaction_id": "fb87ff67-a735-46ea-9d80-7b919e2d23d9",
-    "message_id": "c3cf2c94-4ba9-4c07-ac65-004b9d6d8d9c",
-    "timestamp": "2025-05-14T06:33:53.383Z",
+    "transaction_id": "35ed5167-a540-4783-9d7a-a11f4dac47d7",
+    "message_id": "e29b052f-5dda-4848-aa13-633c3289301b",
+    "timestamp": "2025-05-21T09:12:39.474Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S"
@@ -26,7 +26,7 @@
             "end": "2100"
           },
           "schedule": {
-            "holidays": ["2025-05-28", "2025-05-19"]
+            "holidays": ["2025-06-07", "2025-06-05"]
           }
         }
       },
@@ -123,18 +123,21 @@
         },
         "dimensions": {
           "length": {
-            "value": "25"
+            "unit": "centimeter",
+            "value": 25
           },
           "breadth": {
-            "value": "24"
+            "unit": "centimeter",
+            "value": 24
           },
           "height": {
-            "value": "40"
+            "unit": "centimeter",
+            "value": 40
           }
         },
         "weight": {
           "unit": "kilogram",
-          "value": "2"
+          "value": 2
         },
         "dangerous_goods": false
       },

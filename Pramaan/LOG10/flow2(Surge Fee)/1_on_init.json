@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_init",
-    "transaction_id": "2c9306df-0c33-44d3-b36d-c364febb64d5",
-    "message_id": "412ca6d8-25cd-470d-b49e-f1ad5fbdc48f",
-    "timestamp": "2025-05-14T05:36:33.018Z",
+    "transaction_id": "825e5f11-dc6c-49b8-bbda-f525c678b141",
+    "message_id": "51789656-96eb-425b-9241-f365cc043f78",
+    "timestamp": "2025-05-21T08:40:38.179Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -22,12 +22,12 @@
       "items": [
         {
           "id": "I1",
-          "fulfillment_id": "218bd84b-c781-4a69-a973-5eb763b14de5"
+          "fulfillment_id": "db64d8f8-0f49-4ae6-a204-466c0b799592"
         }
       ],
       "fulfillments": [
         {
-          "id": "218bd84b-c781-4a69-a973-5eb763b14de5",
+          "id": "db64d8f8-0f49-4ae6-a204-466c0b799592",
           "type": "Delivery",
           "start": {
             "location": {
@@ -37,7 +37,7 @@
                 "name": "Sherlock Holmes",
                 "building": "221 B",
                 "locality": "Baker Street",
-                "city": "Baker Street",
+                "city": "Bangalore",
                 "state": "Karanataka",
                 "country": "India",
                 "area_code": "560076"
@@ -55,7 +55,7 @@
                 "name": "Tony Soprano",
                 "building": "633 Stagtrail Rd",
                 "locality": "N. Caldwell",
-                "city": "N. Caldwell",
+                "city": "Bangalore",
                 "state": "Karanataka",
                 "country": "India",
                 "area_code": "560076"
@@ -150,7 +150,7 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "42.65"
+          "value": "23.47"
         },
         "breakup": [
           {
@@ -167,22 +167,6 @@
               "value": "0.00"
             },
             "@ondc/org/item_id": "I1",
-            "@ondc/org/title_type": "tax"
-          },
-          {
-            "price": {
-              "currency": "INR",
-              "value": "19.18"
-            },
-            "@ondc/org/item_id": "I4",
-            "@ondc/org/title_type": "surge"
-          },
-          {
-            "price": {
-              "currency": "INR",
-              "value": "0.00"
-            },
-            "@ondc/org/item_id": "I4",
             "@ondc/org/title_type": "tax"
           }
         ],
@@ -204,7 +188,7 @@
           "fulfillment_state": {
             "descriptor": {
               "code": "Pending",
-              "short_desc": "008"
+              "short_desc": "132"
             }
           },
           "cancellation_fee": {
@@ -219,7 +203,7 @@
           "fulfillment_state": {
             "descriptor": {
               "code": "Agent-assigned",
-              "short_desc": "001,003"
+              "short_desc": "102,103,105"
             }
           },
           "cancellation_fee": {
@@ -234,7 +218,7 @@
           "fulfillment_state": {
             "descriptor": {
               "code": "Order-picked-up",
-              "short_desc": "001,003"
+              "short_desc": "125,126,127,128"
             }
           },
           "cancellation_fee": {

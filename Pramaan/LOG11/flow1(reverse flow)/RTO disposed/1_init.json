@@ -1,13 +1,13 @@
 {
   "context": {
-    "domain": "ONDC:LOG11",
+    "domain": "ONDC:LOG10",
     "country": "IND",
     "city": "*",
     "core_version": "1.2.5",
     "action": "init",
-    "transaction_id": "a9cba7de-6761-4007-a4af-1d35fdc596f4",
-    "message_id": "9c9de147-75ed-4d0c-a6ec-cdc836885c6a",
-    "timestamp": "2025-05-14T06:56:03.645Z",
+    "transaction_id": "f2dd16c4-bdf6-4224-9acd-a6330bdbc972",
+    "message_id": "5fd48711-7e87-44a2-9215-7da31e08cced",
+    "timestamp": "2025-05-21T09:36:52.713Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -17,23 +17,18 @@
   "message": {
     "order": {
       "provider": {
-        "id": "P1",
-        "locations": [
-          {
-            "id": "L1"
-          }
-        ]
+        "id": "P1"
       },
       "items": [
         {
-          "id": "exp_del",
-          "fulfillment_id": "a7e72c0a-f320-49f8-a263-476eb66053c2",
-          "category_id": "Express Delivery"
+          "id": "I1",
+          "fulfillment_id": "03effeea-38d7-4ad1-9a37-d343685f15b8",
+          "category_id": "Immediate Delivery"
         }
       ],
       "fulfillments": [
         {
-          "id": "a7e72c0a-f320-49f8-a263-476eb66053c2",
+          "id": "03effeea-38d7-4ad1-9a37-d343685f15b8",
           "type": "Delivery",
           "start": {
             "location": {
@@ -43,7 +38,7 @@
                 "name": "Sherlock Holmes",
                 "building": "221 B",
                 "locality": "Baker Street",
-                "city": "Baker Street",
+                "city": "Bangalore",
                 "state": "Karanataka",
                 "country": "India",
                 "area_code": "560076"
@@ -61,7 +56,7 @@
                 "name": "Tony Soprano",
                 "building": "633 Stagtrail Rd",
                 "locality": "N. Caldwell",
-                "city": "N. Caldwell",
+                "city": "Bangalore",
                 "state": "Karanataka",
                 "country": "India",
                 "area_code": "560076"
@@ -144,8 +139,8 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-05-14T06:55:56.325Z",
-        "updated_at": "2025-05-14T06:55:56.325Z"
+        "created_at": "2025-05-21T09:36:45.100Z",
+        "updated_at": "2025-05-21T09:36:45.100Z"
       },
       "payment": {
         "collected_by": "BAP",

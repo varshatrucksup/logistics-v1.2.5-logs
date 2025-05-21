@@ -1,13 +1,13 @@
 {
   "context": {
-    "domain": "ONDC:LOG11",
+    "domain": "ONDC:LOG10",
     "country": "IND",
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_status",
-    "transaction_id": "a9cba7de-6761-4007-a4af-1d35fdc596f4",
-    "message_id": "8bbe3b65-1bf1-4bcc-9e15-8a97626e3dab",
-    "timestamp": "2025-05-14T07:01:29.936Z",
+    "transaction_id": "f2dd16c4-bdf6-4224-9acd-a6330bdbc972",
+    "message_id": "0e8d0758-a13c-4555-ac17-048191fae782",
+    "timestamp": "2025-05-21T09:40:45.128Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,72 +16,51 @@
   },
   "message": {
     "order": {
-      "id": "SS-1747205769220",
-      "state": "Completed",
+      "id": "SS-1747820218590",
+      "state": "Cancelled",
       "cancellation": {
         "cancelled_by": "ondc.sequelstring.com/seller/protocol",
         "reason": {
-          "id": "007"
+          "id": "008"
         }
       },
       "provider": {
-        "id": "P1",
-        "locations": [
-          {
-            "id": "L1"
-          }
-        ]
+        "id": "P1"
       },
       "items": [
         {
-          "id": "exp_del",
-          "category_id": "Express Delivery",
-          "fulfillment_id": "a7e72c0a-f320-49f8-a263-476eb66053c2",
+          "id": "I1",
+          "category_id": "Immediate Delivery",
+          "fulfillment_id": "03effeea-38d7-4ad1-9a37-d343685f15b8",
           "time": {
             "label": "TAT",
-            "duration": "PT24H",
-            "timestamp": "2025-05-15"
+            "duration": "PT45M",
+            "timestamp": "2025-05-21"
           }
         },
         {
-          "id": "rto_exp",
-          "category_id": "Express Delivery",
-          "fulfillment_id": "61ee3ca9-b4ab-4675-bc13-5971a073522d",
+          "id": "I2",
+          "category_id": "Immediate Delivery",
+          "fulfillment_id": "8be92206-94df-487f-b494-6fb139968ca5",
           "time": {
             "label": "TAT",
-            "duration": "PT24H",
-            "timestamp": "2025-05-15"
+            "duration": "PT60M",
+            "timestamp": "2025-05-21"
           }
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": 58.67
+          "value": "35.20"
         },
         "breakup": [
           {
             "price": {
               "currency": "INR",
-              "value": "23.47"
-            },
-            "@ondc/org/item_id": "exp_del",
-            "@ondc/org/title_type": "delivery"
-          },
-          {
-            "price": {
-              "currency": "INR",
-              "value": "0.00"
-            },
-            "@ondc/org/item_id": "exp_del",
-            "@ondc/org/title_type": "tax"
-          },
-          {
-            "price": {
-              "currency": "INR",
               "value": "35.20"
             },
-            "@ondc/org/item_id": "rto_exp",
+            "@ondc/org/item_id": "I2",
             "@ondc/org/title_type": "rto"
           },
           {
@@ -90,14 +69,14 @@
               "currency": "INR",
               "value": "0.00"
             },
-            "@ondc/org/item_id": "rto_exp",
+            "@ondc/org/item_id": "I2",
             "@ondc/org/title_type": "tax"
           }
         ]
       },
       "fulfillments": [
         {
-          "id": "a7e72c0a-f320-49f8-a263-476eb66053c2",
+          "id": "03effeea-38d7-4ad1-9a37-d343685f15b8",
           "type": "Delivery",
           "state": {
             "descriptor": {
@@ -105,7 +84,7 @@
               "short_desc": "pickup or delivery failed reason code"
             }
           },
-          "tracking": false,
+          "tracking": true,
           "start": {
             "location": {
               "id": "S1",
@@ -114,7 +93,7 @@
                 "name": "Sherlock Holmes",
                 "building": "221 B",
                 "locality": "Baker Street",
-                "city": "Baker Street",
+                "city": "Bangalore",
                 "state": "Karanataka",
                 "country": "India",
                 "area_code": "560076"
@@ -134,16 +113,16 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-05-14T09:00:00.000Z",
-                "end": "2025-05-14T23:00:00.000Z"
+                "start": "2025-05-21T09:00:00.000Z",
+                "end": "2025-05-21T23:00:00.000Z"
               },
-              "timestamp": "2025-05-14T06:57:19.689Z"
+              "timestamp": "2025-05-21T09:38:14.792Z"
             },
             "authorization": {
               "type": "OTP",
               "token": "1234",
-              "valid_from": "2025-05-14T06:56:17.938Z",
-              "valid_to": "2025-05-14T07:11:17.938Z"
+              "valid_from": "2025-05-21T09:37:09.858Z",
+              "valid_to": "2025-05-21T09:52:09.858Z"
             }
           },
           "end": {
@@ -153,7 +132,7 @@
                 "name": "Tony Soprano",
                 "building": "633 Stagtrail Rd",
                 "locality": "N. Caldwell",
-                "city": "N. Caldwell",
+                "city": "Bangalore",
                 "state": "Karanataka",
                 "country": "India",
                 "area_code": "560076"
@@ -173,16 +152,16 @@
             },
             "time": {
               "range": {
-                "start": "2025-05-15T09:30:00.000Z",
-                "end": "2025-05-15T19:00:00.000Z"
+                "start": "2025-05-21T09:38:14.792Z",
+                "end": "2025-05-21T19:00:00.000Z"
               },
-              "timestamp": "2025-05-14T06:57:58.997Z"
+              "timestamp": "2025-05-21T09:38:55.535Z"
             },
             "authorization": {
               "type": "OTP",
               "token": "1234",
-              "valid_from": "2025-05-14T06:56:17.938Z",
-              "valid_to": "2025-05-14T07:11:17.938Z"
+              "valid_from": "2025-05-21T09:37:09.858Z",
+              "valid_to": "2025-05-21T09:52:09.858Z"
             }
           },
           "tags": [
@@ -239,6 +218,10 @@
                   "value": "40"
                 },
                 {
+                  "code": "prep_time",
+                  "value": "PT30M"
+                },
+                {
                   "code": "shipment_type",
                   "value": "box"
                 },
@@ -287,10 +270,10 @@
             "registration": "3LVJ945"
           },
           "@ondc/org/ewaybillno": "EBN1",
-          "@ondc/org/ebnexpirydate": "2025-05-14T07:01:29.935Z"
+          "@ondc/org/ebnexpirydate": "2025-05-21T09:40:45.128Z"
         },
         {
-          "id": "61ee3ca9-b4ab-4675-bc13-5971a073522d",
+          "id": "8be92206-94df-487f-b494-6fb139968ca5",
           "state": {
             "descriptor": {
               "code": "RTO-Initiated"
@@ -300,10 +283,10 @@
           "start": {
             "time": {
               "range": {
-                "start": "2025-05-14T07:00:45.972Z",
-                "end": "2025-05-14T07:00:45.972Z"
+                "start": "2025-05-21T09:39:34.536Z",
+                "end": "2025-05-21T09:39:34.536Z"
               },
-              "timestamp": "2025-05-14T07:01:29.935Z"
+              "timestamp": "2025-05-21T09:40:45.128Z"
             }
           },
           "agent": {
@@ -334,21 +317,21 @@
         "@ondc/org/settlement_window": "P15D",
         "@ondc/org/settlement_details": [
           {
-            "settlement_counterparty": "seller-app",
+            "settlement_counterparty": "lbnp",
             "settlement_type": "upi",
             "upi_address": "gft@oksbi",
             "settlement_bank_account_no": "123456789123456",
             "settlement_ifsc_code": "SBI00001234",
             "settlement_status": "PAID",
-            "settlement_timestamp": "2025-05-14T07:01:29.936Z"
+            "settlement_timestamp": "2025-05-21T09:40:45.128Z"
           }
         ],
         "status": "PAID",
         "time": {
-          "timestamp": "2025-05-14T07:01:29.936Z"
+          "timestamp": "2025-05-21T09:40:45.128Z"
         }
       },
-      "updated_at": "2025-05-14T07:01:29.936Z"
+      "updated_at": "2025-05-21T09:40:45.128Z"
     }
   }
 }
