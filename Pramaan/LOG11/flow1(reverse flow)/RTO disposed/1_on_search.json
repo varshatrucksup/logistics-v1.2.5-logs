@@ -1,13 +1,13 @@
 {
   "context": {
-    "domain": "ONDC:LOG11",
+    "domain": "ONDC:LOG10",
     "country": "IND",
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_search",
-    "transaction_id": "a9cba7de-6761-4007-a4af-1d35fdc596f4",
-    "message_id": "84888372-0ef3-424a-99ad-cbd042f50cf6",
-    "timestamp": "2025-05-14T06:55:56.325Z",
+    "transaction_id": "f2dd16c4-bdf6-4224-9acd-a6330bdbc972",
+    "message_id": "a55d7a1d-782a-4e88-84c0-f5389ff7c54e",
+    "timestamp": "2025-05-21T09:36:45.100Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -48,17 +48,17 @@
           },
           "categories": [
             {
-              "id": "Express Delivery",
+              "id": "Immediate Delivery",
               "time": {
                 "label": "TAT",
-                "duration": "PT24H",
-                "timestamp": "2025-05-15"
+                "duration": "PT60M",
+                "timestamp": "2025-05-21"
               }
             }
           ],
           "fulfillments": [
             {
-              "id": "a7e72c0a-f320-49f8-a263-476eb66053c2",
+              "id": "03effeea-38d7-4ad1-9a37-d343685f15b8",
               "type": "Delivery",
               "start": {
                 "time": {
@@ -82,59 +82,45 @@
               ]
             },
             {
-              "id": "61ee3ca9-b4ab-4675-bc13-5971a073522d",
+              "id": "8be92206-94df-487f-b494-6fb139968ca5",
               "type": "RTO"
-            }
-          ],
-          "locations": [
-            {
-              "id": "L1",
-              "gps": "12.921200,77.588000",
-              "address": {
-                "street": "Jayanagar 4th Block",
-                "city": "Bengaluru",
-                "area_code": "560076",
-                "state": "KA"
-              }
             }
           ],
           "items": [
             {
-              "id": "exp_del",
+              "id": "I1",
               "parent_item_id": "",
               "descriptor": {
-                "code": "P2P",
-                "name": "Express Delivery",
-                "long_desc": "Upto 1 day for Delivery",
-                "short_desc": "Upto 1 day for Delivery"
+                "name": "60 min delivery",
+                "short_desc": "60 min delivery for F&B",
+                "long_desc": "60 min delivery for F&B"
               },
-              "category_id": "Express Delivery",
-              "fulfillment_id": "a7e72c0a-f320-49f8-a263-476eb66053c2",
+              "category_id": "Immediate Delivery",
+              "fulfillment_id": "03effeea-38d7-4ad1-9a37-d343685f15b8",
               "price": {
                 "currency": "INR",
                 "value": "23.47"
               },
               "time": {
                 "label": "TAT",
-                "duration": "PT24H",
-                "timestamp": "2025-05-15"
+                "duration": "PT45M",
+                "timestamp": "2025-05-21"
               }
             },
             {
-              "id": "rto_exp",
-              "parent_item_id": "exp_del",
-              "category_id": "Express Delivery",
+              "id": "I2",
+              "parent_item_id": "I1",
+              "category_id": "Immediate Delivery",
               "descriptor": {
-                "code": "P2P",
-                "name": "Express Delivery",
-                "long_desc": "Upto 1 day for Delivery",
-                "short_desc": "Upto 1 day for Delivery"
+                "name": "RTO quote",
+                "short_desc": "RTO quote",
+                "long_desc": "RTO quote"
               },
-              "fulfillment_id": "61ee3ca9-b4ab-4675-bc13-5971a073522d",
+              "fulfillment_id": "8be92206-94df-487f-b494-6fb139968ca5",
               "time": {
                 "label": "TAT",
-                "duration": "PT24H",
-                "timestamp": "2025-05-15"
+                "duration": "PT60M",
+                "timestamp": "2025-05-21"
               },
               "price": {
                 "currency": "INR",

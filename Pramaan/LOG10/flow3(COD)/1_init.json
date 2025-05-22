@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "init",
-    "transaction_id": "31dd80ca-3996-422d-9d0e-c03f4e67023c",
-    "message_id": "1d8d5668-36c3-4316-b11f-81566d1b4f9e",
-    "timestamp": "2025-05-14T06:16:08.475Z",
+    "transaction_id": "53ba38e6-37cc-488b-aca5-f4dc52f6042b",
+    "message_id": "738f159e-5eec-4b63-83d3-56a23d063c5e",
+    "timestamp": "2025-05-21T08:50:55.631Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -22,13 +22,40 @@
       "items": [
         {
           "id": "I1",
-          "fulfillment_id": "bffa6967-eea1-48e4-bf2c-b9e0b9ec524f",
-          "category_id": "Immediate Delivery"
+          "fulfillment_id": "e2d69439-760f-4c60-8a9f-63a8685c3f16",
+          "category_id": "Immediate Delivery",
+          "tags": [
+            {
+              "code": "type",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "base"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "I3",
+          "fulfillment_id": "c8e39674-6c1e-4f95-bcc0-120d61e7d52c",
+          "category_id": "Immediate Delivery",
+          "tags": [
+            {
+              "code": "type",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "cod"
+                }
+              ]
+            }
+          ]
         }
       ],
       "fulfillments": [
         {
-          "id": "bffa6967-eea1-48e4-bf2c-b9e0b9ec524f",
+          "id": "e2d69439-760f-4c60-8a9f-63a8685c3f16",
           "type": "Delivery",
           "start": {
             "location": {
@@ -38,7 +65,7 @@
                 "name": "Sherlock Holmes",
                 "building": "221 B",
                 "locality": "Baker Street",
-                "city": "Baker Street",
+                "city": "Bangalore",
                 "state": "Karanataka",
                 "country": "India",
                 "area_code": "560076"
@@ -56,7 +83,7 @@
                 "name": "Tony Soprano",
                 "building": "633 Stagtrail Rd",
                 "locality": "N. Caldwell",
-                "city": "N. Caldwell",
+                "city": "Bangalore",
                 "state": "Karanataka",
                 "country": "India",
                 "area_code": "560076"
@@ -147,8 +174,8 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-05-14T06:14:37.523Z",
-        "updated_at": "2025-05-14T06:14:37.523Z"
+        "created_at": "2025-05-21T08:50:51.378Z",
+        "updated_at": "2025-05-21T08:50:51.378Z"
       },
       "payment": {
         "collected_by": "BAP",

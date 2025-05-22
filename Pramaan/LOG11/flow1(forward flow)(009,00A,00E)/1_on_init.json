@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_init",
-    "transaction_id": "fb87ff67-a735-46ea-9d80-7b919e2d23d9",
-    "message_id": "49f37386-0dcf-4017-bcf9-d288f9f24f93",
-    "timestamp": "2025-05-14T06:34:04.795Z",
+    "transaction_id": "35ed5167-a540-4783-9d7a-a11f4dac47d7",
+    "message_id": "d8728234-2b97-452e-a9f3-6de72a60e0df",
+    "timestamp": "2025-05-21T09:12:46.330Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -27,12 +27,12 @@
       "items": [
         {
           "id": "exp_del",
-          "fulfillment_id": "df8448b1-1b59-4649-970a-999d8a40d2f4"
+          "fulfillment_id": "d501726d-cd26-44ca-b58e-7f93e6e55fff"
         }
       ],
       "fulfillments": [
         {
-          "id": "df8448b1-1b59-4649-970a-999d8a40d2f4",
+          "id": "d501726d-cd26-44ca-b58e-7f93e6e55fff",
           "type": "Delivery",
           "start": {
             "location": {
@@ -42,7 +42,7 @@
                 "name": "Sherlock Holmes",
                 "building": "221 B",
                 "locality": "Baker Street",
-                "city": "Baker Street",
+                "city": "Bangalore",
                 "state": "Karanataka",
                 "country": "India",
                 "area_code": "560076"
@@ -60,7 +60,7 @@
                 "name": "Tony Soprano",
                 "building": "633 Stagtrail Rd",
                 "locality": "N. Caldwell",
-                "city": "N. Caldwell",
+                "city": "Bangalore",
                 "state": "Karanataka",
                 "country": "India",
                 "area_code": "560076"
@@ -193,7 +193,7 @@
           "fulfillment_state": {
             "descriptor": {
               "code": "Pending",
-              "short_desc": "008"
+              "short_desc": "132"
             }
           },
           "cancellation_fee": {
@@ -208,7 +208,7 @@
           "fulfillment_state": {
             "descriptor": {
               "code": "Agent-assigned",
-              "short_desc": "001,003"
+              "short_desc": "102,103,105"
             }
           },
           "cancellation_fee": {
@@ -223,7 +223,7 @@
           "fulfillment_state": {
             "descriptor": {
               "code": "Order-picked-up",
-              "short_desc": "001,003"
+              "short_desc": "125,126,127,128"
             }
           },
           "cancellation_fee": {

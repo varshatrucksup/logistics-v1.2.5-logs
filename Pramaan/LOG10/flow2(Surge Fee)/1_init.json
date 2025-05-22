@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "init",
-    "transaction_id": "2c9306df-0c33-44d3-b36d-c364febb64d5",
-    "message_id": "412ca6d8-25cd-470d-b49e-f1ad5fbdc48f",
-    "timestamp": "2025-05-14T05:36:32.293Z",
+    "transaction_id": "825e5f11-dc6c-49b8-bbda-f525c678b141",
+    "message_id": "51789656-96eb-425b-9241-f365cc043f78",
+    "timestamp": "2025-05-21T08:40:37.817Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -22,13 +22,13 @@
       "items": [
         {
           "id": "I1",
-          "fulfillment_id": "218bd84b-c781-4a69-a973-5eb763b14de5",
+          "fulfillment_id": "db64d8f8-0f49-4ae6-a204-466c0b799592",
           "category_id": "Immediate Delivery"
         }
       ],
       "fulfillments": [
         {
-          "id": "218bd84b-c781-4a69-a973-5eb763b14de5",
+          "id": "db64d8f8-0f49-4ae6-a204-466c0b799592",
           "type": "Delivery",
           "start": {
             "location": {
@@ -38,7 +38,7 @@
                 "name": "Sherlock Holmes",
                 "building": "221 B",
                 "locality": "Baker Street",
-                "city": "Baker Street",
+                "city": "Bangalore",
                 "state": "Karanataka",
                 "country": "India",
                 "area_code": "560076"
@@ -56,7 +56,7 @@
                 "name": "Tony Soprano",
                 "building": "633 Stagtrail Rd",
                 "locality": "N. Caldwell",
-                "city": "N. Caldwell",
+                "city": "Bangalore",
                 "state": "Karanataka",
                 "country": "India",
                 "area_code": "560076"
@@ -139,8 +139,8 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-05-14T05:35:59.594Z",
-        "updated_at": "2025-05-14T05:35:59.594Z"
+        "created_at": "2025-05-21T08:40:31.742Z",
+        "updated_at": "2025-05-21T08:40:31.742Z"
       },
       "payment": {
         "collected_by": "BAP",

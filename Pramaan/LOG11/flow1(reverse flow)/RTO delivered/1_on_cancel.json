@@ -1,13 +1,13 @@
 {
   "context": {
-    "domain": "ONDC:LOG11",
+    "domain": "ONDC:LOG10",
     "country": "IND",
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_cancel",
-    "transaction_id": "a9cba7de-6761-4007-a4af-1d35fdc596f4",
-    "message_id": "1d605483-d532-41ac-87b0-0a136c0856aa",
-    "timestamp": "2025-05-14T06:58:57.588Z",
+    "transaction_id": "f2dd16c4-bdf6-4224-9acd-a6330bdbc972",
+    "message_id": "758b9840-c581-44cc-9fc2-2e87ef3f9859",
+    "timestamp": "2025-05-21T09:39:22.698Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,55 +16,34 @@
   },
   "message": {
     "order": {
-      "id": "SS-1747205769220",
+      "id": "SS-1747820218590",
       "state": "Cancelled",
       "provider": {
-        "id": "P1",
-        "locations": [
-          {
-            "id": "L1"
-          }
-        ]
+        "id": "P1"
       },
       "items": [
         {
-          "id": "exp_del",
-          "category_id": "Express Delivery",
-          "fulfillment_id": "a7e72c0a-f320-49f8-a263-476eb66053c2",
+          "id": "I1",
+          "category_id": "Immediate Delivery",
+          "fulfillment_id": "03effeea-38d7-4ad1-9a37-d343685f15b8",
           "time": {
             "label": "TAT",
-            "duration": "PT24H",
-            "timestamp": "2025-05-15"
+            "duration": "PT45M",
+            "timestamp": "2025-05-21"
           }
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "23.47"
+          "value": "0.00"
         },
-        "breakup": [
-          {
-            "price": {
-              "currency": "INR",
-              "value": "23.47"
-            },
-            "@ondc/org/item_id": "exp_del",
-            "@ondc/org/title_type": "delivery"
-          },
-          {
-            "price": {
-              "currency": "INR",
-              "value": "0.00"
-            },
-            "@ondc/org/item_id": "exp_del",
-            "@ondc/org/title_type": "tax"
-          }
-        ]
+        "breakup": [],
+        "ttl": "PT15M"
       },
       "fulfillments": [
         {
-          "id": "a7e72c0a-f320-49f8-a263-476eb66053c2",
+          "id": "03effeea-38d7-4ad1-9a37-d343685f15b8",
           "type": "Delivery",
           "state": {
             "descriptor": {
@@ -80,7 +59,7 @@
                 "name": "Sherlock Holmes",
                 "building": "221 B",
                 "locality": "Baker Street",
-                "city": "Baker Street",
+                "city": "Bangalore",
                 "state": "Karanataka",
                 "country": "India",
                 "area_code": "560076"
@@ -100,10 +79,10 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-05-14T09:00:00.000Z",
-                "end": "2025-05-14T23:00:00.000Z"
+                "start": "2025-05-21T09:00:00.000Z",
+                "end": "2025-05-21T23:00:00.000Z"
               },
-              "timestamp": "2025-05-14T06:57:19.689Z"
+              "timestamp": "2025-05-21T09:38:14.792Z"
             }
           },
           "end": {
@@ -113,7 +92,7 @@
                 "name": "Tony Soprano",
                 "building": "633 Stagtrail Rd",
                 "locality": "N. Caldwell",
-                "city": "N. Caldwell",
+                "city": "Bangalore",
                 "state": "Karanataka",
                 "country": "India",
                 "area_code": "560076"
@@ -132,10 +111,10 @@
             },
             "time": {
               "range": {
-                "start": "2025-05-15T09:30:00.000Z",
-                "end": "2025-05-15T19:00:00.000Z"
+                "start": "2025-05-21T09:38:14.792Z",
+                "end": "2025-05-21T19:00:00.000Z"
               },
-              "timestamp": "2025-05-14T06:57:58.997Z"
+              "timestamp": "2025-05-21T09:38:55.535Z"
             }
           },
           "tags": [
@@ -157,7 +136,7 @@
                 },
                 {
                   "code": "updated_at",
-                  "value": "2025-05-14T06:58:57.589Z"
+                  "value": "2025-05-21T09:39:22.698Z"
                 }
               ]
             },
@@ -214,6 +193,10 @@
                   "value": "40"
                 },
                 {
+                  "code": "prep_time",
+                  "value": "PT30M"
+                },
+                {
                   "code": "shipment_type",
                   "value": "box"
                 },
@@ -247,8 +230,8 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-05-14T06:55:56.325Z",
-        "updated_at": "2025-05-14T06:55:56.325Z"
+        "created_at": "2025-05-21T09:36:45.100Z",
+        "updated_at": "2025-05-21T09:36:45.100Z"
       },
       "payment": {
         "collected_by": "BAP",
@@ -257,25 +240,79 @@
         "@ondc/org/settlement_window": "P15D",
         "@ondc/org/settlement_details": [
           {
-            "settlement_counterparty": "seller-app",
+            "settlement_counterparty": "lbnp",
             "settlement_type": "upi",
             "upi_address": "gft@oksbi",
             "settlement_bank_account_no": "123456789123456",
             "settlement_ifsc_code": "SBI00001234"
           }
         ],
-        "status": "NOT-PAID",
-        "time": {
-          "timestamp": "2025-05-14T06:57:58.997Z"
+        "status": "NOT-PAID"
+      },
+      "@ondc/org/linked_order": {
+        "items": [
+          {
+            "category_id": "Home & Kitchen",
+            "descriptor": {
+              "name": "Home & Kitchen"
+            },
+            "quantity": {
+              "count": 0,
+              "measure": {
+                "unit": "kilogram",
+                "value": 2
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "1000.00"
+            }
+          }
+        ],
+        "provider": {
+          "descriptor": {
+            "name": "KitchenAura"
+          },
+          "address": {
+            "name": "Sherlock Holmes",
+            "building": "221 B",
+            "locality": "Baker Street",
+            "city": "Bangalore",
+            "state": "Karanataka",
+            "country": "India",
+            "area_code": "560076"
+          }
+        },
+        "order": {
+          "id": "f4fe6ee7-7405-40b5-80ff-cabd503796f4",
+          "weight": {
+            "unit": "kilogram",
+            "value": 2
+          },
+          "dimensions": {
+            "length": {
+              "unit": "centimeter",
+              "value": 25
+            },
+            "breadth": {
+              "unit": "centimeter",
+              "value": 24
+            },
+            "height": {
+              "unit": "centimeter",
+              "value": 40
+            }
+          }
         }
       },
-      "updated_at": "2025-05-14T06:58:57.589Z",
+      "updated_at": "2025-05-21T09:39:22.698Z",
       "cancellation": {
         "cancelled_by": "ondc.sequelstring.com/buyer/protocol",
         "reason": {
-          "id": "007"
+          "id": "008"
         }
-      }
+      },
+      "created_at": "2025-05-21T09:39:22.698Z"
     }
   }
 }
