@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "search",
-    "transaction_id": "875ee836-4be5-4986-81a7-cc2eb87d5556",
-    "message_id": "f9d15f0e-82cb-44e2-bc82-293183a3f815",
-    "timestamp": "2025-05-21T07:12:00.376Z",
+    "transaction_id": "d56c5bff-76c5-475c-b477-67676e231230",
+    "message_id": "5edc558e-6034-4bf7-a77b-4eceebce1b97",
+    "timestamp": "2025-05-26T09:45:47.483Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S"
@@ -26,7 +26,7 @@
             "end": "2100"
           },
           "schedule": {
-            "holidays": ["2025-06-13", "2025-06-17"]
+            "holidays": ["2025-06-16", "2025-06-01"]
           }
         }
       },

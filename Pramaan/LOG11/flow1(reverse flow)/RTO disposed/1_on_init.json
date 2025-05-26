@@ -1,13 +1,13 @@
 {
   "context": {
-    "domain": "ONDC:LOG10",
+    "domain": "ONDC:LOG11",
     "country": "IND",
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_init",
-    "transaction_id": "f2dd16c4-bdf6-4224-9acd-a6330bdbc972",
-    "message_id": "5fd48711-7e87-44a2-9215-7da31e08cced",
-    "timestamp": "2025-05-21T09:36:53.344Z",
+    "transaction_id": "f0afbf43-6d88-4eda-9c10-2df6998fcd9f",
+    "message_id": "90914eb1-7a40-471a-bca9-cdb32df7b23c",
+    "timestamp": "2025-05-26T12:43:58.766Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -17,17 +17,22 @@
   "message": {
     "order": {
       "provider": {
-        "id": "P1"
+        "id": "P1",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
       },
       "items": [
         {
-          "id": "I1",
-          "fulfillment_id": "03effeea-38d7-4ad1-9a37-d343685f15b8"
+          "id": "exp_del",
+          "fulfillment_id": "400984e4-79c5-420b-ac21-dd4aaa17f1ba"
         }
       ],
       "fulfillments": [
         {
-          "id": "03effeea-38d7-4ad1-9a37-d343685f15b8",
+          "id": "400984e4-79c5-420b-ac21-dd4aaa17f1ba",
           "type": "Delivery",
           "start": {
             "location": {
@@ -158,7 +163,7 @@
               "currency": "INR",
               "value": "23.47"
             },
-            "@ondc/org/item_id": "I1",
+            "@ondc/org/item_id": "exp_del",
             "@ondc/org/title_type": "delivery"
           },
           {
@@ -166,7 +171,7 @@
               "currency": "INR",
               "value": "0.00"
             },
-            "@ondc/org/item_id": "I1",
+            "@ondc/org/item_id": "exp_del",
             "@ondc/org/title_type": "tax"
           }
         ],

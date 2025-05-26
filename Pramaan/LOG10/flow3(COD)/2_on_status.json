@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_status",
-    "transaction_id": "53ba38e6-37cc-488b-aca5-f4dc52f6042b",
-    "message_id": "8d9182b4-5045-4e27-b093-a5ab2dc10187",
-    "timestamp": "2025-05-21T08:52:27.161Z",
+    "transaction_id": "46c32409-bca4-4b0d-bb22-a179776ba694",
+    "message_id": "5debc90c-71ec-41fc-9033-20e37eb788ee",
+    "timestamp": "2025-05-26T11:58:35.143Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "SS-1747817461116",
+      "id": "SS-1748260702622",
       "state": "In-progress",
       "provider": {
         "id": "P1"
@@ -25,39 +25,71 @@
         {
           "id": "I1",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "e2d69439-760f-4c60-8a9f-63a8685c3f16",
+          "fulfillment_id": "7e429cde-359c-46df-ba7f-86e93f581e6a",
           "time": {
             "label": "TAT",
             "duration": "PT45M",
-            "timestamp": "2025-05-21"
+            "timestamp": "2025-05-26"
           }
         },
         {
           "id": "I3",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "c8e39674-6c1e-4f95-bcc0-120d61e7d52c",
+          "fulfillment_id": "7e429cde-359c-46df-ba7f-86e93f581e6a",
           "time": {
             "label": "TAT",
             "duration": "PT45M",
-            "timestamp": "2025-05-21"
+            "timestamp": "2025-05-26"
           }
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "0.00"
+          "value": "42.65"
         },
-        "breakup": [],
-        "ttl": "PT15M"
+        "breakup": [
+          {
+            "price": {
+              "currency": "INR",
+              "value": "23.47"
+            },
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "delivery"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "19.18"
+            },
+            "@ondc/org/item_id": "I3",
+            "@ondc/org/title_type": "cod"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "@ondc/org/item_id": "I3",
+            "@ondc/org/title_type": "tax"
+          }
+        ]
       },
       "fulfillments": [
         {
-          "id": "e2d69439-760f-4c60-8a9f-63a8685c3f16",
+          "id": "7e429cde-359c-46df-ba7f-86e93f581e6a",
           "type": "Delivery",
           "state": {
             "descriptor": {
-              "code": "rider reached at pickup location"
+              "code": "At-pickup"
             }
           },
           "tracking": true,
@@ -81,7 +113,7 @@
             },
             "instructions": {
               "code": "2",
-              "short_desc": "8032",
+              "short_desc": "3764",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
@@ -94,8 +126,8 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-05-21T09:00:00.000Z",
-                "end": "2025-05-21T23:00:00.000Z"
+                "start": "2025-05-26T09:00:00.000Z",
+                "end": "2025-05-26T23:00:00.000Z"
               }
             }
           },
@@ -121,7 +153,7 @@
             },
             "instructions": {
               "code": "1",
-              "short_desc": "7843",
+              "short_desc": "7469",
               "additional_desc": {
                 "content_type": "text/html",
                 "url": ".."
@@ -129,8 +161,8 @@
             },
             "time": {
               "range": {
-                "start": "2025-05-21T08:51:06.944Z",
-                "end": "2025-05-21T19:00:00.000Z"
+                "start": "2025-05-26T11:58:28.505Z",
+                "end": "2025-05-26T19:00:00.000Z"
               }
             }
           },
@@ -283,8 +315,8 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-05-21T08:50:51.378Z",
-        "updated_at": "2025-05-21T08:50:51.378Z"
+        "created_at": "2025-05-26T11:58:15.242Z",
+        "updated_at": "2025-05-26T11:58:15.242Z"
       },
       "payment": {
         "collected_by": "BAP",
@@ -310,10 +342,10 @@
               "name": "Home & Kitchen"
             },
             "quantity": {
-              "count": 0,
+              "count": 2,
               "measure": {
                 "unit": "kilogram",
-                "value": 2
+                "value": 1
               }
             },
             "price": {
@@ -327,10 +359,10 @@
               "name": "Home & Kitchen"
             },
             "quantity": {
-              "count": 0,
+              "count": 2,
               "measure": {
                 "unit": "kilogram",
-                "value": 2
+                "value": 1
               }
             },
             "price": {
@@ -354,7 +386,7 @@
           }
         },
         "order": {
-          "id": "778c29ca-d30d-4845-b5f3-af4057c78bf9",
+          "id": "57d42c11-f54e-409f-83fa-1897244dfc37",
           "weight": {
             "unit": "kilogram",
             "value": 2
@@ -442,7 +474,7 @@
           }
         }
       ],
-      "updated_at": "2025-05-21T08:52:27.161Z"
+      "updated_at": "2025-05-26T11:58:35.143Z"
     }
   }
 }

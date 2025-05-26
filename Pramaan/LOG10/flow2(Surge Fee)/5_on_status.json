@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_status",
-    "transaction_id": "825e5f11-dc6c-49b8-bbda-f525c678b141",
-    "message_id": "496378f5-fb83-45bf-a2c3-f4e32be1d37c",
-    "timestamp": "2025-05-21T08:41:59.229Z",
+    "transaction_id": "9b4c14ec-47f2-4745-bd03-a9f92bb7a491",
+    "message_id": "6f4032db-57c0-4990-b2ef-9a5c66ef3636",
+    "timestamp": "2025-05-26T11:31:15.267Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "SS-1747816846961",
+      "id": "SS-1748259046844",
       "state": "Completed",
       "provider": {
         "id": "P1"
@@ -25,21 +25,21 @@
         {
           "id": "I1",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "db64d8f8-0f49-4ae6-a204-466c0b799592",
+          "fulfillment_id": "877f34e8-622f-45ae-a825-bd56ce9c5cf3",
           "time": {
             "label": "TAT",
             "duration": "PT45M",
-            "timestamp": "2025-05-21"
+            "timestamp": "2025-05-26"
           }
         },
         {
           "id": "I4",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "7aa0e9cf-12d8-44af-a156-7f15be87271e",
+          "fulfillment_id": "877f34e8-622f-45ae-a825-bd56ce9c5cf3",
           "time": {
             "label": "TAT",
             "duration": "PT45M",
-            "timestamp": "2025-05-21"
+            "timestamp": "2025-05-26"
           }
         }
       ],
@@ -81,12 +81,11 @@
             "@ondc/org/item_id": "I4",
             "@ondc/org/title_type": "tax"
           }
-        ],
-        "ttl": "PT15M"
+        ]
       },
       "fulfillments": [
         {
-          "id": "db64d8f8-0f49-4ae6-a204-466c0b799592",
+          "id": "877f34e8-622f-45ae-a825-bd56ce9c5cf3",
           "type": "Delivery",
           "state": {
             "descriptor": {
@@ -122,10 +121,10 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-05-21T09:00:00.000Z",
-                "end": "2025-05-21T23:00:00.000Z"
+                "start": "2025-05-26T09:00:00.000Z",
+                "end": "2025-05-26T23:00:00.000Z"
               },
-              "timestamp": "2025-05-21T08:41:45.669Z"
+              "timestamp": "2025-05-26T11:31:08.168Z"
             }
           },
           "end": {
@@ -154,10 +153,10 @@
             },
             "time": {
               "range": {
-                "start": "2025-05-21T08:41:45.669Z",
-                "end": "2025-05-21T19:00:00.000Z"
+                "start": "2025-05-26T11:31:08.168Z",
+                "end": "2025-05-26T19:00:00.000Z"
               },
-              "timestamp": "2025-05-21T08:41:59.229Z"
+              "timestamp": "2025-05-26T11:31:15.267Z"
             }
           },
           "tags": [
@@ -281,8 +280,8 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-05-21T08:40:31.742Z",
-        "updated_at": "2025-05-21T08:40:31.742Z"
+        "created_at": "2025-05-26T11:30:25.822Z",
+        "updated_at": "2025-05-26T11:30:25.822Z"
       },
       "payment": {
         "collected_by": "BAP",
@@ -308,10 +307,10 @@
               "name": "Home & Kitchen"
             },
             "quantity": {
-              "count": 0,
+              "count": 2,
               "measure": {
                 "unit": "kilogram",
-                "value": 2
+                "value": 1
               }
             },
             "price": {
@@ -335,7 +334,7 @@
           }
         },
         "order": {
-          "id": "52b2e111-d88e-47cf-a1e4-99cff5818fbb",
+          "id": "0c33a82b-e236-4dac-84a8-39667acad784",
           "weight": {
             "unit": "kilogram",
             "value": 2
@@ -423,7 +422,7 @@
           }
         }
       ],
-      "updated_at": "2025-05-21T08:41:59.229Z"
+      "updated_at": "2025-05-26T11:31:15.267Z"
     }
   }
 }

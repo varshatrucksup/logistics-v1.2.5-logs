@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "init",
-    "transaction_id": "35ed5167-a540-4783-9d7a-a11f4dac47d7",
-    "message_id": "d8728234-2b97-452e-a9f3-6de72a60e0df",
-    "timestamp": "2025-05-21T09:12:45.705Z",
+    "transaction_id": "d51cf438-f23f-4419-8c3d-cb304614cacc",
+    "message_id": "6fe3f2fb-ec51-4af7-a54b-64f23590ec92",
+    "timestamp": "2025-05-26T12:27:47.005Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -27,13 +27,13 @@
       "items": [
         {
           "id": "exp_del",
-          "fulfillment_id": "d501726d-cd26-44ca-b58e-7f93e6e55fff",
+          "fulfillment_id": "df579054-41cd-468d-98ca-ee774158102f",
           "category_id": "Express Delivery"
         }
       ],
       "fulfillments": [
         {
-          "id": "d501726d-cd26-44ca-b58e-7f93e6e55fff",
+          "id": "df579054-41cd-468d-98ca-ee774158102f",
           "type": "Delivery",
           "start": {
             "location": {
@@ -144,8 +144,8 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-05-21T09:12:39.934Z",
-        "updated_at": "2025-05-21T09:12:39.934Z"
+        "created_at": "2025-05-26T12:27:38.295Z",
+        "updated_at": "2025-05-26T12:27:38.295Z"
       },
       "payment": {
         "collected_by": "BAP",

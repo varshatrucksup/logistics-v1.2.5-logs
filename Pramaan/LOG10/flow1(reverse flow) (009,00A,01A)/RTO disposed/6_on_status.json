@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_status",
-    "transaction_id": "dd93f54a-c7d8-4bb1-9614-31e37bbc80c0",
-    "message_id": "ffe90d63-7a06-491d-a008-d1848d0cb806",
-    "timestamp": "2025-05-21T07:36:33.112Z",
+    "transaction_id": "3edc541b-f7ba-45ef-b410-ce0c8c974f36",
+    "message_id": "3162b9bc-19e3-4a6d-a963-18b48a71d6f0",
+    "timestamp": "2025-05-26T11:15:14.989Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,12 +16,12 @@
   },
   "message": {
     "order": {
-      "id": "SS-1747812870043",
+      "id": "SS-1748258026136",
       "state": "Cancelled",
       "cancellation": {
         "cancelled_by": "ondc.sequelstring.com/seller/protocol",
         "reason": {
-          "id": "008"
+          "id": "007"
         }
       },
       "provider": {
@@ -31,30 +31,46 @@
         {
           "id": "I1",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "acce8bd3-a4c6-41ed-bbd0-79e0962091cd",
+          "fulfillment_id": "beb55553-edb4-4423-a6b9-cc4b578c96a4",
           "time": {
             "label": "TAT",
             "duration": "PT45M",
-            "timestamp": "2025-05-21"
+            "timestamp": "2025-05-26"
           }
         },
         {
           "id": "I2",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "ce7cbd26-00cc-4db7-a737-442dd2f5d20d",
+          "fulfillment_id": "58c3bd07-d1b1-4f12-a36c-d4e0cec98083",
           "time": {
             "label": "TAT",
             "duration": "PT60M",
-            "timestamp": "2025-05-21"
+            "timestamp": "2025-05-26"
           }
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "35.20"
+          "value": "58.67"
         },
         "breakup": [
+          {
+            "price": {
+              "currency": "INR",
+              "value": "23.47"
+            },
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "delivery"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "tax"
+          },
           {
             "price": {
               "currency": "INR",
@@ -76,7 +92,7 @@
       },
       "fulfillments": [
         {
-          "id": "acce8bd3-a4c6-41ed-bbd0-79e0962091cd",
+          "id": "beb55553-edb4-4423-a6b9-cc4b578c96a4",
           "type": "Delivery",
           "state": {
             "descriptor": {
@@ -113,16 +129,16 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-05-21T09:00:00.000Z",
-                "end": "2025-05-21T23:00:00.000Z"
+                "start": "2025-05-26T09:00:00.000Z",
+                "end": "2025-05-26T23:00:00.000Z"
               },
-              "timestamp": "2025-05-21T07:35:22.424Z"
+              "timestamp": "2025-05-26T11:14:03.691Z"
             },
             "authorization": {
               "type": "OTP",
               "token": "1234",
-              "valid_from": "2025-05-21T07:35:08.696Z",
-              "valid_to": "2025-05-21T07:50:08.696Z"
+              "valid_from": "2025-05-26T11:13:48.986Z",
+              "valid_to": "2025-05-26T11:28:48.986Z"
             }
           },
           "end": {
@@ -152,16 +168,15 @@
             },
             "time": {
               "range": {
-                "start": "2025-05-21T07:35:22.424Z",
-                "end": "2025-05-21T19:00:00.000Z"
-              },
-              "timestamp": "2025-05-21T07:35:31.850Z"
+                "start": "2025-05-26T11:14:03.691Z",
+                "end": "2025-05-26T19:00:00.000Z"
+              }
             },
             "authorization": {
               "type": "OTP",
               "token": "1234",
-              "valid_from": "2025-05-21T07:35:08.696Z",
-              "valid_to": "2025-05-21T07:50:08.696Z"
+              "valid_from": "2025-05-26T11:13:48.986Z",
+              "valid_to": "2025-05-26T11:28:48.986Z"
             }
           },
           "tags": [
@@ -232,6 +247,36 @@
               ]
             },
             {
+              "code": "shipping_label",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "pdf"
+                },
+                {
+                  "code": "url",
+                  "value": "public link to pdf"
+                }
+              ]
+            },
+            {
+              "code": "tracking",
+              "list": [
+                {
+                  "code": "gps_enabled",
+                  "value": "yes"
+                },
+                {
+                  "code": "url_enabled",
+                  "value": "yes"
+                },
+                {
+                  "code": "url",
+                  "value": "http://sequelstring-lsp-ondc.com/track"
+                }
+              ]
+            },
+            {
               "code": "tracking",
               "list": [
                 {
@@ -270,10 +315,10 @@
             "registration": "3LVJ945"
           },
           "@ondc/org/ewaybillno": "EBN1",
-          "@ondc/org/ebnexpirydate": "2025-05-21T07:36:33.112Z"
+          "@ondc/org/ebnexpirydate": "2025-05-26T11:15:14.988Z"
         },
         {
-          "id": "ce7cbd26-00cc-4db7-a737-442dd2f5d20d",
+          "id": "58c3bd07-d1b1-4f12-a36c-d4e0cec98083",
           "state": {
             "descriptor": {
               "code": "RTO-Initiated"
@@ -283,10 +328,10 @@
           "start": {
             "time": {
               "range": {
-                "start": "2025-05-21T07:36:10.909Z",
-                "end": "2025-05-21T07:36:10.909Z"
+                "start": "2025-05-26T11:14:56.411Z",
+                "end": "2025-05-26T11:14:56.411Z"
               },
-              "timestamp": "2025-05-21T07:36:33.112Z"
+              "timestamp": "2025-05-26T11:15:14.988Z"
             }
           },
           "agent": {
@@ -323,15 +368,15 @@
             "settlement_bank_account_no": "123456789123456",
             "settlement_ifsc_code": "SBI00001234",
             "settlement_status": "PAID",
-            "settlement_timestamp": "2025-05-21T07:36:33.112Z"
+            "settlement_timestamp": "2025-05-26T11:15:14.988Z"
           }
         ],
         "status": "PAID",
         "time": {
-          "timestamp": "2025-05-21T07:36:33.112Z"
+          "timestamp": "2025-05-26T11:15:14.988Z"
         }
       },
-      "updated_at": "2025-05-21T07:36:33.112Z"
+      "updated_at": "2025-05-26T11:15:14.989Z"
     }
   }
 }

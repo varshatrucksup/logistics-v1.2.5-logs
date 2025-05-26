@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_status",
-    "transaction_id": "53ba38e6-37cc-488b-aca5-f4dc52f6042b",
-    "message_id": "22ffa143-5eda-4aed-8744-c05051257ce3",
-    "timestamp": "2025-05-21T08:53:13.360Z",
+    "transaction_id": "46c32409-bca4-4b0d-bb22-a179776ba694",
+    "message_id": "9edad7bb-1751-41d9-b0e7-20952c1aea4b",
+    "timestamp": "2025-05-26T11:59:46.043Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "SS-1747817461116",
+      "id": "SS-1748260702622",
       "state": "Completed",
       "provider": {
         "id": "P1"
@@ -25,11 +25,11 @@
         {
           "id": "I1",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "e2d69439-760f-4c60-8a9f-63a8685c3f16",
+          "fulfillment_id": "7e429cde-359c-46df-ba7f-86e93f581e6a",
           "time": {
             "label": "TAT",
             "duration": "PT45M",
-            "timestamp": "2025-05-21"
+            "timestamp": "2025-05-26"
           },
           "tags": [
             {
@@ -46,11 +46,11 @@
         {
           "id": "I3",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "c8e39674-6c1e-4f95-bcc0-120d61e7d52c",
+          "fulfillment_id": "7e429cde-359c-46df-ba7f-86e93f581e6a",
           "time": {
             "label": "TAT",
             "duration": "PT45M",
-            "timestamp": "2025-05-21"
+            "timestamp": "2025-05-26"
           },
           "tags": [
             {
@@ -68,14 +68,46 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "0.00"
+          "value": "42.65"
         },
-        "breakup": [],
-        "ttl": "PT15M"
+        "breakup": [
+          {
+            "price": {
+              "currency": "INR",
+              "value": "23.47"
+            },
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "delivery"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "19.18"
+            },
+            "@ondc/org/item_id": "I3",
+            "@ondc/org/title_type": "cod"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "@ondc/org/item_id": "I3",
+            "@ondc/org/title_type": "tax"
+          }
+        ]
       },
       "fulfillments": [
         {
-          "id": "e2d69439-760f-4c60-8a9f-63a8685c3f16",
+          "id": "7e429cde-359c-46df-ba7f-86e93f581e6a",
           "type": "Delivery",
           "state": {
             "descriptor": {
@@ -112,16 +144,16 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-05-21T09:00:00.000Z",
-                "end": "2025-05-21T23:00:00.000Z"
+                "start": "2025-05-26T09:00:00.000Z",
+                "end": "2025-05-26T23:00:00.000Z"
               },
-              "timestamp": "2025-05-21T08:52:32.430Z"
+              "timestamp": "2025-05-26T11:58:39.207Z"
             },
             "authorization": {
               "type": "OTP",
               "token": "1234",
-              "valid_from": "2025-05-21T08:51:06.323Z",
-              "valid_to": "2025-05-21T09:06:06.323Z"
+              "valid_from": "2025-05-26T11:58:27.275Z",
+              "valid_to": "2025-05-26T12:13:27.275Z"
             }
           },
           "end": {
@@ -151,16 +183,16 @@
             },
             "time": {
               "range": {
-                "start": "2025-05-21T08:52:32.430Z",
-                "end": "2025-05-21T19:00:00.000Z"
+                "start": "2025-05-26T11:58:39.207Z",
+                "end": "2025-05-26T19:00:00.000Z"
               },
-              "timestamp": "2025-05-21T08:52:42.704Z"
+              "timestamp": "2025-05-26T11:58:46.950Z"
             },
             "authorization": {
               "type": "OTP",
               "token": "1234",
-              "valid_from": "2025-05-21T08:51:06.323Z",
-              "valid_to": "2025-05-21T09:06:06.323Z"
+              "valid_from": "2025-05-26T11:58:27.275Z",
+              "valid_to": "2025-05-26T12:13:27.275Z"
             }
           },
           "tags": [
@@ -344,7 +376,7 @@
             "registration": "3LVJ945"
           },
           "@ondc/org/ewaybillno": "EBN1",
-          "@ondc/org/ebnexpirydate": "2025-05-21T08:53:13.359Z"
+          "@ondc/org/ebnexpirydate": "2025-05-26T11:59:46.041Z"
         }
       ],
       "billing": {
@@ -375,15 +407,15 @@
             "settlement_bank_account_no": "123456789123456",
             "settlement_ifsc_code": "SBI00001234",
             "settlement_status": "PAID",
-            "settlement_timestamp": "2025-05-21T08:53:13.359Z"
+            "settlement_timestamp": "2025-05-26T11:59:46.042Z"
           }
         ],
         "status": "PAID",
         "time": {
-          "timestamp": "2025-05-21T08:53:13.359Z"
+          "timestamp": "2025-05-26T11:59:46.042Z"
         }
       },
-      "updated_at": "2025-05-21T08:53:13.360Z"
+      "updated_at": "2025-05-26T11:59:46.043Z"
     }
   }
 }
