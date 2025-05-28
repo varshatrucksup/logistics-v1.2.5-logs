@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "init",
-    "transaction_id": "53ba38e6-37cc-488b-aca5-f4dc52f6042b",
-    "message_id": "738f159e-5eec-4b63-83d3-56a23d063c5e",
-    "timestamp": "2025-05-21T08:50:55.631Z",
+    "transaction_id": "46c32409-bca4-4b0d-bb22-a179776ba694",
+    "message_id": "394fe351-3a29-4565-b95a-d8e84caa5620",
+    "timestamp": "2025-05-26T11:58:18.846Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -22,7 +22,7 @@
       "items": [
         {
           "id": "I1",
-          "fulfillment_id": "e2d69439-760f-4c60-8a9f-63a8685c3f16",
+          "fulfillment_id": "7e429cde-359c-46df-ba7f-86e93f581e6a",
           "category_id": "Immediate Delivery",
           "tags": [
             {
@@ -38,7 +38,7 @@
         },
         {
           "id": "I3",
-          "fulfillment_id": "c8e39674-6c1e-4f95-bcc0-120d61e7d52c",
+          "fulfillment_id": "7e429cde-359c-46df-ba7f-86e93f581e6a",
           "category_id": "Immediate Delivery",
           "tags": [
             {
@@ -55,7 +55,7 @@
       ],
       "fulfillments": [
         {
-          "id": "e2d69439-760f-4c60-8a9f-63a8685c3f16",
+          "id": "7e429cde-359c-46df-ba7f-86e93f581e6a",
           "type": "Delivery",
           "start": {
             "location": {
@@ -174,8 +174,8 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-05-21T08:50:51.378Z",
-        "updated_at": "2025-05-21T08:50:51.378Z"
+        "created_at": "2025-05-26T11:58:15.242Z",
+        "updated_at": "2025-05-26T11:58:15.242Z"
       },
       "payment": {
         "collected_by": "BAP",

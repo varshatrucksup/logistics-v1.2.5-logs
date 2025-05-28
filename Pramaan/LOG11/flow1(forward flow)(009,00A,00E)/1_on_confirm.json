@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_confirm",
-    "transaction_id": "35ed5167-a540-4783-9d7a-a11f4dac47d7",
-    "message_id": "42981968-5d10-40d3-a36b-7be949093d06",
-    "timestamp": "2025-05-21T09:12:51.707Z",
+    "transaction_id": "d51cf438-f23f-4419-8c3d-cb304614cacc",
+    "message_id": "e9f19864-48fd-4255-9c72-9ba86127cd54",
+    "timestamp": "2025-05-26T12:27:51.763Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "SS-1747818771044",
+      "id": "SS-1748262471116",
       "state": "Accepted",
       "provider": {
         "id": "P1",
@@ -30,11 +30,11 @@
         {
           "id": "exp_del",
           "category_id": "Express Delivery",
-          "fulfillment_id": "d501726d-cd26-44ca-b58e-7f93e6e55fff",
+          "fulfillment_id": "df579054-41cd-468d-98ca-ee774158102f",
           "time": {
             "label": "TAT",
             "duration": "PT24H",
-            "timestamp": "2025-05-22"
+            "timestamp": "2025-05-27"
           }
         }
       ],
@@ -52,12 +52,12 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-05-21T09:12:39.934Z",
-        "updated_at": "2025-05-21T09:12:39.934Z"
+        "created_at": "2025-05-26T12:27:38.295Z",
+        "updated_at": "2025-05-26T12:27:38.295Z"
       },
       "fulfillments": [
         {
-          "id": "d501726d-cd26-44ca-b58e-7f93e6e55fff",
+          "id": "df579054-41cd-468d-98ca-ee774158102f",
           "type": "Delivery",
           "state": {
             "descriptor": {
@@ -85,7 +85,7 @@
             },
             "instructions": {
               "code": "2",
-              "short_desc": "2757",
+              "short_desc": "3694",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
@@ -98,8 +98,8 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-05-21T09:00:00.000Z",
-                "end": "2025-05-21T23:00:00.000Z"
+                "start": "2025-05-26T09:00:00.000Z",
+                "end": "2025-05-26T23:00:00.000Z"
               }
             }
           },
@@ -125,7 +125,7 @@
             },
             "instructions": {
               "code": "1",
-              "short_desc": "6510",
+              "short_desc": "5956",
               "additional_desc": {
                 "content_type": "text/html",
                 "url": ".."
@@ -133,8 +133,8 @@
             },
             "time": {
               "range": {
-                "start": "2025-05-21T09:00:00.000Z",
-                "end": "2025-05-21T23:00:00.000Z"
+                "start": "2025-05-26T09:00:00.000Z",
+                "end": "2025-05-26T23:00:00.000Z"
               }
             }
           },
@@ -247,10 +247,26 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "0.00"
+          "value": "23.47"
         },
-        "breakup": [],
-        "ttl": "PT15M"
+        "breakup": [
+          {
+            "price": {
+              "currency": "INR",
+              "value": "23.47"
+            },
+            "@ondc/org/item_id": "exp_del",
+            "@ondc/org/title_type": "delivery"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "@ondc/org/item_id": "exp_del",
+            "@ondc/org/title_type": "tax"
+          }
+        ]
       },
       "payment": {
         "collected_by": "BAP",
@@ -276,10 +292,10 @@
               "name": "Home & Kitchen"
             },
             "quantity": {
-              "count": 0,
+              "count": 2,
               "measure": {
                 "unit": "kilogram",
-                "value": 2
+                "value": 1
               }
             },
             "price": {
@@ -303,7 +319,7 @@
           }
         },
         "order": {
-          "id": "b8069a6b-e24f-47e9-badf-08a67cd86253",
+          "id": "f838df67-0fd1-4324-ac92-a42f046315ff",
           "weight": {
             "unit": "kilogram",
             "value": 2
@@ -391,8 +407,8 @@
           ]
         }
       ],
-      "created_at": "2025-05-21T09:12:51.044Z",
-      "updated_at": "2025-05-21T09:12:51.707Z"
+      "created_at": "2025-05-26T12:27:51.115Z",
+      "updated_at": "2025-05-26T12:27:51.763Z"
     }
   }
 }

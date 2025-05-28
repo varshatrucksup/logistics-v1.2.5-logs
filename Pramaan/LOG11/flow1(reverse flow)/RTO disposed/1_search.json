@@ -1,13 +1,13 @@
 {
   "context": {
-    "domain": "ONDC:LOG10",
+    "domain": "ONDC:LOG11",
     "country": "IND",
     "city": "*",
     "core_version": "1.2.5",
     "action": "search",
-    "transaction_id": "f2dd16c4-bdf6-4224-9acd-a6330bdbc972",
-    "message_id": "a55d7a1d-782a-4e88-84c0-f5389ff7c54e",
-    "timestamp": "2025-05-21T09:36:44.767Z",
+    "transaction_id": "f0afbf43-6d88-4eda-9c10-2df6998fcd9f",
+    "message_id": "2af5a17f-b051-45cf-b8d8-d132bd8e169d",
+    "timestamp": "2025-05-26T12:43:52.983Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S"
@@ -15,7 +15,7 @@
   "message": {
     "intent": {
       "category": {
-        "id": "Immediate Delivery"
+        "id": "Express Delivery"
       },
       "provider": {
         "time": {
@@ -26,7 +26,7 @@
             "end": "2100"
           },
           "schedule": {
-            "holidays": ["2025-06-01", "2025-06-14"]
+            "holidays": ["2025-06-04", "2025-06-23"]
           }
         }
       },

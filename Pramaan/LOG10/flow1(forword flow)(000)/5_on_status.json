@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_status",
-    "transaction_id": "875ee836-4be5-4986-81a7-cc2eb87d5556",
-    "message_id": "49bae0e0-0a85-4ec2-86ab-d5e3a28c25cc",
-    "timestamp": "2025-05-21T07:15:01.597Z",
+    "transaction_id": "d56c5bff-76c5-475c-b477-67676e231230",
+    "message_id": "088a99ad-4926-475c-b3c4-49a0ed8bba3e",
+    "timestamp": "2025-05-26T09:47:36.951Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "SS-1747811532862",
+      "id": "SS-1748252753499",
       "state": "Completed",
       "provider": {
         "id": "P1"
@@ -25,25 +25,41 @@
         {
           "id": "I1",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "4432d3e5-9af7-4fa6-8c36-07862cf96961",
+          "fulfillment_id": "0bcedd0c-a7e3-4872-ae7e-a95e0769a887",
           "time": {
             "label": "TAT",
             "duration": "PT45M",
-            "timestamp": "2025-05-21"
+            "timestamp": "2025-05-26"
           }
         }
       ],
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "0.00"
+          "value": "23.47"
         },
-        "breakup": [],
-        "ttl": "PT15M"
+        "breakup": [
+          {
+            "price": {
+              "currency": "INR",
+              "value": "23.47"
+            },
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "delivery"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "tax"
+          }
+        ]
       },
       "fulfillments": [
         {
-          "id": "4432d3e5-9af7-4fa6-8c36-07862cf96961",
+          "id": "0bcedd0c-a7e3-4872-ae7e-a95e0769a887",
           "type": "Delivery",
           "state": {
             "descriptor": {
@@ -79,10 +95,10 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-05-21T09:00:00.000Z",
-                "end": "2025-05-21T23:00:00.000Z"
+                "start": "2025-05-26T09:00:00.000Z",
+                "end": "2025-05-26T23:00:00.000Z"
               },
-              "timestamp": "2025-05-21T07:14:52.571Z"
+              "timestamp": "2025-05-26T09:46:09.938Z"
             }
           },
           "end": {
@@ -111,10 +127,10 @@
             },
             "time": {
               "range": {
-                "start": "2025-05-21T07:14:52.571Z",
-                "end": "2025-05-21T19:00:00.000Z"
+                "start": "2025-05-26T09:46:09.938Z",
+                "end": "2025-05-26T19:00:00.000Z"
               },
-              "timestamp": "2025-05-21T07:15:01.597Z"
+              "timestamp": "2025-05-26T09:47:36.951Z"
             }
           },
           "tags": [
@@ -238,8 +254,8 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-05-21T07:12:01.159Z",
-        "updated_at": "2025-05-21T07:12:01.159Z"
+        "created_at": "2025-05-26T09:45:48.936Z",
+        "updated_at": "2025-05-26T09:45:48.936Z"
       },
       "payment": {
         "collected_by": "BAP",
@@ -265,10 +281,10 @@
               "name": "Home & Kitchen"
             },
             "quantity": {
-              "count": 0,
+              "count": 2,
               "measure": {
                 "unit": "kilogram",
-                "value": 2
+                "value": 1
               }
             },
             "price": {
@@ -292,7 +308,7 @@
           }
         },
         "order": {
-          "id": "419da87c-c11b-43b5-a518-14d4ac2cd4ae",
+          "id": "d1b3cb21-ba8b-4088-8cd5-748c53c4786c",
           "weight": {
             "unit": "kilogram",
             "value": 2
@@ -380,7 +396,7 @@
           }
         }
       ],
-      "updated_at": "2025-05-21T07:15:01.597Z"
+      "updated_at": "2025-05-26T09:47:36.951Z"
     }
   }
 }
