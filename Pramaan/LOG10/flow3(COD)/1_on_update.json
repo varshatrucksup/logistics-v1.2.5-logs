@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_update",
-    "transaction_id": "46c32409-bca4-4b0d-bb22-a179776ba694",
-    "message_id": "7814dc00-3012-4c65-919a-5adcdf6863d5",
-    "timestamp": "2025-05-26T11:58:28.506Z",
+    "transaction_id": "7ef8a2a5-fc33-4cf3-b954-4689b7f9ce08",
+    "message_id": "9824f28c-5132-4a8e-975f-cdd965ce7e66",
+    "timestamp": "2025-05-29T06:10:38.350Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "SS-1748260702622",
+      "id": "SS-1748499031847",
       "state": "Accepted",
       "provider": {
         "id": "P1"
@@ -25,21 +25,21 @@
         {
           "id": "I1",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "7e429cde-359c-46df-ba7f-86e93f581e6a",
+          "fulfillment_id": "9a57b3c6-e8ad-4aeb-b938-9bb92a5fe483",
           "time": {
             "label": "TAT",
             "duration": "PT45M",
-            "timestamp": "2025-05-26"
+            "timestamp": "2025-05-29"
           }
         },
         {
           "id": "I3",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "7e429cde-359c-46df-ba7f-86e93f581e6a",
+          "fulfillment_id": "9a57b3c6-e8ad-4aeb-b938-9bb92a5fe483",
           "time": {
             "label": "TAT",
             "duration": "PT45M",
-            "timestamp": "2025-05-26"
+            "timestamp": "2025-05-29"
           }
         }
       ],
@@ -85,7 +85,7 @@
       },
       "fulfillments": [
         {
-          "id": "7e429cde-359c-46df-ba7f-86e93f581e6a",
+          "id": "9a57b3c6-e8ad-4aeb-b938-9bb92a5fe483",
           "type": "Delivery",
           "state": {
             "descriptor": {
@@ -113,7 +113,7 @@
             },
             "instructions": {
               "code": "2",
-              "short_desc": "3764",
+              "short_desc": "6241",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
@@ -126,8 +126,8 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-05-26T09:00:00.000Z",
-                "end": "2025-05-26T23:00:00.000Z"
+                "start": "2025-05-29T09:00:00.000Z",
+                "end": "2025-05-29T23:00:00.000Z"
               }
             }
           },
@@ -153,7 +153,7 @@
             },
             "instructions": {
               "code": "1",
-              "short_desc": "7469",
+              "short_desc": "2369",
               "additional_desc": {
                 "content_type": "text/html",
                 "url": ".."
@@ -161,8 +161,8 @@
             },
             "time": {
               "range": {
-                "start": "2025-05-26T11:58:28.505Z",
-                "end": "2025-05-26T19:00:00.000Z"
+                "start": "2025-05-29T06:10:38.350Z",
+                "end": "2025-05-29T19:00:00.000Z"
               }
             }
           },
@@ -308,14 +308,12 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-05-26T11:58:15.242Z",
-        "updated_at": "2025-05-26T11:58:15.242Z"
+        "created_at": "2025-05-29T06:10:25.234Z",
+        "updated_at": "2025-05-29T06:10:25.234Z"
       },
       "payment": {
-        "collected_by": "BAP",
+        "collected_by": "BPP",
         "type": "ON-FULFILLMENT",
-        "@ondc/org/settlement_basis": "invoicing",
-        "@ondc/org/settlement_window": "P15D",
         "@ondc/org/settlement_details": [
           {
             "settlement_counterparty": "lbnp",
@@ -379,7 +377,7 @@
           }
         },
         "order": {
-          "id": "57d42c11-f54e-409f-83fa-1897244dfc37",
+          "id": "618d2586-e8cf-4698-8ca3-29bf2f4e0c49",
           "weight": {
             "unit": "kilogram",
             "value": 2
@@ -467,7 +465,7 @@
           }
         }
       ],
-      "updated_at": "2025-05-26T11:58:28.506Z"
+      "updated_at": "2025-05-29T06:10:38.350Z"
     }
   }
 }
