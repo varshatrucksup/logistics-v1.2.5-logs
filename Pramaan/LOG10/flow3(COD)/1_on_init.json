@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_init",
-    "transaction_id": "46c32409-bca4-4b0d-bb22-a179776ba694",
-    "message_id": "394fe351-3a29-4565-b95a-d8e84caa5620",
-    "timestamp": "2025-05-26T11:58:20.068Z",
+    "transaction_id": "7ef8a2a5-fc33-4cf3-b954-4689b7f9ce08",
+    "message_id": "8c76d032-c996-496c-bd57-6b709aed2868",
+    "timestamp": "2025-05-29T06:10:29.284Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -22,16 +22,16 @@
       "items": [
         {
           "id": "I1",
-          "fulfillment_id": "7e429cde-359c-46df-ba7f-86e93f581e6a"
+          "fulfillment_id": "9a57b3c6-e8ad-4aeb-b938-9bb92a5fe483"
         },
         {
           "id": "I3",
-          "fulfillment_id": "7e429cde-359c-46df-ba7f-86e93f581e6a"
+          "fulfillment_id": "9a57b3c6-e8ad-4aeb-b938-9bb92a5fe483"
         }
       ],
       "fulfillments": [
         {
-          "id": "7e429cde-359c-46df-ba7f-86e93f581e6a",
+          "id": "9a57b3c6-e8ad-4aeb-b938-9bb92a5fe483",
           "type": "Delivery",
           "start": {
             "location": {

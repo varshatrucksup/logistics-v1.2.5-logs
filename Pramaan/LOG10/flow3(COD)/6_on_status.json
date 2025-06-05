@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "on_status",
-    "transaction_id": "46c32409-bca4-4b0d-bb22-a179776ba694",
-    "message_id": "9edad7bb-1751-41d9-b0e7-20952c1aea4b",
-    "timestamp": "2025-05-26T11:59:46.043Z",
+    "transaction_id": "7ef8a2a5-fc33-4cf3-b954-4689b7f9ce08",
+    "message_id": "06e91354-ed7c-4f80-b95e-4ca3bf89ee4a",
+    "timestamp": "2025-05-29T06:14:41.845Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "SS-1748260702622",
+      "id": "SS-1748499031847",
       "state": "Completed",
       "provider": {
         "id": "P1"
@@ -25,11 +25,11 @@
         {
           "id": "I1",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "7e429cde-359c-46df-ba7f-86e93f581e6a",
+          "fulfillment_id": "9a57b3c6-e8ad-4aeb-b938-9bb92a5fe483",
           "time": {
             "label": "TAT",
             "duration": "PT45M",
-            "timestamp": "2025-05-26"
+            "timestamp": "2025-05-29"
           },
           "tags": [
             {
@@ -46,11 +46,11 @@
         {
           "id": "I3",
           "category_id": "Immediate Delivery",
-          "fulfillment_id": "7e429cde-359c-46df-ba7f-86e93f581e6a",
+          "fulfillment_id": "9a57b3c6-e8ad-4aeb-b938-9bb92a5fe483",
           "time": {
             "label": "TAT",
             "duration": "PT45M",
-            "timestamp": "2025-05-26"
+            "timestamp": "2025-05-29"
           },
           "tags": [
             {
@@ -107,7 +107,7 @@
       },
       "fulfillments": [
         {
-          "id": "7e429cde-359c-46df-ba7f-86e93f581e6a",
+          "id": "9a57b3c6-e8ad-4aeb-b938-9bb92a5fe483",
           "type": "Delivery",
           "state": {
             "descriptor": {
@@ -144,16 +144,16 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-05-26T09:00:00.000Z",
-                "end": "2025-05-26T23:00:00.000Z"
+                "start": "2025-05-29T09:00:00.000Z",
+                "end": "2025-05-29T23:00:00.000Z"
               },
-              "timestamp": "2025-05-26T11:58:39.207Z"
+              "timestamp": "2025-05-29T06:11:00.061Z"
             },
             "authorization": {
               "type": "OTP",
               "token": "1234",
-              "valid_from": "2025-05-26T11:58:27.275Z",
-              "valid_to": "2025-05-26T12:13:27.275Z"
+              "valid_from": "2025-05-29T06:10:37.835Z",
+              "valid_to": "2025-05-29T06:25:37.835Z"
             }
           },
           "end": {
@@ -183,16 +183,16 @@
             },
             "time": {
               "range": {
-                "start": "2025-05-26T11:58:39.207Z",
-                "end": "2025-05-26T19:00:00.000Z"
+                "start": "2025-05-29T06:11:00.061Z",
+                "end": "2025-05-29T19:00:00.000Z"
               },
-              "timestamp": "2025-05-26T11:58:46.950Z"
+              "timestamp": "2025-05-29T06:11:10.306Z"
             },
             "authorization": {
               "type": "OTP",
               "token": "1234",
-              "valid_from": "2025-05-26T11:58:27.275Z",
-              "valid_to": "2025-05-26T12:13:27.275Z"
+              "valid_from": "2025-05-29T06:10:37.835Z",
+              "valid_to": "2025-05-29T06:25:37.835Z"
             }
           },
           "tags": [
@@ -376,7 +376,7 @@
             "registration": "3LVJ945"
           },
           "@ondc/org/ewaybillno": "EBN1",
-          "@ondc/org/ebnexpirydate": "2025-05-26T11:59:46.041Z"
+          "@ondc/org/ebnexpirydate": "2025-05-29T06:14:41.844Z"
         }
       ],
       "billing": {
@@ -395,10 +395,8 @@
         "email": "sherlock@detective.com"
       },
       "payment": {
-        "collected_by": "BAP",
+        "collected_by": "BPP",
         "type": "ON-FULFILLMENT",
-        "@ondc/org/settlement_basis": "invoicing",
-        "@ondc/org/settlement_window": "P15D",
         "@ondc/org/settlement_details": [
           {
             "settlement_counterparty": "lbnp",
@@ -407,15 +405,15 @@
             "settlement_bank_account_no": "123456789123456",
             "settlement_ifsc_code": "SBI00001234",
             "settlement_status": "PAID",
-            "settlement_timestamp": "2025-05-26T11:59:46.042Z"
+            "settlement_timestamp": "2025-05-29T06:14:41.844Z"
           }
         ],
         "status": "PAID",
         "time": {
-          "timestamp": "2025-05-26T11:59:46.042Z"
+          "timestamp": "2025-05-29T06:14:41.844Z"
         }
       },
-      "updated_at": "2025-05-26T11:59:46.043Z"
+      "updated_at": "2025-05-29T06:14:41.845Z"
     }
   }
 }

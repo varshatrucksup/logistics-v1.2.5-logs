@@ -5,9 +5,9 @@
     "city": "*",
     "core_version": "1.2.5",
     "action": "confirm",
-    "transaction_id": "f0afbf43-6d88-4eda-9c10-2df6998fcd9f",
-    "message_id": "dc28fb07-6f31-472c-8df3-c20e2020d866",
-    "timestamp": "2025-05-26T12:44:02.818Z",
+    "transaction_id": "29425153-f854-4a68-b34e-d784beb4883f",
+    "message_id": "d196acec-f0cc-44bf-b54a-3550a188b2be",
+    "timestamp": "2025-05-29T07:20:27.990Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "SS-1748263442818",
+      "id": "SS-1748503227990",
       "state": "Created",
       "provider": {
         "id": "P1",
@@ -29,12 +29,12 @@
       "items": [
         {
           "id": "exp_del",
-          "fulfillment_id": "400984e4-79c5-420b-ac21-dd4aaa17f1ba",
+          "fulfillment_id": "09876e1a-2fcf-4117-8cbd-6830400fb221",
           "category_id": "Express Delivery",
           "time": {
             "label": "TAT",
             "duration": "PT24H",
-            "timestamp": "2025-05-27"
+            "timestamp": "2025-05-30"
           }
         }
       ],
@@ -76,12 +76,12 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-05-26T12:43:53.396Z",
-        "updated_at": "2025-05-26T12:43:53.396Z"
+        "created_at": "2025-05-29T07:20:18.662Z",
+        "updated_at": "2025-05-29T07:20:18.662Z"
       },
       "fulfillments": [
         {
-          "id": "400984e4-79c5-420b-ac21-dd4aaa17f1ba",
+          "id": "09876e1a-2fcf-4117-8cbd-6830400fb221",
           "type": "Delivery",
           "start": {
             "location": {
@@ -103,7 +103,7 @@
             },
             "instructions": {
               "code": "2",
-              "short_desc": "6666",
+              "short_desc": "6882",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
@@ -139,7 +139,7 @@
             },
             "instructions": {
               "code": "1",
-              "short_desc": "4554",
+              "short_desc": "8523",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
@@ -235,8 +235,6 @@
       "payment": {
         "collected_by": "BAP",
         "type": "POST-FULFILLMENT",
-        "@ondc/org/settlement_basis": "invoicing",
-        "@ondc/org/settlement_window": "P15D",
         "@ondc/org/settlement_details": [
           {
             "settlement_counterparty": "lbnp",
@@ -303,7 +301,7 @@
           }
         },
         "order": {
-          "id": "4fe87dc9-977a-4436-abe5-9ae866ecf832",
+          "id": "e85b571d-9efd-4419-9209-798bdb81657a",
           "weight": {
             "unit": "kilogram",
             "value": 2
@@ -324,8 +322,8 @@
           }
         }
       },
-      "created_at": "2025-05-26T12:44:02.818Z",
-      "updated_at": "2025-05-26T12:44:02.818Z"
+      "created_at": "2025-05-29T07:20:27.990Z",
+      "updated_at": "2025-05-29T07:20:27.990Z"
     }
   }
 }
