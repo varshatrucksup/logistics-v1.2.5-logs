@@ -2,12 +2,12 @@
   "context": {
     "domain": "ONDC:LOG10",
     "country": "IND",
-    "city": "*",
+    "city": "std:080",
     "core_version": "1.2.5",
     "action": "search",
-    "transaction_id": "7ef8a2a5-fc33-4cf3-b954-4689b7f9ce08",
-    "message_id": "667eef48-9fc1-4483-839b-b065467e6da7",
-    "timestamp": "2025-05-29T06:10:24.713Z",
+    "transaction_id": "5a77d4d4-a59a-49c4-81a5-fa93939bdd86",
+    "message_id": "37937944-6e08-49ec-a3a5-b0cf7ff2941f",
+    "timestamp": "2025-06-13T08:38:11.584Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S"
@@ -15,7 +15,7 @@
   "message": {
     "intent": {
       "category": {
-        "id": "Immediate Delivery"
+        "id": "Standard Delivery"
       },
       "provider": {
         "time": {
@@ -26,7 +26,7 @@
             "end": "2100"
           },
           "schedule": {
-            "holidays": ["2025-06-13", "2025-06-28"]
+            "holidays": ["2025-06-19", "2025-07-04"]
           }
         }
       },
@@ -39,9 +39,6 @@
               "area_code": "560041"
             },
             "id": "S1"
-          },
-          "authorization": {
-            "type": "OTP"
           }
         },
         "end": {
@@ -50,9 +47,6 @@
             "address": {
               "area_code": "560001"
             }
-          },
-          "authorization": {
-            "type": "OTP"
           }
         },
         "tags": [
@@ -125,7 +119,6 @@
       },
       "@ondc/org/payload_details": {
         "category": "Home & Kitchen",
-        "collection_amount": "1050",
         "value": {
           "currency": "INR",
           "value": "1000.00"
@@ -156,15 +149,11 @@
           "list": [
             {
               "code": "00B",
-              "value": "yes"
+              "value": "Yes"
             },
             {
               "code": "00E",
-              "value": "yes"
-            },
-            {
-              "code": "01D",
-              "value": "yes"
+              "value": "Yes"
             }
           ]
         }

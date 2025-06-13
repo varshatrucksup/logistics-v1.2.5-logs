@@ -2,12 +2,12 @@
   "context": {
     "domain": "ONDC:LOG10",
     "country": "IND",
-    "city": "*",
+    "city": "std:080",
     "core_version": "1.2.5",
     "action": "on_status",
-    "transaction_id": "d56c5bff-76c5-475c-b477-67676e231230",
-    "message_id": "cd9a71a7-27b4-4a5b-83a2-8634f61b1f23",
-    "timestamp": "2025-05-26T09:46:12.891Z",
+    "transaction_id": "04391f03-fdfd-468c-a2be-3eba713d354a",
+    "message_id": "7be22e5f-2855-47ba-b12e-b582064ec882",
+    "timestamp": "2025-06-13T07:28:49.200Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,20 +16,20 @@
   },
   "message": {
     "order": {
-      "id": "SS-1748252753499",
+      "id": "SS-1749799633053",
       "state": "In-progress",
       "provider": {
         "id": "P1"
       },
       "items": [
         {
-          "id": "I1",
-          "category_id": "Immediate Delivery",
-          "fulfillment_id": "0bcedd0c-a7e3-4872-ae7e-a95e0769a887",
+          "id": "std_del",
+          "category_id": "Standard Delivery",
+          "fulfillment_id": "30ba5480-36f6-4873-a178-a431ecda8d9e",
           "time": {
             "label": "TAT",
-            "duration": "PT45M",
-            "timestamp": "2025-05-26"
+            "duration": "PT24H",
+            "timestamp": "2025-06-14"
           }
         }
       ],
@@ -44,7 +44,7 @@
               "currency": "INR",
               "value": "23.47"
             },
-            "@ondc/org/item_id": "I1",
+            "@ondc/org/item_id": "std_del",
             "@ondc/org/title_type": "delivery"
           },
           {
@@ -52,21 +52,22 @@
               "currency": "INR",
               "value": "0.00"
             },
-            "@ondc/org/item_id": "I1",
+            "@ondc/org/item_id": "std_del",
             "@ondc/org/title_type": "tax"
           }
         ]
       },
       "fulfillments": [
         {
-          "id": "0bcedd0c-a7e3-4872-ae7e-a95e0769a887",
+          "id": "30ba5480-36f6-4873-a178-a431ecda8d9e",
           "type": "Delivery",
           "state": {
             "descriptor": {
-              "code": "At-delivery"
+              "code": "Order-picked-up",
+              "short_desc": "pickup or delivery failed reason code"
             }
           },
-          "tracking": true,
+          "tracking": false,
           "start": {
             "location": {
               "id": "S1",
@@ -86,8 +87,14 @@
               "email": "sherlock@detective.com"
             },
             "instructions": {
-              "name": "Proof Of Pickup",
-              "images": ["http://sequelstring-lsp-ondc.com/proof"]
+              "code": "2",
+              "short_desc": "9628",
+              "long_desc": "additional instructions for pickup",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
+              },
+              "name": "ONDC order"
             },
             "person": {
               "name": "Sherlock Holmes"
@@ -95,10 +102,10 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-05-26T09:00:00.000Z",
-                "end": "2025-05-26T23:00:00.000Z"
+                "start": "2025-06-13T09:00:00.000Z",
+                "end": "2025-06-13T23:00:00.000Z"
               },
-              "timestamp": "2025-05-26T09:46:09.938Z"
+              "timestamp": "2025-06-13T07:27:43.907Z"
             }
           },
           "end": {
@@ -123,16 +130,14 @@
             },
             "instructions": {
               "code": "1",
-              "short_desc": "3158",
-              "additional_desc": {
-                "content_type": "text/html",
-                "url": ".."
-              }
+              "short_desc": "5326",
+              "name": "ONDC order",
+              "long_desc": "additional instructions for delivery"
             },
             "time": {
               "range": {
-                "start": "2025-05-26T09:46:09.938Z",
-                "end": "2025-05-26T19:00:00.000Z"
+                "start": "2025-06-14T09:30:00.000Z",
+                "end": "2025-06-14T19:00:00.000Z"
               }
             }
           },
@@ -190,29 +195,12 @@
                   "value": "40"
                 },
                 {
-                  "code": "prep_time",
-                  "value": "PT30M"
-                },
-                {
                   "code": "shipment_type",
                   "value": "box"
                 },
                 {
                   "code": "id",
                   "value": "RO1"
-                }
-              ]
-            },
-            {
-              "code": "shipping_label",
-              "list": [
-                {
-                  "code": "type",
-                  "value": "pdf"
-                },
-                {
-                  "code": "url",
-                  "value": "public link to pdf"
                 }
               ]
             },
@@ -232,6 +220,36 @@
                   "value": "http://sequelstring-lsp-ondc.com/track"
                 }
               ]
+            },
+            {
+              "code": "tracking",
+              "list": [
+                {
+                  "code": "gps_enabled",
+                  "value": "yes"
+                },
+                {
+                  "code": "url_enabled",
+                  "value": "no"
+                },
+                {
+                  "code": "url",
+                  "value": ".."
+                }
+              ]
+            },
+            {
+              "code": "shipping_label",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "pdf"
+                },
+                {
+                  "code": "url",
+                  "value": "public link to pdf"
+                }
+              ]
             }
           ],
           "agent": {
@@ -240,7 +258,9 @@
           },
           "vehicle": {
             "registration": "3LVJ945"
-          }
+          },
+          "@ondc/org/ewaybillno": "EBN1",
+          "@ondc/org/ebnexpirydate": "2025-06-13T07:28:49.199Z"
         }
       ],
       "billing": {
@@ -256,9 +276,7 @@
         },
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
-        "email": "sherlock@detective.com",
-        "created_at": "2025-05-26T09:45:48.936Z",
-        "updated_at": "2025-05-26T09:45:48.936Z"
+        "email": "sherlock@detective.com"
       },
       "payment": {
         "collected_by": "BAP",
@@ -271,135 +289,17 @@
             "settlement_type": "upi",
             "upi_address": "gft@oksbi",
             "settlement_bank_account_no": "123456789123456",
-            "settlement_ifsc_code": "SBI00001234"
+            "settlement_ifsc_code": "SBI00001234",
+            "settlement_status": "PAID",
+            "settlement_timestamp": "2025-06-13T07:28:49.200Z"
           }
         ],
-        "status": "NOT-PAID"
-      },
-      "@ondc/org/linked_order": {
-        "items": [
-          {
-            "category_id": "Home & Kitchen",
-            "descriptor": {
-              "name": "Home & Kitchen"
-            },
-            "quantity": {
-              "count": 2,
-              "measure": {
-                "unit": "kilogram",
-                "value": 1
-              }
-            },
-            "price": {
-              "currency": "INR",
-              "value": "1000.00"
-            }
-          }
-        ],
-        "provider": {
-          "descriptor": {
-            "name": "KitchenAura"
-          },
-          "address": {
-            "name": "Sherlock Holmes",
-            "building": "221 B",
-            "locality": "Baker Street",
-            "city": "Bangalore",
-            "state": "Karanataka",
-            "country": "India",
-            "area_code": "560076"
-          }
-        },
-        "order": {
-          "id": "d1b3cb21-ba8b-4088-8cd5-748c53c4786c",
-          "weight": {
-            "unit": "kilogram",
-            "value": 2
-          },
-          "dimensions": {
-            "length": {
-              "unit": "centimeter",
-              "value": 25
-            },
-            "breadth": {
-              "unit": "centimeter",
-              "value": 24
-            },
-            "height": {
-              "unit": "centimeter",
-              "value": 40
-            }
-          }
+        "status": "PAID",
+        "time": {
+          "timestamp": "2025-06-13T07:28:49.200Z"
         }
       },
-      "tags": [
-        {
-          "code": "bap_terms",
-          "list": [
-            {
-              "code": "accept_bpp_terms",
-              "value": "yes"
-            }
-          ]
-        },
-        {
-          "code": "bpp_terms",
-          "list": [
-            {
-              "code": "static_terms",
-              "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
-            }
-          ]
-        }
-      ],
-      "cancellation_terms": [
-        {
-          "fulfillment_state": {
-            "descriptor": {
-              "code": "Pending",
-              "short_desc": "132"
-            }
-          },
-          "cancellation_fee": {
-            "percentage": "0.00",
-            "amount": {
-              "currency": "INR",
-              "value": "0.00"
-            }
-          }
-        },
-        {
-          "fulfillment_state": {
-            "descriptor": {
-              "code": "Agent-assigned",
-              "short_desc": "102,103,105"
-            }
-          },
-          "cancellation_fee": {
-            "percentage": "100.00",
-            "amount": {
-              "currency": "INR",
-              "value": "50.00"
-            }
-          }
-        },
-        {
-          "fulfillment_state": {
-            "descriptor": {
-              "code": "Order-picked-up",
-              "short_desc": "125,126,127,128"
-            }
-          },
-          "cancellation_fee": {
-            "percentage": "100.00",
-            "amount": {
-              "currency": "INR",
-              "value": "50.00"
-            }
-          }
-        }
-      ],
-      "updated_at": "2025-05-26T09:46:12.891Z"
+      "updated_at": "2025-06-13T07:28:49.200Z"
     }
   }
 }

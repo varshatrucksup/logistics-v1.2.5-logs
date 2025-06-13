@@ -2,12 +2,12 @@
   "context": {
     "domain": "ONDC:LOG11",
     "country": "IND",
-    "city": "*",
+    "city": "std:080",
     "core_version": "1.2.5",
     "action": "init",
-    "transaction_id": "d51cf438-f23f-4419-8c3d-cb304614cacc",
-    "message_id": "6fe3f2fb-ec51-4af7-a54b-64f23590ec92",
-    "timestamp": "2025-05-26T12:27:47.005Z",
+    "transaction_id": "5121de60-5d39-4c6e-82ae-9bb241e6add4",
+    "message_id": "d0f80a35-bc10-43c8-95e5-05c392229e90",
+    "timestamp": "2025-06-13T08:50:28.412Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -27,13 +27,13 @@
       "items": [
         {
           "id": "exp_del",
-          "fulfillment_id": "df579054-41cd-468d-98ca-ee774158102f",
+          "fulfillment_id": "31dd974b-6024-486e-a5a3-06f393cc9e7e",
           "category_id": "Express Delivery"
         }
       ],
       "fulfillments": [
         {
-          "id": "df579054-41cd-468d-98ca-ee774158102f",
+          "id": "31dd974b-6024-486e-a5a3-06f393cc9e7e",
           "type": "Delivery",
           "start": {
             "location": {
@@ -144,8 +144,8 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-05-26T12:27:38.295Z",
-        "updated_at": "2025-05-26T12:27:38.295Z"
+        "created_at": "2025-06-13T08:50:17.150Z",
+        "updated_at": "2025-06-13T08:50:17.150Z"
       },
       "payment": {
         "collected_by": "BAP",

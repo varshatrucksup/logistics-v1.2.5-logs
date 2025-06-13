@@ -2,12 +2,12 @@
   "context": {
     "domain": "ONDC:LOG10",
     "country": "IND",
-    "city": "*",
+    "city": "std:080",
     "core_version": "1.2.5",
     "action": "search",
-    "transaction_id": "9b4c14ec-47f2-4745-bd03-a9f92bb7a491",
-    "message_id": "60c19285-3798-4ccf-be1d-bd276414dc49",
-    "timestamp": "2025-05-26T11:30:25.503Z",
+    "transaction_id": "1f6dd9ff-2738-4c97-9474-5244c6ff902c",
+    "message_id": "d5ef870e-04c4-45a0-97bf-9840e77170de",
+    "timestamp": "2025-06-13T08:13:42.427Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S"
@@ -15,7 +15,7 @@
   "message": {
     "intent": {
       "category": {
-        "id": "Immediate Delivery"
+        "id": "Standard Delivery"
       },
       "provider": {
         "time": {
@@ -26,7 +26,7 @@
             "end": "2100"
           },
           "schedule": {
-            "holidays": ["2025-06-13", "2025-06-22"]
+            "holidays": ["2025-07-04", "2025-07-07"]
           }
         }
       },
@@ -39,9 +39,6 @@
               "area_code": "560041"
             },
             "id": "S1"
-          },
-          "authorization": {
-            "type": "OTP"
           }
         },
         "end": {
@@ -50,9 +47,6 @@
             "address": {
               "area_code": "560001"
             }
-          },
-          "authorization": {
-            "type": "OTP"
           }
         },
         "tags": [
@@ -147,15 +141,15 @@
           "list": [
             {
               "code": "00B",
-              "value": "yes"
+              "value": "Yes"
             },
             {
               "code": "00E",
-              "value": "yes"
+              "value": "Yes"
             },
             {
-              "code": "01D",
-              "value": "yes"
+              "code": "017",
+              "value": "Yes"
             }
           ]
         }

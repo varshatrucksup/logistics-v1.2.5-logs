@@ -2,12 +2,12 @@
   "context": {
     "domain": "ONDC:LOG11",
     "country": "IND",
-    "city": "*",
+    "city": "std:080",
     "core_version": "1.2.5",
     "action": "search",
-    "transaction_id": "29425153-f854-4a68-b34e-d784beb4883f",
-    "message_id": "07a6373a-d8ee-41d5-966a-aff70df18499",
-    "timestamp": "2025-05-29T07:20:18.119Z",
+    "transaction_id": "43656a1e-c9ea-4f9d-b306-556bf3a6813d",
+    "message_id": "35b1e5b7-b605-441a-b2bb-d276ddebf19d",
+    "timestamp": "2025-06-13T09:01:05.393Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S"
@@ -26,7 +26,7 @@
             "end": "2100"
           },
           "schedule": {
-            "holidays": ["2025-06-06", "2025-06-18"]
+            "holidays": ["2025-07-12", "2025-06-25"]
           }
         }
       },
@@ -147,15 +147,11 @@
           "list": [
             {
               "code": "00B",
-              "value": "yes"
+              "value": "Yes"
             },
             {
               "code": "00E",
-              "value": "yes"
-            },
-            {
-              "code": "01D",
-              "value": "yes"
+              "value": "Yes"
             }
           ]
         }

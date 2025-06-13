@@ -2,12 +2,12 @@
   "context": {
     "domain": "ONDC:LOG10",
     "country": "IND",
-    "city": "*",
+    "city": "std:080",
     "core_version": "1.2.5",
     "action": "on_init",
-    "transaction_id": "9b4c14ec-47f2-4745-bd03-a9f92bb7a491",
-    "message_id": "0dae7ea0-58a9-4edf-b2b9-0eee33977aaf",
-    "timestamp": "2025-05-26T11:30:29.703Z",
+    "transaction_id": "1f6dd9ff-2738-4c97-9474-5244c6ff902c",
+    "message_id": "3041b18b-eced-4bb9-ba61-aa24afeb02ce",
+    "timestamp": "2025-06-13T08:13:46.204Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -21,13 +21,13 @@
       },
       "items": [
         {
-          "id": "I1",
-          "fulfillment_id": "877f34e8-622f-45ae-a825-bd56ce9c5cf3"
+          "id": "std_del",
+          "fulfillment_id": "6b765bac-3f13-4704-b30f-3bf7679bde25"
         }
       ],
       "fulfillments": [
         {
-          "id": "877f34e8-622f-45ae-a825-bd56ce9c5cf3",
+          "id": "6b765bac-3f13-4704-b30f-3bf7679bde25",
           "type": "Delivery",
           "start": {
             "location": {
@@ -136,6 +136,8 @@
       "payment": {
         "collected_by": "BAP",
         "type": "POST-FULFILLMENT",
+        "@ondc/org/settlement_basis": "invoicing",
+        "@ondc/org/settlement_window": "P15D",
         "@ondc/org/settlement_details": [
           {
             "settlement_counterparty": "lbnp",
@@ -158,7 +160,7 @@
               "currency": "INR",
               "value": "23.47"
             },
-            "@ondc/org/item_id": "I1",
+            "@ondc/org/item_id": "std_del",
             "@ondc/org/title_type": "delivery"
           },
           {
@@ -166,7 +168,7 @@
               "currency": "INR",
               "value": "0.00"
             },
-            "@ondc/org/item_id": "I1",
+            "@ondc/org/item_id": "std_del",
             "@ondc/org/title_type": "tax"
           }
         ],
@@ -207,10 +209,10 @@
             }
           },
           "cancellation_fee": {
-            "percentage": "100.00",
+            "percentage": "30.00",
             "amount": {
               "currency": "INR",
-              "value": "50.00"
+              "value": "20.00"
             }
           }
         },
@@ -222,10 +224,10 @@
             }
           },
           "cancellation_fee": {
-            "percentage": "100.00",
+            "percentage": "30.00",
             "amount": {
               "currency": "INR",
-              "value": "50.00"
+              "value": "20.00"
             }
           }
         }

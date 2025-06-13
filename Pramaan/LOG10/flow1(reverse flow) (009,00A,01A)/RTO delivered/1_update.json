@@ -2,12 +2,12 @@
   "context": {
     "domain": "ONDC:LOG10",
     "country": "IND",
-    "city": "*",
+    "city": "std:080",
     "core_version": "1.2.5",
     "action": "update",
-    "transaction_id": "dc1c8082-39ca-4925-80f3-dbc8fa6062ba",
-    "message_id": "27bfa730-1680-49a3-8190-293600778eb0",
-    "timestamp": "2025-05-29T06:40:13.540Z",
+    "transaction_id": "e8315054-5738-4dea-832f-204df0d1e3d3",
+    "message_id": "24ed6bc2-ad0f-4c95-a561-26edf4fe7454",
+    "timestamp": "2025-06-13T07:56:58.689Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -17,42 +17,36 @@
   "message": {
     "update_target": "fulfillment",
     "order": {
-      "id": "SS-1748500811010",
+      "id": "SS-1749801413279",
       "items": [
         {
-          "id": "I1",
-          "category_id": "Immediate Delivery"
+          "id": "std_del",
+          "category_id": "Standard Delivery"
         }
       ],
       "fulfillments": [
         {
-          "id": "e287fabb-53cd-46f7-a905-8e7e1dc3d05e",
+          "id": "8c538288-b9c6-4002-9a31-9ac5335139ee",
           "type": "Delivery",
           "start": {
             "instructions": {
               "code": "2",
-              "short_desc": "9044",
+              "short_desc": "3070",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
-                "url": ".."
+                "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
               }
-            },
-            "authorization": {
-              "type": "OTP",
-              "token": "1234",
-              "valid_from": "2025-05-29T06:40:13.540Z",
-              "valid_to": "2025-05-29T06:55:13.540Z"
             }
           },
           "end": {
             "instructions": {
               "code": "1",
-              "short_desc": "3884",
+              "short_desc": "8298",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
-                "url": ".."
+                "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
               }
             }
           },
@@ -119,10 +113,6 @@
                   "value": "40"
                 },
                 {
-                  "code": "prep_time",
-                  "value": "PT30M"
-                },
-                {
                   "code": "shipment_type",
                   "value": "box"
                 },
@@ -135,7 +125,7 @@
           ]
         }
       ],
-      "updated_at": "2025-05-29T06:40:13.540Z"
+      "updated_at": "2025-06-13T07:56:58.689Z"
     }
   }
 }

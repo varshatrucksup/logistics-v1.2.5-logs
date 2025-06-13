@@ -2,12 +2,12 @@
   "context": {
     "domain": "ONDC:LOG11",
     "country": "IND",
-    "city": "*",
+    "city": "std:080",
     "core_version": "1.2.5",
     "action": "on_confirm",
-    "transaction_id": "d51cf438-f23f-4419-8c3d-cb304614cacc",
-    "message_id": "e9f19864-48fd-4255-9c72-9ba86127cd54",
-    "timestamp": "2025-05-26T12:27:51.763Z",
+    "transaction_id": "5121de60-5d39-4c6e-82ae-9bb241e6add4",
+    "message_id": "dede6c91-121d-45d2-8f52-76558fead67d",
+    "timestamp": "2025-06-13T08:50:37.747Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "SS-1748262471116",
+      "id": "SS-1749804636709",
       "state": "Accepted",
       "provider": {
         "id": "P1",
@@ -30,11 +30,11 @@
         {
           "id": "exp_del",
           "category_id": "Express Delivery",
-          "fulfillment_id": "df579054-41cd-468d-98ca-ee774158102f",
+          "fulfillment_id": "31dd974b-6024-486e-a5a3-06f393cc9e7e",
           "time": {
             "label": "TAT",
             "duration": "PT24H",
-            "timestamp": "2025-05-27"
+            "timestamp": "2025-06-14"
           }
         }
       ],
@@ -52,12 +52,12 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-05-26T12:27:38.295Z",
-        "updated_at": "2025-05-26T12:27:38.295Z"
+        "created_at": "2025-06-13T08:50:17.150Z",
+        "updated_at": "2025-06-13T08:50:17.150Z"
       },
       "fulfillments": [
         {
-          "id": "df579054-41cd-468d-98ca-ee774158102f",
+          "id": "31dd974b-6024-486e-a5a3-06f393cc9e7e",
           "type": "Delivery",
           "state": {
             "descriptor": {
@@ -85,11 +85,11 @@
             },
             "instructions": {
               "code": "2",
-              "short_desc": "3694",
+              "short_desc": "4617",
               "long_desc": "additional instructions for pickup",
               "additional_desc": {
                 "content_type": "text/html",
-                "url": ".."
+                "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
               }
             },
             "person": {
@@ -98,8 +98,8 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-05-26T09:00:00.000Z",
-                "end": "2025-05-26T23:00:00.000Z"
+                "start": "2025-06-13T09:00:00.000Z",
+                "end": "2025-06-13T23:00:00.000Z"
               }
             }
           },
@@ -125,16 +125,16 @@
             },
             "instructions": {
               "code": "1",
-              "short_desc": "5956",
+              "short_desc": "9355",
               "additional_desc": {
                 "content_type": "text/html",
-                "url": ".."
+                "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
               }
             },
             "time": {
               "range": {
-                "start": "2025-05-26T09:00:00.000Z",
-                "end": "2025-05-26T23:00:00.000Z"
+                "start": "2025-06-13T09:00:00.000Z",
+                "end": "2025-06-13T23:00:00.000Z"
               }
             }
           },
@@ -282,7 +282,7 @@
             "settlement_ifsc_code": "SBI00001234"
           }
         ],
-        "status": "PAID"
+        "status": "NOT-PAID"
       },
       "@ondc/org/linked_order": {
         "items": [
@@ -319,7 +319,7 @@
           }
         },
         "order": {
-          "id": "f838df67-0fd1-4324-ac92-a42f046315ff",
+          "id": "8f677716-b2d4-49bd-8434-9bbf11ba41a6",
           "weight": {
             "unit": "kilogram",
             "value": 2
@@ -364,10 +364,10 @@
             }
           },
           "cancellation_fee": {
-            "percentage": "100.00",
+            "percentage": "30.00",
             "amount": {
               "currency": "INR",
-              "value": "50.00"
+              "value": "20.00"
             }
           }
         },
@@ -379,10 +379,10 @@
             }
           },
           "cancellation_fee": {
-            "percentage": "100.00",
+            "percentage": "30.00",
             "amount": {
               "currency": "INR",
-              "value": "50.00"
+              "value": "20.00"
             }
           }
         }
@@ -407,8 +407,8 @@
           ]
         }
       ],
-      "created_at": "2025-05-26T12:27:51.115Z",
-      "updated_at": "2025-05-26T12:27:51.763Z"
+      "created_at": "2025-06-13T08:50:36.709Z",
+      "updated_at": "2025-06-13T08:50:37.747Z"
     }
   }
 }

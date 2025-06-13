@@ -2,12 +2,12 @@
   "context": {
     "domain": "ONDC:LOG10",
     "country": "IND",
-    "city": "*",
+    "city": "std:080",
     "core_version": "1.2.5",
     "action": "init",
-    "transaction_id": "d56c5bff-76c5-475c-b477-67676e231230",
-    "message_id": "7eacf18a-114c-4164-971d-bf9ae67e780c",
-    "timestamp": "2025-05-26T09:45:50.922Z",
+    "transaction_id": "04391f03-fdfd-468c-a2be-3eba713d354a",
+    "message_id": "87dbee9b-c348-4bc3-ab5f-485dfca50d43",
+    "timestamp": "2025-06-13T07:27:08.996Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -21,14 +21,14 @@
       },
       "items": [
         {
-          "id": "I1",
-          "fulfillment_id": "0bcedd0c-a7e3-4872-ae7e-a95e0769a887",
-          "category_id": "Immediate Delivery"
+          "id": "std_del",
+          "fulfillment_id": "30ba5480-36f6-4873-a178-a431ecda8d9e",
+          "category_id": "Standard Delivery"
         }
       ],
       "fulfillments": [
         {
-          "id": "0bcedd0c-a7e3-4872-ae7e-a95e0769a887",
+          "id": "30ba5480-36f6-4873-a178-a431ecda8d9e",
           "type": "Delivery",
           "start": {
             "location": {
@@ -139,8 +139,8 @@
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
         "email": "sherlock@detective.com",
-        "created_at": "2025-05-26T09:45:48.936Z",
-        "updated_at": "2025-05-26T09:45:48.936Z"
+        "created_at": "2025-06-13T07:26:45.075Z",
+        "updated_at": "2025-06-13T07:26:45.075Z"
       },
       "payment": {
         "collected_by": "BAP",

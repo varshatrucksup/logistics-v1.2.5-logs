@@ -2,12 +2,12 @@
   "context": {
     "domain": "ONDC:LOG10",
     "country": "IND",
-    "city": "*",
+    "city": "std:080",
     "core_version": "1.2.5",
     "action": "on_track",
-    "transaction_id": "d56c5bff-76c5-475c-b477-67676e231230",
-    "message_id": "a2fdba48-90a0-4c03-ad66-c34b78fe0855",
-    "timestamp": "2025-05-26T09:49:34.947Z",
+    "transaction_id": "04391f03-fdfd-468c-a2be-3eba713d354a",
+    "message_id": "3b75f787-1f32-4b83-a802-aaa2c9cb4769",
+    "timestamp": "2025-06-13T07:29:37.648Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,14 +16,14 @@
   },
   "message": {
     "tracking": {
-      "id": "0bcedd0c-a7e3-4872-ae7e-a95e0769a887",
+      "id": "30ba5480-36f6-4873-a178-a431ecda8d9e",
       "url": "http://sequelstring-lsp-ondc.com/track",
       "location": {
         "gps": "12.974002,77.613458",
         "time": {
-          "timestamp": "2025-05-26T09:49:34.947Z"
+          "timestamp": "2025-06-13T07:29:37.648Z"
         },
-        "updated_at": "2025-05-26T09:49:34.947Z"
+        "updated_at": "2025-06-13T07:29:37.648Z"
       },
       "status": "active",
       "tags": [
@@ -32,7 +32,7 @@
           "list": [
             {
               "code": "id",
-              "value": "SS-1748252753499"
+              "value": "SS-1749799633053"
             }
           ]
         },

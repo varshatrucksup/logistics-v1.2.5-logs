@@ -2,12 +2,12 @@
   "context": {
     "domain": "ONDC:LOG10",
     "country": "IND",
-    "city": "*",
+    "city": "std:080",
     "core_version": "1.2.5",
     "action": "on_status",
-    "transaction_id": "d56c5bff-76c5-475c-b477-67676e231230",
-    "message_id": "6173f875-0c2f-4812-9d61-13d230de54ce",
-    "timestamp": "2025-05-26T09:49:43.810Z",
+    "transaction_id": "04391f03-fdfd-468c-a2be-3eba713d354a",
+    "message_id": "03c88873-8062-4c44-a8f5-e39da8cf382f",
+    "timestamp": "2025-06-13T07:29:14.227Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -16,20 +16,20 @@
   },
   "message": {
     "order": {
-      "id": "SS-1748252753499",
+      "id": "SS-1749799633053",
       "state": "Completed",
       "provider": {
         "id": "P1"
       },
       "items": [
         {
-          "id": "I1",
-          "category_id": "Immediate Delivery",
-          "fulfillment_id": "0bcedd0c-a7e3-4872-ae7e-a95e0769a887",
+          "id": "std_del",
+          "category_id": "Standard Delivery",
+          "fulfillment_id": "30ba5480-36f6-4873-a178-a431ecda8d9e",
           "time": {
             "label": "TAT",
-            "duration": "PT45M",
-            "timestamp": "2025-05-26"
+            "duration": "PT24H",
+            "timestamp": "2025-06-14"
           }
         }
       ],
@@ -44,7 +44,7 @@
               "currency": "INR",
               "value": "23.47"
             },
-            "@ondc/org/item_id": "I1",
+            "@ondc/org/item_id": "std_del",
             "@ondc/org/title_type": "delivery"
           },
           {
@@ -52,19 +52,18 @@
               "currency": "INR",
               "value": "0.00"
             },
-            "@ondc/org/item_id": "I1",
+            "@ondc/org/item_id": "std_del",
             "@ondc/org/title_type": "tax"
           }
         ]
       },
       "fulfillments": [
         {
-          "id": "0bcedd0c-a7e3-4872-ae7e-a95e0769a887",
+          "id": "30ba5480-36f6-4873-a178-a431ecda8d9e",
           "type": "Delivery",
           "state": {
             "descriptor": {
-              "code": "Order-delivered",
-              "short_desc": "pickup or delivery failed reason code"
+              "code": "Order-delivered"
             }
           },
           "tracking": true,
@@ -87,8 +86,13 @@
               "email": "sherlock@detective.com"
             },
             "instructions": {
-              "name": "ONDC order",
-              "images": ["http://sequelstring-lsp-ondc.com/proof"]
+              "code": "2",
+              "short_desc": "9628",
+              "long_desc": "additional instructions for pickup",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
+              }
             },
             "person": {
               "name": "Sherlock Holmes"
@@ -96,16 +100,10 @@
             "time": {
               "duration": "PT15M",
               "range": {
-                "start": "2025-05-26T09:00:00.000Z",
-                "end": "2025-05-26T23:00:00.000Z"
+                "start": "2025-06-13T09:00:00.000Z",
+                "end": "2025-06-13T23:00:00.000Z"
               },
-              "timestamp": "2025-05-26T09:46:09.938Z"
-            },
-            "authorization": {
-              "type": "OTP",
-              "token": "1234",
-              "valid_from": "2025-05-26T09:45:56.364Z",
-              "valid_to": "2025-05-26T10:00:56.364Z"
+              "timestamp": "2025-06-13T07:27:43.907Z"
             }
           },
           "end": {
@@ -129,22 +127,19 @@
               "name": "Tony Soprano"
             },
             "instructions": {
-              "name": "ONDC order",
-              "images": ["http://sequelstring-lsp-ondc.com/proof"],
-              "long_desc": "additional instructions for delivery"
+              "code": "1",
+              "short_desc": "5326",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
+              }
             },
             "time": {
               "range": {
-                "start": "2025-05-26T09:46:09.938Z",
-                "end": "2025-05-26T19:00:00.000Z"
+                "start": "2025-06-14T09:30:00.000Z",
+                "end": "2025-06-14T19:00:00.000Z"
               },
-              "timestamp": "2025-05-26T09:47:36.951Z"
-            },
-            "authorization": {
-              "type": "OTP",
-              "token": "1234",
-              "valid_from": "2025-05-26T09:45:56.364Z",
-              "valid_to": "2025-05-26T10:00:56.364Z"
+              "timestamp": "2025-06-13T07:29:14.227Z"
             }
           },
           "tags": [
@@ -201,29 +196,12 @@
                   "value": "40"
                 },
                 {
-                  "code": "prep_time",
-                  "value": "PT30M"
-                },
-                {
                   "code": "shipment_type",
                   "value": "box"
                 },
                 {
                   "code": "id",
                   "value": "RO1"
-                }
-              ]
-            },
-            {
-              "code": "shipping_label",
-              "list": [
-                {
-                  "code": "type",
-                  "value": "pdf"
-                },
-                {
-                  "code": "url",
-                  "value": "public link to pdf"
                 }
               ]
             },
@@ -243,36 +221,6 @@
                   "value": "http://sequelstring-lsp-ondc.com/track"
                 }
               ]
-            },
-            {
-              "code": "tracking",
-              "list": [
-                {
-                  "code": "gps_enabled",
-                  "value": "yes"
-                },
-                {
-                  "code": "url_enabled",
-                  "value": "no"
-                },
-                {
-                  "code": "url",
-                  "value": ".."
-                }
-              ]
-            },
-            {
-              "code": "shipping_label",
-              "list": [
-                {
-                  "code": "type",
-                  "value": "pdf"
-                },
-                {
-                  "code": "url",
-                  "value": "public link to pdf"
-                }
-              ]
             }
           ],
           "agent": {
@@ -281,9 +229,7 @@
           },
           "vehicle": {
             "registration": "3LVJ945"
-          },
-          "@ondc/org/ewaybillno": "EBN1",
-          "@ondc/org/ebnexpirydate": "2025-05-26T09:49:43.809Z"
+          }
         }
       ],
       "billing": {
@@ -299,7 +245,9 @@
         },
         "tax_number": "00ABCDE1234F1Z5",
         "phone": "9876543210",
-        "email": "sherlock@detective.com"
+        "email": "sherlock@detective.com",
+        "created_at": "2025-06-13T07:26:45.075Z",
+        "updated_at": "2025-06-13T07:26:45.075Z"
       },
       "payment": {
         "collected_by": "BAP",
@@ -312,17 +260,135 @@
             "settlement_type": "upi",
             "upi_address": "gft@oksbi",
             "settlement_bank_account_no": "123456789123456",
-            "settlement_ifsc_code": "SBI00001234",
-            "settlement_status": "PAID",
-            "settlement_timestamp": "2025-05-26T09:49:43.809Z"
+            "settlement_ifsc_code": "SBI00001234"
           }
         ],
-        "status": "PAID",
-        "time": {
-          "timestamp": "2025-05-26T09:49:43.809Z"
+        "status": "NOT-PAID"
+      },
+      "@ondc/org/linked_order": {
+        "items": [
+          {
+            "category_id": "Home & Kitchen",
+            "descriptor": {
+              "name": "Home & Kitchen"
+            },
+            "quantity": {
+              "count": 2,
+              "measure": {
+                "unit": "kilogram",
+                "value": 1
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "1000.00"
+            }
+          }
+        ],
+        "provider": {
+          "descriptor": {
+            "name": "KitchenAura"
+          },
+          "address": {
+            "name": "Sherlock Holmes",
+            "building": "221 B",
+            "locality": "Baker Street",
+            "city": "Bangalore",
+            "state": "Karanataka",
+            "country": "India",
+            "area_code": "560076"
+          }
+        },
+        "order": {
+          "id": "d17b24c3-d8b6-4093-82ba-0591cc8e803f",
+          "weight": {
+            "unit": "kilogram",
+            "value": 2
+          },
+          "dimensions": {
+            "length": {
+              "unit": "centimeter",
+              "value": 25
+            },
+            "breadth": {
+              "unit": "centimeter",
+              "value": 24
+            },
+            "height": {
+              "unit": "centimeter",
+              "value": 40
+            }
+          }
         }
       },
-      "updated_at": "2025-05-26T09:49:43.810Z"
+      "tags": [
+        {
+          "code": "bap_terms",
+          "list": [
+            {
+              "code": "accept_bpp_terms",
+              "value": "yes"
+            }
+          ]
+        },
+        {
+          "code": "bpp_terms",
+          "list": [
+            {
+              "code": "static_terms",
+              "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+            }
+          ]
+        }
+      ],
+      "cancellation_terms": [
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Pending",
+              "short_desc": "132"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "0.00",
+            "amount": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          }
+        },
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Agent-assigned",
+              "short_desc": "102,103,105"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "30.00",
+            "amount": {
+              "currency": "INR",
+              "value": "20.00"
+            }
+          }
+        },
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Order-picked-up",
+              "short_desc": "125,126,127,128"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "30.00",
+            "amount": {
+              "currency": "INR",
+              "value": "20.00"
+            }
+          }
+        }
+      ],
+      "updated_at": "2025-06-13T07:29:14.227Z"
     }
   }
 }

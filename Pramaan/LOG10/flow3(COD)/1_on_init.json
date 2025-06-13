@@ -2,12 +2,12 @@
   "context": {
     "domain": "ONDC:LOG10",
     "country": "IND",
-    "city": "*",
+    "city": "std:080",
     "core_version": "1.2.5",
     "action": "on_init",
-    "transaction_id": "7ef8a2a5-fc33-4cf3-b954-4689b7f9ce08",
-    "message_id": "8c76d032-c996-496c-bd57-6b709aed2868",
-    "timestamp": "2025-05-29T06:10:29.284Z",
+    "transaction_id": "5a77d4d4-a59a-49c4-81a5-fa93939bdd86",
+    "message_id": "fe510183-7596-4f87-b259-096859747697",
+    "timestamp": "2025-06-13T08:40:04.812Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -21,17 +21,17 @@
       },
       "items": [
         {
-          "id": "I1",
-          "fulfillment_id": "9a57b3c6-e8ad-4aeb-b938-9bb92a5fe483"
+          "id": "std_del",
+          "fulfillment_id": "02a1bed1-aa32-49f3-b244-cb4b546a8d4e"
         },
         {
           "id": "I3",
-          "fulfillment_id": "9a57b3c6-e8ad-4aeb-b938-9bb92a5fe483"
+          "fulfillment_id": "02a1bed1-aa32-49f3-b244-cb4b546a8d4e"
         }
       ],
       "fulfillments": [
         {
-          "id": "9a57b3c6-e8ad-4aeb-b938-9bb92a5fe483",
+          "id": "02a1bed1-aa32-49f3-b244-cb4b546a8d4e",
           "type": "Delivery",
           "start": {
             "location": {
@@ -148,6 +148,8 @@
       "payment": {
         "collected_by": "BPP",
         "type": "ON-FULFILLMENT",
+        "@ondc/org/settlement_basis": "invoicing",
+        "@ondc/org/settlement_window": "P15D",
         "@ondc/org/settlement_details": [
           {
             "settlement_counterparty": "lbnp",
@@ -170,7 +172,7 @@
               "currency": "INR",
               "value": "23.47"
             },
-            "@ondc/org/item_id": "I1",
+            "@ondc/org/item_id": "std_del",
             "@ondc/org/title_type": "delivery"
           },
           {
@@ -178,7 +180,7 @@
               "currency": "INR",
               "value": "0.00"
             },
-            "@ondc/org/item_id": "I1",
+            "@ondc/org/item_id": "std_del",
             "@ondc/org/title_type": "tax"
           },
           {
@@ -235,10 +237,10 @@
             }
           },
           "cancellation_fee": {
-            "percentage": "100.00",
+            "percentage": "30.00",
             "amount": {
               "currency": "INR",
-              "value": "50.00"
+              "value": "20.00"
             }
           }
         },
@@ -250,10 +252,10 @@
             }
           },
           "cancellation_fee": {
-            "percentage": "100.00",
+            "percentage": "30.00",
             "amount": {
               "currency": "INR",
-              "value": "50.00"
+              "value": "20.00"
             }
           }
         }

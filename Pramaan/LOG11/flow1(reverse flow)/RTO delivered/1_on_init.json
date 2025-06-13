@@ -2,12 +2,12 @@
   "context": {
     "domain": "ONDC:LOG11",
     "country": "IND",
-    "city": "*",
+    "city": "std:080",
     "core_version": "1.2.5",
     "action": "on_init",
-    "transaction_id": "29425153-f854-4a68-b34e-d784beb4883f",
-    "message_id": "f683f0e2-59f6-4dca-88bf-418ab7f565b4",
-    "timestamp": "2025-05-29T07:20:24.594Z",
+    "transaction_id": "43656a1e-c9ea-4f9d-b306-556bf3a6813d",
+    "message_id": "7bf555da-3cb7-405f-b37b-0b93ac429a03",
+    "timestamp": "2025-06-13T09:01:11.903Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -27,12 +27,12 @@
       "items": [
         {
           "id": "exp_del",
-          "fulfillment_id": "09876e1a-2fcf-4117-8cbd-6830400fb221"
+          "fulfillment_id": "16a56a32-01c5-4b96-b1d7-59a8db3729d4"
         }
       ],
       "fulfillments": [
         {
-          "id": "09876e1a-2fcf-4117-8cbd-6830400fb221",
+          "id": "16a56a32-01c5-4b96-b1d7-59a8db3729d4",
           "type": "Delivery",
           "start": {
             "location": {
@@ -141,6 +141,8 @@
       "payment": {
         "collected_by": "BAP",
         "type": "POST-FULFILLMENT",
+        "@ondc/org/settlement_basis": "invoicing",
+        "@ondc/org/settlement_window": "P15D",
         "@ondc/org/settlement_details": [
           {
             "settlement_counterparty": "lbnp",
@@ -212,10 +214,10 @@
             }
           },
           "cancellation_fee": {
-            "percentage": "100.00",
+            "percentage": "30.00",
             "amount": {
               "currency": "INR",
-              "value": "50.00"
+              "value": "20.00"
             }
           }
         },
@@ -227,10 +229,10 @@
             }
           },
           "cancellation_fee": {
-            "percentage": "100.00",
+            "percentage": "30.00",
             "amount": {
               "currency": "INR",
-              "value": "50.00"
+              "value": "20.00"
             }
           }
         }

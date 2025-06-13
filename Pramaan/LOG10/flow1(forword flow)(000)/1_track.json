@@ -2,12 +2,12 @@
   "context": {
     "domain": "ONDC:LOG10",
     "country": "IND",
-    "city": "*",
+    "city": "std:080",
     "core_version": "1.2.5",
     "action": "track",
-    "transaction_id": "d56c5bff-76c5-475c-b477-67676e231230",
-    "message_id": "a2fdba48-90a0-4c03-ad66-c34b78fe0855",
-    "timestamp": "2025-05-26T09:49:34.514Z",
+    "transaction_id": "04391f03-fdfd-468c-a2be-3eba713d354a",
+    "message_id": "3b75f787-1f32-4b83-a802-aaa2c9cb4769",
+    "timestamp": "2025-06-13T07:29:36.772Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -15,6 +15,6 @@
     "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
   },
   "message": {
-    "order_id": "SS-1748252753499"
+    "order_id": "SS-1749799633053"
   }
 }

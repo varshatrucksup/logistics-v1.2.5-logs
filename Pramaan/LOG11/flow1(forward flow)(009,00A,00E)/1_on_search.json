@@ -2,12 +2,12 @@
   "context": {
     "domain": "ONDC:LOG11",
     "country": "IND",
-    "city": "*",
+    "city": "std:080",
     "core_version": "1.2.5",
     "action": "on_search",
-    "transaction_id": "d51cf438-f23f-4419-8c3d-cb304614cacc",
-    "message_id": "0e20de47-280b-49a1-8e72-b8805aa74673",
-    "timestamp": "2025-05-26T12:27:38.295Z",
+    "transaction_id": "5121de60-5d39-4c6e-82ae-9bb241e6add4",
+    "message_id": "f74c4b77-0990-4ec7-910d-6c12bc0a522e",
+    "timestamp": "2025-06-13T08:50:17.150Z",
     "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
     "bap_id": "ondc.sequelstring.com/buyer/protocol",
     "ttl": "PT30S",
@@ -52,13 +52,13 @@
               "time": {
                 "label": "TAT",
                 "duration": "PT24H",
-                "timestamp": "2025-05-27"
+                "timestamp": "2025-06-14"
               }
             }
           ],
           "fulfillments": [
             {
-              "id": "df579054-41cd-468d-98ca-ee774158102f",
+              "id": "31dd974b-6024-486e-a5a3-06f393cc9e7e",
               "type": "Delivery",
               "start": {
                 "time": {
@@ -82,7 +82,7 @@
               ]
             },
             {
-              "id": "b47cab06-38cb-4221-954d-fdc6b9782810",
+              "id": "84aade61-faf0-45b2-98f3-7281ba5349f7",
               "type": "RTO"
             }
           ],
@@ -109,7 +109,7 @@
                 "short_desc": "Upto 1 day for Delivery"
               },
               "category_id": "Express Delivery",
-              "fulfillment_id": "df579054-41cd-468d-98ca-ee774158102f",
+              "fulfillment_id": "31dd974b-6024-486e-a5a3-06f393cc9e7e",
               "price": {
                 "currency": "INR",
                 "value": "23.47"
@@ -117,7 +117,7 @@
               "time": {
                 "label": "TAT",
                 "duration": "PT24H",
-                "timestamp": "2025-05-27"
+                "timestamp": "2025-06-14"
               }
             },
             {
@@ -130,11 +130,11 @@
                 "long_desc": "Upto 1 day for Delivery",
                 "short_desc": "Upto 1 day for Delivery"
               },
-              "fulfillment_id": "b47cab06-38cb-4221-954d-fdc6b9782810",
+              "fulfillment_id": "84aade61-faf0-45b2-98f3-7281ba5349f7",
               "time": {
                 "label": "TAT",
                 "duration": "PT24H",
-                "timestamp": "2025-05-27"
+                "timestamp": "2025-06-14"
               },
               "price": {
                 "currency": "INR",
@@ -152,10 +152,6 @@
                 },
                 {
                   "code": "009",
-                  "value": "yes"
-                },
-                {
-                  "code": "00C",
                   "value": "yes"
                 }
               ]
