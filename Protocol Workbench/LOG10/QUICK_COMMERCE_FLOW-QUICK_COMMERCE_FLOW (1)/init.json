@@ -1,0 +1,163 @@
+{
+  "context": {
+    "domain": "ONDC:LOG10",
+    "country": "IND",
+    "city": "std:080",
+    "action": "init",
+    "core_version": "1.2.5",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/buyer",
+    "message_id": "55fda3e6-1436-4e02-b9a3-5ac7156f947f",
+    "timestamp": "2025-06-27T04:38:01.428Z",
+    "transaction_id": "d19f6dd2-aa11-4329-a705-bd33d91c5ad5",
+    "ttl": "PT30S",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/seller"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "P1"
+      },
+      "items": [
+        {
+          "id": "I1",
+          "fulfillment_id": "1",
+          "category_id": "Instant Delivery",
+          "tags": [
+            {
+              "code": "type",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "base"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Batch",
+          "start": {
+            "location": {
+              "id": "S1",
+              "gps": "12.4535,77.9283",
+              "address": {
+                "name": "My store name 1",
+                "building": "My building name 1",
+                "locality": "My street name 1",
+                "city": "my city 1",
+                "state": "my state 1",
+                "country": "India",
+                "area_code": "560001"
+              }
+            },
+            "contact": {
+              "phone": "9886098860",
+              "email": "abcd.efgh@gmail.com"
+            }
+          },
+          "end": {},
+          "tags": [
+            {
+              "code": "fulfill_response",
+              "list": [
+                {
+                  "code": "rider_count",
+                  "value": "2"
+                },
+                {
+                  "code": "rate_basis",
+                  "value": "rider"
+                }
+              ]
+            },
+            {
+              "code": "linked_provider",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "P1"
+                },
+                {
+                  "code": "name",
+                  "value": "Seller1"
+                }
+              ]
+            },
+            {
+              "code": "fulfill_request",
+              "list": [
+                {
+                  "code": "rider_count",
+                  "value": "2"
+                },
+                {
+                  "code": "rate_basis",
+                  "value": "rider"
+                },
+                {
+                  "code": "motorable_distance",
+                  "value": "3.0"
+                },
+                {
+                  "code": "pickup_slot_start",
+                  "value": "2025-06-27T04:47:51.847Z"
+                },
+                {
+                  "code": "pickup_slot_end",
+                  "value": "2025-06-27T04:49:51.847Z"
+                },
+                {
+                  "code": "delivery_slot_start",
+                  "value": "2025-06-27T04:57:51.847Z"
+                },
+                {
+                  "code": "delivery_slot_end",
+                  "value": "2025-06-27T05:07:51.847Z"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "billing": {
+        "name": "ONDC Logistics Buyer NP",
+        "address": {
+          "name": "My house or building no",
+          "building": "My house or building name",
+          "locality": "Jayanagar",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "India",
+          "area_code": "560076"
+        },
+        "tax_number": "AS34234HKJ342KH",
+        "phone": "9886098860",
+        "email": "abcd.efgh@gmail.com",
+        "created_at": "2025-06-27T04:38:01.428Z",
+        "updated_at": "2025-06-27T04:38:01.428Z"
+      },
+      "payment": {
+        "type": "POST-FULFILLMENT",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_basis": "invoicing",
+        "@ondc/org/settlement_window": "P15D"
+      },
+      "tags": [
+        {
+          "code": "bap_terms",
+          "list": [
+            {
+              "code": "accept_bpp_terms",
+              "value": "yes"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

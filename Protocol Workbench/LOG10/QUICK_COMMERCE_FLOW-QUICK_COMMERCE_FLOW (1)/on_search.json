@@ -1,0 +1,260 @@
+{
+  "context": {
+    "domain": "ONDC:LOG10",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_search",
+    "core_version": "1.2.5",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/buyer",
+    "message_id": "5182f4fe-de0a-4e36-9bc3-61cfc61c3594",
+    "timestamp": "2025-06-27T04:37:59.354Z",
+    "transaction_id": "d19f6dd2-aa11-4329-a705-bd33d91c5ad5",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/seller"
+  },
+  "message": {
+    "catalog": {
+      "bpp/descriptor": {
+        "name": "LSP Aggregator Inc",
+        "tags": [
+          {
+            "code": "bpp_terms",
+            "list": [
+              {
+                "code": "static_terms",
+                "value": ""
+              },
+              {
+                "code": "static_terms_new",
+                "value": "https://github.com/ONDC-Official/NP-Static-Terms/lspNP_LSP/1.0/tc.pdf"
+              },
+              {
+                "code": "effective_date",
+                "value": "2025-06-27T04:37:59.354Z"
+              }
+            ]
+          }
+        ]
+      },
+      "bpp/providers": [
+        {
+          "id": "P1",
+          "descriptor": {
+            "name": "LSP Courier Inc",
+            "short_desc": "LSP Courier Inc",
+            "long_desc": "LSP Courier Inc"
+          },
+          "categories": [
+            {
+              "id": "Instant Delivery",
+              "time": {
+                "label": "TAT",
+                "duration": "PT10M",
+                "timestamp": "2025-06-27"
+              }
+            }
+          ],
+          "fulfillments": [
+            {
+              "id": "1",
+              "type": "Batch",
+              "start": {
+                "time": {
+                  "duration": "PT2M"
+                }
+              },
+              "tags": [
+                {
+                  "code": "fulfill_response",
+                  "list": [
+                    {
+                      "code": "rider_count",
+                      "value": "2"
+                    },
+                    {
+                      "code": "rate_basis",
+                      "value": "rider"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_provider",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "P1"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Seller1"
+                    }
+                  ]
+                },
+                {
+                  "code": "fulfill_request",
+                  "list": [
+                    {
+                      "code": "rider_count",
+                      "value": "2"
+                    },
+                    {
+                      "code": "rate_basis",
+                      "value": "rider"
+                    },
+                    {
+                      "code": "motorable_distance",
+                      "value": "3.0"
+                    },
+                    {
+                      "code": "pickup_slot_start",
+                      "value": "2025-06-27T04:47:51.847Z"
+                    },
+                    {
+                      "code": "pickup_slot_end",
+                      "value": "2025-06-27T04:49:51.847Z"
+                    },
+                    {
+                      "code": "delivery_slot_start",
+                      "value": "2025-06-27T04:57:51.847Z"
+                    },
+                    {
+                      "code": "delivery_slot_end",
+                      "value": "2025-06-27T05:07:51.847Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "2",
+              "type": "RTO"
+            }
+          ],
+          "items": [
+            {
+              "id": "I1",
+              "parent_item_id": "",
+              "category_id": "Instant Delivery",
+              "fulfillment_id": "1",
+              "descriptor": {
+                "name": "Fast delivery",
+                "short_desc": "Fast delivery services",
+                "long_desc": "Fast delivery services"
+              },
+              "price": {
+                "currency": "INR",
+                "value": "59.00"
+              },
+              "time": {
+                "label": "TAT",
+                "duration": "PT10M",
+                "timestamp": "2025-06-27"
+              },
+              "tags": [
+                {
+                  "code": "type",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "base"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "I2",
+              "parent_item_id": "",
+              "category_id": "Instant Delivery",
+              "fulfillment_id": "2",
+              "descriptor": {
+                "name": "RTO - Fast delivery",
+                "short_desc": "RTO - Fast delivery services",
+                "long_desc": "RTO - Fast delivery services"
+              },
+              "price": {
+                "currency": "INR",
+                "value": "35.50"
+              },
+              "time": {
+                "label": "TAT",
+                "duration": "PT10M",
+                "timestamp": "2025-06-27"
+              },
+              "tags": [
+                {
+                  "code": "type",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "rider"
+                    },
+                    {
+                      "code": "unit",
+                      "value": "hour"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "I3",
+              "parent_item_id": "",
+              "category_id": "Instant Delivery",
+              "fulfillment_id": "1",
+              "descriptor": {
+                "name": "Fast delivery",
+                "short_desc": "Fast delivery services",
+                "long_desc": "Fast delivery services"
+              },
+              "price": {
+                "currency": "INR",
+                "value": "35.50"
+              },
+              "time": {
+                "label": "TAT",
+                "duration": "PT10M",
+                "timestamp": "2025-06-27"
+              },
+              "tags": [
+                {
+                  "code": "type",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "rider"
+                    },
+                    {
+                      "code": "unit",
+                      "value": "hour"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tags": [
+        {
+          "code": "lsp_features",
+          "list": [
+            {
+              "code": "005",
+              "value": "yes"
+            },
+            {
+              "code": "006",
+              "value": "yes"
+            },
+            {
+              "code": "007",
+              "value": "yes"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

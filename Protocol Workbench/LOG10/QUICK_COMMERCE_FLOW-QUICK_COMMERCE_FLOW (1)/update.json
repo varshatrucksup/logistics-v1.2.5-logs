@@ -1,0 +1,553 @@
+{
+  "context": {
+    "domain": "ONDC:LOG10",
+    "country": "IND",
+    "city": "std:080",
+    "action": "update",
+    "core_version": "1.2.5",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/buyer",
+    "message_id": "589cbb29-ff0d-497a-954f-df8428a2324f",
+    "timestamp": "2025-06-27T04:38:11.767Z",
+    "transaction_id": "d19f6dd2-aa11-4329-a705-bd33d91c5ad5",
+    "ttl": "PT30S",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/seller"
+  },
+  "message": {
+    "update_target": "fulfillment",
+    "order": {
+      "id": "d27eb330-da18-4de1-b3a8-d27ae98112e5",
+      "items": [
+        {
+          "id": "I1",
+          "category_id": "Instant Delivery"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Batch",
+          "start": {
+            "location": {
+              "id": "S1",
+              "gps": "12.4535,77.9283",
+              "address": {
+                "name": "My store name 1",
+                "building": "My building name 1",
+                "locality": "My street name 1",
+                "city": "my city 1",
+                "state": "my state 1",
+                "country": "India",
+                "area_code": "560001"
+              }
+            },
+            "contact": {
+              "phone": "9886098860",
+              "email": "abcd.efgh@gmail.com"
+            },
+            "time": {
+              "duration": "PT2M"
+            },
+            "person": {
+              "name": "person_name_1"
+            }
+          },
+          "end": {},
+          "tags": [
+            {
+              "code": "rider_details",
+              "list": [
+                {
+                  "code": "name",
+                  "value": "agent_name"
+                },
+                {
+                  "code": "phone",
+                  "value": "9886098860"
+                },
+                {
+                  "code": "vehicle_registration",
+                  "value": "3LVJ945"
+                }
+              ]
+            },
+            {
+              "code": "rider_details",
+              "list": [
+                {
+                  "code": "name",
+                  "value": "agent_name"
+                },
+                {
+                  "code": "phone",
+                  "value": "9886098860"
+                },
+                {
+                  "code": "vehicle_registration",
+                  "value": "3LVJ945"
+                }
+              ]
+            }
+          ],
+          "state": {
+            "descriptor": {
+              "code": "Agent-assigned"
+            }
+          },
+          "tracking": true
+        },
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "start": {
+            "location": {
+              "id": "S1",
+              "gps": "12.4535,77.9283",
+              "address": {
+                "name": "My store name 1",
+                "building": "My building name 1",
+                "locality": "My street name 1",
+                "city": "my city 1",
+                "state": "my state 1",
+                "country": "India",
+                "area_code": "560001"
+              }
+            },
+            "contact": {
+              "phone": "9886098860",
+              "email": "abcd.efgh@gmail.com"
+            },
+            "time": {
+              "duration": "PT2M"
+            },
+            "person": {
+              "name": "person_name_1"
+            },
+            "instructions": {
+              "code": "2",
+              "short_desc": "123123",
+              "long_desc": "additional instructions for pickup",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": "http://description.com"
+              }
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.4531,77.9281",
+              "address": {
+                "name": "My house #1",
+                "building": "My house or building name",
+                "locality": "My street name",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "India",
+                "area_code": "560001"
+              }
+            },
+            "contact": {
+              "phone": "9886098860",
+              "email": "rider1@example.com"
+            },
+            "instructions": {
+              "code": "2",
+              "short_desc": "987657",
+              "long_desc": "additional instructions for delivery",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": "http://description.com"
+              }
+            }
+          },
+          "tags": [
+            {
+              "code": "linked_provider",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "P1"
+                },
+                {
+                  "code": "name",
+                  "value": "Seller1"
+                }
+              ]
+            },
+            {
+              "code": "linked_provider",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "P1"
+                },
+                {
+                  "code": "name",
+                  "value": "Seller1"
+                },
+                {
+                  "code": "address",
+                  "value": "My store name 1, My building name 1, My street name 1, my city 1, my state 1, 560001"
+                }
+              ]
+            },
+            {
+              "code": "linked_order",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "RO1"
+                },
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "declared_value",
+                  "value": "300.0"
+                },
+                {
+                  "code": "weight_unit",
+                  "value": "kilogram"
+                },
+                {
+                  "code": "weight_value",
+                  "value": "3.0"
+                },
+                {
+                  "code": "dim_unit",
+                  "value": "centimeter"
+                },
+                {
+                  "code": "length",
+                  "value": "1.0"
+                },
+                {
+                  "code": "breadth",
+                  "value": "1.0"
+                },
+                {
+                  "code": "height",
+                  "value": "1.0"
+                }
+              ]
+            },
+            {
+              "code": "linked_order_item",
+              "list": [
+                {
+                  "code": "category",
+                  "value": "Grocery"
+                },
+                {
+                  "code": "name",
+                  "value": "Item1"
+                },
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "value",
+                  "value": "70.0"
+                },
+                {
+                  "code": "quantity",
+                  "value": "2"
+                },
+                {
+                  "code": "weight_unit",
+                  "value": "kilogram"
+                },
+                {
+                  "code": "weight_value",
+                  "value": "1.0"
+                }
+              ]
+            },
+            {
+              "code": "linked_order_item",
+              "list": [
+                {
+                  "code": "category",
+                  "value": "Grocery"
+                },
+                {
+                  "code": "name",
+                  "value": "Item2"
+                },
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "value",
+                  "value": "160.0"
+                },
+                {
+                  "code": "quantity",
+                  "value": "1"
+                },
+                {
+                  "code": "weight_unit",
+                  "value": "kilogram"
+                },
+                {
+                  "code": "weight_value",
+                  "value": "1.0"
+                }
+              ]
+            },
+            {
+              "code": "state",
+              "list": [
+                {
+                  "code": "ready_to_ship",
+                  "value": "yes"
+                }
+              ]
+            }
+          ],
+          "tracking": true,
+          "agent": {
+            "name": "agent_name",
+            "phone": "9886098860"
+          }
+        },
+        {
+          "id": "F2",
+          "type": "Delivery",
+          "start": {
+            "location": {
+              "id": "S1",
+              "gps": "12.4535,77.9283",
+              "address": {
+                "name": "My store name 1",
+                "building": "My building name 1",
+                "locality": "My street name 1",
+                "city": "my city 1",
+                "state": "my state 1",
+                "country": "India",
+                "area_code": "560001"
+              }
+            },
+            "contact": {
+              "phone": "9886098860",
+              "email": "abcd.efgh@gmail.com"
+            },
+            "time": {
+              "duration": "PT2M"
+            },
+            "person": {
+              "name": "person_name_1"
+            },
+            "instructions": {
+              "code": "2",
+              "short_desc": "123123",
+              "long_desc": "additional instructions for pickup",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": "http://description.com"
+              }
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.4532,77.9282",
+              "address": {
+                "name": "My house #2",
+                "building": "My house or building name",
+                "locality": "My street name",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "India",
+                "area_code": "560001"
+              }
+            },
+            "contact": {
+              "phone": "9886098860",
+              "email": "rider2@example.com"
+            },
+            "instructions": {
+              "code": "2",
+              "short_desc": "987657",
+              "long_desc": "additional instructions for delivery",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": "http://description.com"
+              }
+            }
+          },
+          "tags": [
+            {
+              "code": "linked_provider",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "P1"
+                },
+                {
+                  "code": "name",
+                  "value": "Seller1"
+                }
+              ]
+            },
+            {
+              "code": "linked_provider",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "P1"
+                },
+                {
+                  "code": "name",
+                  "value": "Seller1"
+                }
+              ]
+            },
+            {
+              "code": "linked_provider",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "P1"
+                },
+                {
+                  "code": "name",
+                  "value": "Seller1"
+                },
+                {
+                  "code": "address",
+                  "value": "My store name 1, My building name 1, My street name 1, my city 1, my state 1, 560001"
+                }
+              ]
+            },
+            {
+              "code": "linked_order",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "RO1"
+                },
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "declared_value",
+                  "value": "300.0"
+                },
+                {
+                  "code": "weight_unit",
+                  "value": "kilogram"
+                },
+                {
+                  "code": "weight_value",
+                  "value": "3.0"
+                },
+                {
+                  "code": "dim_unit",
+                  "value": "centimeter"
+                },
+                {
+                  "code": "length",
+                  "value": "1.0"
+                },
+                {
+                  "code": "breadth",
+                  "value": "1.0"
+                },
+                {
+                  "code": "height",
+                  "value": "1.0"
+                }
+              ]
+            },
+            {
+              "code": "linked_order_item",
+              "list": [
+                {
+                  "code": "category",
+                  "value": "Grocery"
+                },
+                {
+                  "code": "name",
+                  "value": "Item1"
+                },
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "value",
+                  "value": "70.0"
+                },
+                {
+                  "code": "quantity",
+                  "value": "2"
+                },
+                {
+                  "code": "weight_unit",
+                  "value": "kilogram"
+                },
+                {
+                  "code": "weight_value",
+                  "value": "1.0"
+                }
+              ]
+            },
+            {
+              "code": "linked_order_item",
+              "list": [
+                {
+                  "code": "category",
+                  "value": "Grocery"
+                },
+                {
+                  "code": "name",
+                  "value": "Item2"
+                },
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "value",
+                  "value": "160.0"
+                },
+                {
+                  "code": "quantity",
+                  "value": "1"
+                },
+                {
+                  "code": "weight_unit",
+                  "value": "kilogram"
+                },
+                {
+                  "code": "weight_value",
+                  "value": "1.0"
+                }
+              ]
+            },
+            {
+              "code": "state",
+              "list": [
+                {
+                  "code": "ready_to_ship",
+                  "value": "yes"
+                }
+              ]
+            }
+          ],
+          "tracking": true,
+          "agent": {
+            "name": "agent_name",
+            "phone": "9886098860"
+          }
+        }
+      ],
+      "updated_at": "2025-06-27T04:38:11.767Z"
+    }
+  }
+}

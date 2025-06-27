@@ -1,0 +1,343 @@
+{
+  "context": {
+    "domain": "ONDC:LOG10",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_init",
+    "core_version": "1.2.5",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/buyer",
+    "message_id": "55fda3e6-1436-4e02-b9a3-5ac7156f947f",
+    "timestamp": "2025-06-27T04:38:03.190Z",
+    "transaction_id": "d19f6dd2-aa11-4329-a705-bd33d91c5ad5",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/seller"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "P1"
+      },
+      "items": [
+        {
+          "id": "I1",
+          "fulfillment_id": "1",
+          "category_id": "Instant Delivery",
+          "fulfillment_ids": [
+            "F1",
+            "F2"
+          ]
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Batch",
+          "start": {
+            "location": {
+              "id": "S1",
+              "gps": "12.4535,77.9283",
+              "address": {
+                "name": "My store name 1",
+                "building": "My building name 1",
+                "locality": "My street name 1",
+                "city": "my city 1",
+                "state": "my state 1",
+                "country": "India",
+                "area_code": "560001"
+              }
+            },
+            "contact": {
+              "phone": "9886098860",
+              "email": "abcd.efgh@gmail.com"
+            }
+          },
+          "end": {},
+          "tags": [
+            {
+              "code": "fulfill_response",
+              "list": [
+                {
+                  "code": "rider_count",
+                  "value": "2"
+                },
+                {
+                  "code": "rate_basis",
+                  "value": "rider"
+                }
+              ]
+            },
+            {
+              "code": "linked_provider",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "P1"
+                },
+                {
+                  "code": "name",
+                  "value": "Seller1"
+                }
+              ]
+            },
+            {
+              "code": "fulfill_request",
+              "list": [
+                {
+                  "code": "rider_count",
+                  "value": "2"
+                },
+                {
+                  "code": "rate_basis",
+                  "value": "rider"
+                },
+                {
+                  "code": "motorable_distance",
+                  "value": "3.0"
+                },
+                {
+                  "code": "pickup_slot_start",
+                  "value": "2025-06-27T04:47:51.847Z"
+                },
+                {
+                  "code": "pickup_slot_end",
+                  "value": "2025-06-27T04:49:51.847Z"
+                },
+                {
+                  "code": "delivery_slot_start",
+                  "value": "2025-06-27T04:57:51.847Z"
+                },
+                {
+                  "code": "delivery_slot_end",
+                  "value": "2025-06-27T05:07:51.847Z"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "start": {
+            "location": {
+              "id": "S1",
+              "gps": "12.4535,77.9283",
+              "address": {
+                "name": "My store name 1",
+                "building": "My building name 1",
+                "locality": "My street name 1",
+                "city": "my city 1",
+                "state": "my state 1",
+                "country": "India",
+                "area_code": "560001"
+              }
+            },
+            "contact": {
+              "phone": "9886098860",
+              "email": "abcd.efgh@gmail.com"
+            }
+          },
+          "end": {},
+          "tags": [
+            {
+              "code": "fulfill_response",
+              "list": [
+                {
+                  "code": "rider_count",
+                  "value": "2"
+                },
+                {
+                  "code": "rate_basis",
+                  "value": "rider"
+                }
+              ]
+            },
+            {
+              "code": "linked_provider",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "P1"
+                },
+                {
+                  "code": "name",
+                  "value": "Seller1"
+                }
+              ]
+            },
+            {
+              "code": "fulfill_request",
+              "list": [
+                {
+                  "code": "rider_count",
+                  "value": "2"
+                },
+                {
+                  "code": "rate_basis",
+                  "value": "rider"
+                },
+                {
+                  "code": "motorable_distance",
+                  "value": "3.0"
+                },
+                {
+                  "code": "pickup_slot_start",
+                  "value": "2025-06-27T04:47:51.847Z"
+                },
+                {
+                  "code": "pickup_slot_end",
+                  "value": "2025-06-27T04:49:51.847Z"
+                },
+                {
+                  "code": "delivery_slot_start",
+                  "value": "2025-06-27T04:57:51.847Z"
+                },
+                {
+                  "code": "delivery_slot_end",
+                  "value": "2025-06-27T05:07:51.847Z"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F2",
+          "type": "Delivery",
+          "start": {
+            "location": {
+              "id": "S1",
+              "gps": "12.4535,77.9283",
+              "address": {
+                "name": "My store name 1",
+                "building": "My building name 1",
+                "locality": "My street name 1",
+                "city": "my city 1",
+                "state": "my state 1",
+                "country": "India",
+                "area_code": "560001"
+              }
+            },
+            "contact": {
+              "phone": "9886098860",
+              "email": "abcd.efgh@gmail.com"
+            }
+          },
+          "end": {},
+          "tags": [
+            {
+              "code": "fulfill_response",
+              "list": [
+                {
+                  "code": "rider_count",
+                  "value": "2"
+                },
+                {
+                  "code": "rate_basis",
+                  "value": "rider"
+                }
+              ]
+            },
+            {
+              "code": "linked_provider",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "P1"
+                },
+                {
+                  "code": "name",
+                  "value": "Seller1"
+                }
+              ]
+            },
+            {
+              "code": "fulfill_request",
+              "list": [
+                {
+                  "code": "rider_count",
+                  "value": "2"
+                },
+                {
+                  "code": "rate_basis",
+                  "value": "rider"
+                },
+                {
+                  "code": "motorable_distance",
+                  "value": "3.0"
+                },
+                {
+                  "code": "pickup_slot_start",
+                  "value": "2025-06-27T04:47:51.847Z"
+                },
+                {
+                  "code": "pickup_slot_end",
+                  "value": "2025-06-27T04:49:51.847Z"
+                },
+                {
+                  "code": "delivery_slot_start",
+                  "value": "2025-06-27T04:57:51.847Z"
+                },
+                {
+                  "code": "delivery_slot_end",
+                  "value": "2025-06-27T05:07:51.847Z"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "quote": {
+        "breakup": [
+          {
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "100"
+            }
+          },
+          {
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "18"
+            }
+          }
+        ],
+        "ttl": "PT15M",
+        "price": {
+          "currency": "INR",
+          "value": "118.00"
+        }
+      },
+      "payment": {
+        "type": "POST-FULFILLMENT",
+        "collected_by": "BAP",
+        "@ondc/org/settlement_basis": "invoicing",
+        "@ondc/org/settlement_window": "P15D",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "lsp",
+            "settlement_type": "upi",
+            "beneficiary_name": "xxxxx",
+            "upi_address": "gft@oksbi",
+            "settlement_bank_account_no": "XXXXXXXXXX",
+            "settlement_ifsc_code": "XXXXXXXXX"
+          }
+        ]
+      },
+      "tags": [
+        {
+          "code": "bpp_terms",
+          "list": [
+            {
+              "code": "static_terms",
+              "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

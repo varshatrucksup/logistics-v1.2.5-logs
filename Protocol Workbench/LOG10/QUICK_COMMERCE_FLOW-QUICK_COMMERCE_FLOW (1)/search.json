@@ -1,0 +1,101 @@
+{
+  "context": {
+    "domain": "ONDC:LOG10",
+    "country": "IND",
+    "city": "std:080",
+    "action": "search",
+    "core_version": "1.2.5",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/buyer",
+    "message_id": "5182f4fe-de0a-4e36-9bc3-61cfc61c3594",
+    "timestamp": "2025-06-27T04:37:51.841Z",
+    "transaction_id": "d19f6dd2-aa11-4329-a705-bd33d91c5ad5",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "category": {
+        "id": "Instant Delivery"
+      },
+      "provider": {
+        "time": {
+          "days": "1,2,3,4,5,6,7",
+          "schedule": {
+            "holidays": [
+              "2025-07-07",
+              "2025-07-12"
+            ]
+          },
+          "duration": "PT2M",
+          "range": {
+            "start": "1100",
+            "end": "2100"
+          }
+        }
+      },
+      "fulfillment": {
+        "type": "Batch",
+        "start": {
+          "location": {
+            "id": "S1",
+            "gps": "12.4535,77.9283",
+            "address": {
+              "area_code": "560001"
+            }
+          }
+        },
+        "tags": [
+          {
+            "code": "linked_provider",
+            "list": [
+              {
+                "code": "id",
+                "value": "P1"
+              },
+              {
+                "code": "name",
+                "value": "Seller1"
+              }
+            ]
+          },
+          {
+            "code": "fulfill_request",
+            "list": [
+              {
+                "code": "rider_count",
+                "value": "2"
+              },
+              {
+                "code": "rate_basis",
+                "value": "rider"
+              },
+              {
+                "code": "motorable_distance",
+                "value": "3.0"
+              },
+              {
+                "code": "pickup_slot_start",
+                "value": "2025-06-27T04:47:51.847Z"
+              },
+              {
+                "code": "pickup_slot_end",
+                "value": "2025-06-27T04:49:51.847Z"
+              },
+              {
+                "code": "delivery_slot_start",
+                "value": "2025-06-27T04:57:51.847Z"
+              },
+              {
+                "code": "delivery_slot_end",
+                "value": "2025-06-27T05:07:51.847Z"
+              }
+            ]
+          }
+        ]
+      },
+      "payment": {
+        "type": "POST-FULFILLMENT"
+      }
+    }
+  }
+}
