@@ -1,0 +1,20 @@
+ {
+        "context": {
+          "domain": "ONDC:LOG10",
+          "country": "IND",
+          "city": "std:123",
+          "core_version": "1.2.5",
+          "action": "status",
+          "transaction_id": "2ec9dac9-cb37-461a-8514-c17b0166b375",
+          "message_id": "6320d7ce-cd09-4852-b091-644927c90509",
+          "timestamp": "2025-07-17T05:24:56.135Z",
+          "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+          "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+          "ttl": "PT30S",
+          "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+          "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller"
+        },
+        "message": {
+          "order_id": "SS-1752729872186"
+        }
+      }

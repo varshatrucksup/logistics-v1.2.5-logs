@@ -1,143 +1,139 @@
-{
-  "context": {
-    "domain": "ONDC:LOG10",
-    "country": "IND",
-    "city": "std:080",
-    "core_version": "1.2.5",
-    "action": "update",
-    "transaction_id": "5a77d4d4-a59a-49c4-81a5-fa93939bdd86",
-    "message_id": "32b81901-de8c-4763-ad14-10b10e5efd2a",
-    "timestamp": "2025-06-13T08:40:22.288Z",
-    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
-    "bap_id": "ondc.sequelstring.com/buyer/protocol",
-    "ttl": "PT30S",
-    "bpp_id": "ondc.sequelstring.com/seller/protocol",
-    "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
-  },
-  "message": {
-    "update_target": "fulfillment",
-    "order": {
-      "id": "SS-1749804014443",
-      "items": [
-        {
-          "id": "std_del",
-          "category_id": "Standard Delivery"
+ {
+        "context": {
+          "domain": "ONDC:LOG10",
+          "country": "IND",
+          "city": "std:123",
+          "core_version": "1.2.5",
+          "action": "update",
+          "transaction_id": "a734208e-b94c-4c5c-9945-0e4cebbfc7a7",
+          "message_id": "a676755c-dbab-4b52-a80f-31ff0770e361",
+          "timestamp": "2025-07-17T06:33:03.457Z",
+          "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+          "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+          "ttl": "PT30S",
+          "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+          "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller"
         },
-        {
-          "id": "I3",
-          "category_id": "Standard Delivery"
-        }
-      ],
-      "fulfillments": [
-        {
-          "id": "02a1bed1-aa32-49f3-b244-cb4b546a8d4e",
-          "type": "Delivery",
-          "start": {
-            "instructions": {
-              "code": "2",
-              "short_desc": "9396",
-              "long_desc": "additional instructions for pickup",
-              "additional_desc": {
-                "content_type": "text/html",
-                "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
+        "message": {
+          "update_target": "fulfillment",
+          "order": {
+            "id": "SS-1752733960782",
+            "items": [
+              {
+                "id": "std_del",
+                "category_id": "Standard Delivery"
               }
-            }
-          },
-          "end": {
-            "instructions": {
-              "code": "1",
-              "short_desc": "4834",
-              "long_desc": "additional instructions for pickup",
-              "additional_desc": {
-                "content_type": "text/html",
-                "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
+            ],
+            "fulfillments": [
+              {
+                "id": "06e4247c-89d2-47ea-9af1-10923ee88efa",
+                "type": "Delivery",
+                "start": {
+                  "instructions": {
+                    "code": "4",
+                    "short_desc": "3366",
+                    "long_desc": "additional instructions for pickup",
+                    "additional_desc": {
+                      "content_type": "text/html",
+                      "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
+                    }
+                  }
+                },
+                "end": {
+                  "instructions": {
+                    "code": "1",
+                    "short_desc": "2404",
+                    "long_desc": "additional instructions for pickup",
+                    "additional_desc": {
+                      "content_type": "text/html",
+                      "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
+                    }
+                  }
+                },
+                "tags": [
+                  {
+                    "code": "state",
+                    "list": [
+                      {
+                        "code": "ready_to_ship",
+                        "value": "yes"
+                      }
+                    ]
+                  },
+                  {
+                    "code": "linked_provider",
+                    "list": [
+                      {
+                        "code": "id",
+                        "value": "P1"
+                      },
+                      {
+                        "code": "name",
+                        "value": "Seller1"
+                      }
+                    ]
+                  },
+                  {
+                    "code": "linked_order",
+                    "list": [
+                      {
+                        "code": "currency",
+                        "value": "INR"
+                      },
+                      {
+                        "code": "declared_value",
+                        "value": "1000.00"
+                      },
+                      {
+                        "code": "category",
+                        "value": "Home & Kitchen"
+                      },
+                      {
+                        "code": "weight_unit",
+                        "value": "kilogram"
+                      },
+                      {
+                        "code": "weight_value",
+                        "value": "2"
+                      },
+                      {
+                        "code": "dim_unit",
+                        "value": "centimeter"
+                      },
+                      {
+                        "code": "length",
+                        "value": "25"
+                      },
+                      {
+                        "code": "breadth",
+                        "value": "24"
+                      },
+                      {
+                        "code": "height",
+                        "value": "40"
+                      },
+                      {
+                        "code": "cod_order",
+                        "value": "yes"
+                      },
+                      {
+                        "code": "collection_amount",
+                        "value": "1200"
+                      },
+                      {
+                        "code": "shipment_type",
+                        "value": "box"
+                      },
+                      {
+                        "code": "id",
+                        "value": "RO1"
+                      }
+                    ]
+                  }
+                ]
               }
-            }
-          },
-          "tags": [
-            {
-              "code": "state",
-              "list": [
-                {
-                  "code": "ready_to_ship",
-                  "value": "yes"
-                }
-              ]
-            },
-            {
-              "code": "linked_provider",
-              "list": [
-                {
-                  "code": "id",
-                  "value": "P1"
-                },
-                {
-                  "code": "name",
-                  "value": "Seller1"
-                }
-              ]
-            },
-            {
-              "code": "linked_order",
-              "list": [
-                {
-                  "code": "currency",
-                  "value": "INR"
-                },
-                {
-                  "code": "declared_value",
-                  "value": "1000.00"
-                },
-                {
-                  "code": "category",
-                  "value": "Home & Kitchen"
-                },
-                {
-                  "code": "weight_unit",
-                  "value": "kilogram"
-                },
-                {
-                  "code": "weight_value",
-                  "value": "2"
-                },
-                {
-                  "code": "dim_unit",
-                  "value": "centimeter"
-                },
-                {
-                  "code": "length",
-                  "value": "25"
-                },
-                {
-                  "code": "breadth",
-                  "value": "24"
-                },
-                {
-                  "code": "height",
-                  "value": "40"
-                },
-                {
-                  "code": "cod_order",
-                  "value": "yes"
-                },
-                {
-                  "code": "collection_amount",
-                  "value": "1050"
-                },
-                {
-                  "code": "shipment_type",
-                  "value": "box"
-                },
-                {
-                  "code": "id",
-                  "value": "RO1"
-                }
-              ]
-            }
-          ]
+            ],
+            "updated_at": "2025-07-17T06:33:03.457Z"
+          }
         }
-      ],
-      "updated_at": "2025-06-13T08:40:22.288Z"
-    }
-  }
-}
+      }

@@ -1,164 +1,160 @@
 {
-  "context": {
-    "domain": "ONDC:LOG11",
-    "country": "IND",
-    "city": "std:080",
-    "core_version": "1.2.5",
-    "action": "on_search",
-    "transaction_id": "5121de60-5d39-4c6e-82ae-9bb241e6add4",
-    "message_id": "f74c4b77-0990-4ec7-910d-6c12bc0a522e",
-    "timestamp": "2025-06-13T08:50:17.150Z",
-    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
-    "bap_id": "ondc.sequelstring.com/buyer/protocol",
-    "ttl": "PT30S",
-    "bpp_id": "ondc.sequelstring.com/seller/protocol",
-    "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
-  },
-  "message": {
-    "catalog": {
-      "bpp/descriptor": {
-        "name": "ONDC Pramaaan Logistics",
-        "tags": [
-          {
-            "code": "bpp_terms",
-            "list": [
-              {
-                "code": "static_terms",
-                "value": ""
-              },
-              {
-                "code": "static_terms_new",
-                "value": "https://github.com/ONDC-Official/NP-Static-Terms/lspNP_LSP/1.0/tc.pdf"
-              },
-              {
-                "code": "effective_date",
-                "value": "2024-11-20T00:00:00.000Z"
-              }
-            ]
-          }
-        ]
-      },
-      "bpp/providers": [
-        {
-          "id": "P1",
-          "descriptor": {
-            "name": "ONDC Pramaaan Logistics",
-            "short_desc": "Swiftly Yours, Delivered with Care",
-            "long_desc": "We deliver everywhere—yes, even Mars (just give us a little more rocket fuel)."
-          },
-          "categories": [
-            {
-              "id": "Express Delivery",
-              "time": {
-                "label": "TAT",
-                "duration": "PT24H",
-                "timestamp": "2025-06-14"
-              }
-            }
-          ],
-          "fulfillments": [
-            {
-              "id": "31dd974b-6024-486e-a5a3-06f393cc9e7e",
-              "type": "Delivery",
-              "start": {
-                "time": {
-                  "duration": "PT15M"
-                }
-              },
+        "context": {
+          "domain": "ONDC:LOG11",
+          "country": "IND",
+          "city": "std:123",
+          "core_version": "1.2.5",
+          "action": "on_search",
+          "transaction_id": "1414a9d4-bf2f-4464-a443-aae270df9b95",
+          "message_id": "c5611eda-1f1a-4ef2-a5dc-a7b91587798c",
+          "timestamp": "2025-07-17T06:00:44.864Z",
+          "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+          "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+          "ttl": "PT30S",
+          "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+          "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller"
+        },
+        "message": {
+          "catalog": {
+            "bpp/descriptor": {
+              "name": "ONDC Pramaaan Logistics",
               "tags": [
                 {
-                  "code": "distance",
+                  "code": "bpp_terms",
                   "list": [
                     {
-                      "code": "motorable_distance_type",
-                      "value": "kilometer"
+                      "code": "static_terms",
+                      "value": ""
                     },
                     {
-                      "code": "motorable_distance",
-                      "value": "1.16"
+                      "code": "static_terms_new",
+                      "value": "https://github.com/ONDC-Official/NP-Static-Terms/lspNP_LSP/1.0/tc.pdf"
+                    },
+                    {
+                      "code": "effective_date",
+                      "value": "2024-11-20T00:00:00.000Z"
                     }
                   ]
                 }
               ]
             },
-            {
-              "id": "84aade61-faf0-45b2-98f3-7281ba5349f7",
-              "type": "RTO"
-            }
-          ],
-          "locations": [
-            {
-              "id": "L1",
-              "gps": "12.921200,77.588000",
-              "address": {
-                "street": "Jayanagar 4th Block",
-                "city": "Bengaluru",
-                "area_code": "560076",
-                "state": "KA"
-              }
-            }
-          ],
-          "items": [
-            {
-              "id": "exp_del",
-              "parent_item_id": "",
-              "descriptor": {
-                "code": "P2P",
-                "name": "Express Delivery",
-                "long_desc": "Upto 1 day for Delivery",
-                "short_desc": "Upto 1 day for Delivery"
-              },
-              "category_id": "Express Delivery",
-              "fulfillment_id": "31dd974b-6024-486e-a5a3-06f393cc9e7e",
-              "price": {
-                "currency": "INR",
-                "value": "23.47"
-              },
-              "time": {
-                "label": "TAT",
-                "duration": "PT24H",
-                "timestamp": "2025-06-14"
-              }
-            },
-            {
-              "id": "rto_exp",
-              "parent_item_id": "exp_del",
-              "category_id": "Express Delivery",
-              "descriptor": {
-                "code": "P2P",
-                "name": "Express Delivery",
-                "long_desc": "Upto 1 day for Delivery",
-                "short_desc": "Upto 1 day for Delivery"
-              },
-              "fulfillment_id": "84aade61-faf0-45b2-98f3-7281ba5349f7",
-              "time": {
-                "label": "TAT",
-                "duration": "PT24H",
-                "timestamp": "2025-06-14"
-              },
-              "price": {
-                "currency": "INR",
-                "value": "35.20"
-              }
-            }
-          ],
-          "tags": [
-            {
-              "code": "lsp_features",
-              "list": [
-                {
-                  "code": "005",
-                  "value": "yes"
+            "bpp/providers": [
+              {
+                "id": "P1",
+                "descriptor": {
+                  "name": "ONDC Pramaaan Logistics",
+                  "short_desc": "Swiftly Yours, Delivered with Care",
+                  "long_desc": "We deliver everywhere—yes, even Mars (just give us a little more rocket fuel)."
                 },
-                {
-                  "code": "009",
-                  "value": "yes"
-                }
-              ]
-            }
-          ]
+                "categories": [
+                  {
+                    "id": "Standard Delivery",
+                    "time": {
+                      "label": "TAT",
+                      "duration": "PT24H",
+                      "timestamp": "2025-07-18"
+                    }
+                  }
+                ],
+                "fulfillments": [
+                  {
+                    "id": "bc2d3eab-a3e4-4187-8531-9a89940ba1eb",
+                    "type": "Delivery",
+                    "start": {
+                      "time": {
+                        "duration": "PT15M"
+                      }
+                    },
+                    "tags": [
+                      {
+                        "code": "distance",
+                        "list": [
+                          {
+                            "code": "motorable_distance_type",
+                            "value": "kilometer"
+                          },
+                          {
+                            "code": "motorable_distance",
+                            "value": "0.00"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "2f81641b-d044-4ada-a6f1-2f87c94c5282",
+                    "type": "RTO"
+                  }
+                ],
+                "locations": [
+                  {
+                    "id": "L1",
+                    "gps": "12.453544,77.928379",
+                    "address": {
+                      "street": "Jayanagar 4th Block",
+                      "city": "Bengaluru",
+                      "area_code": "560076",
+                      "state": "KA"
+                    }
+                  }
+                ],
+                "items": [
+                  {
+                    "id": "std_del",
+                    "parent_item_id": "",
+                    "descriptor": {
+                      "code": "P2P",
+                      "name": "Standard Delivery",
+                      "long_desc": "Upto 1 day for Delivery",
+                      "short_desc": "Upto 1 day for Delivery"
+                    },
+                    "category_id": "Standard Delivery",
+                    "fulfillment_id": "bc2d3eab-a3e4-4187-8531-9a89940ba1eb",
+                    "price": {
+                      "currency": "INR",
+                      "value": "20.00"
+                    },
+                    "time": {
+                      "label": "TAT",
+                      "duration": "PT24H",
+                      "timestamp": "2025-07-18"
+                    }
+                  },
+                  {
+                    "id": "rto_std",
+                    "parent_item_id": "std_del",
+                    "category_id": "Standard Delivery",
+                    "descriptor": {
+                      "code": "P2P",
+                      "name": "Standard Delivery",
+                      "long_desc": "Upto 1 day for Delivery",
+                      "short_desc": "Upto 1 day for Delivery"
+                    },
+                    "fulfillment_id": "2f81641b-d044-4ada-a6f1-2f87c94c5282",
+                    "time": {
+                      "label": "TAT",
+                      "duration": "PT24H",
+                      "timestamp": "2025-07-18"
+                    },
+                    "price": {
+                      "currency": "INR",
+                      "value": "30.00"
+                    }
+                  }
+                ],
+                "tags": [
+                  {
+                    "code": "lsp_features",
+                    "list": [
+                      {
+                        "code": "009",
+                        "value": "yes"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         }
-      ]
-    }
-  }
-}
+      }

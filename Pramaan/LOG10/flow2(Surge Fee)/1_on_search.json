@@ -1,193 +1,189 @@
 {
-  "context": {
-    "domain": "ONDC:LOG10",
-    "country": "IND",
-    "city": "std:080",
-    "core_version": "1.2.5",
-    "action": "on_search",
-    "transaction_id": "1f6dd9ff-2738-4c97-9474-5244c6ff902c",
-    "message_id": "d5ef870e-04c4-45a0-97bf-9840e77170de",
-    "timestamp": "2025-06-13T08:13:43.155Z",
-    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
-    "bap_id": "ondc.sequelstring.com/buyer/protocol",
-    "ttl": "PT30S",
-    "bpp_id": "ondc.sequelstring.com/seller/protocol",
-    "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
-  },
-  "message": {
-    "catalog": {
-      "bpp/descriptor": {
-        "name": "ONDC Pramaaan Logistics",
-        "tags": [
-          {
-            "code": "bpp_terms",
-            "list": [
+        "context": {
+          "domain": "ONDC:LOG10",
+          "country": "IND",
+          "city": "std:123",
+          "core_version": "1.2.5",
+          "action": "on_search",
+          "transaction_id": "2ec9dac9-cb37-461a-8514-c17b0166b375",
+          "message_id": "07093a31-0f4c-4a55-9453-f6977621925f",
+          "timestamp": "2025-07-17T05:23:24.076Z",
+          "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+          "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+          "ttl": "PT30S",
+          "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+          "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller"
+        },
+        "message": {
+          "catalog": {
+            "bpp/descriptor": {
+              "name": "ONDC Pramaaan Logistics",
+              "tags": [
+                {
+                  "code": "bpp_terms",
+                  "list": [
+                    {
+                      "code": "static_terms",
+                      "value": ""
+                    },
+                    {
+                      "code": "static_terms_new",
+                      "value": "https://github.com/ONDC-Official/NP-Static-Terms/lspNP_LSP/1.0/tc.pdf"
+                    },
+                    {
+                      "code": "effective_date",
+                      "value": "2024-11-20T00:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "bpp/providers": [
               {
-                "code": "static_terms",
-                "value": ""
-              },
-              {
-                "code": "static_terms_new",
-                "value": "https://github.com/ONDC-Official/NP-Static-Terms/lspNP_LSP/1.0/tc.pdf"
-              },
-              {
-                "code": "effective_date",
-                "value": "2024-11-20T00:00:00.000Z"
+                "id": "P1",
+                "descriptor": {
+                  "name": "ONDC Pramaaan Logistics",
+                  "short_desc": "Swiftly Yours, Delivered with Care",
+                  "long_desc": "We deliver everywhere—yes, even Mars (just give us a little more rocket fuel)."
+                },
+                "categories": [
+                  {
+                    "id": "Standard Delivery",
+                    "time": {
+                      "label": "TAT",
+                      "duration": "PT24H",
+                      "timestamp": "2025-07-18"
+                    }
+                  }
+                ],
+                "fulfillments": [
+                  {
+                    "id": "31add3cc-d54f-40f9-9099-fa4234782910",
+                    "type": "Delivery",
+                    "start": {
+                      "time": {
+                        "duration": "PT15M"
+                      }
+                    },
+                    "tags": [
+                      {
+                        "code": "distance",
+                        "list": [
+                          {
+                            "code": "motorable_distance_type",
+                            "value": "kilometer"
+                          },
+                          {
+                            "code": "motorable_distance",
+                            "value": "0.00"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "70e31b0f-5c62-4c5f-884a-800f43781821",
+                    "type": "RTO"
+                  }
+                ],
+                "items": [
+                  {
+                    "id": "std_del",
+                    "parent_item_id": "",
+                    "descriptor": {
+                      "code": "P2P",
+                      "name": "Standard Delivery",
+                      "long_desc": "Upto 1 day for Delivery",
+                      "short_desc": "Upto 1 day for Delivery"
+                    },
+                    "category_id": "Standard Delivery",
+                    "fulfillment_id": "31add3cc-d54f-40f9-9099-fa4234782910",
+                    "price": {
+                      "currency": "INR",
+                      "value": "20.00"
+                    },
+                    "time": {
+                      "label": "TAT",
+                      "duration": "PT24H",
+                      "timestamp": "2025-07-18"
+                    },
+                    "tags": [
+                      {
+                        "code": "type",
+                        "list": [
+                          {
+                            "code": "type",
+                            "value": "base"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "rto_std",
+                    "parent_item_id": "std_del",
+                    "category_id": "Standard Delivery",
+                    "descriptor": {
+                      "code": "P2P",
+                      "name": "Standard Delivery",
+                      "long_desc": "Upto 1 day for Delivery",
+                      "short_desc": "Upto 1 day for Delivery"
+                    },
+                    "fulfillment_id": "70e31b0f-5c62-4c5f-884a-800f43781821",
+                    "time": {
+                      "label": "TAT",
+                      "duration": "PT24H",
+                      "timestamp": "2025-07-18"
+                    },
+                    "price": {
+                      "currency": "INR",
+                      "value": "30.00"
+                    }
+                  },
+                  {
+                    "id": "I4",
+                    "parent_item_id": "",
+                    "category_id": "Standard Delivery",
+                    "fulfillment_id": "31add3cc-d54f-40f9-9099-fa4234782910",
+                    "price": {
+                      "currency": "INR",
+                      "value": "19.18"
+                    },
+                    "time": {
+                      "label": "TAT",
+                      "duration": "PT24H",
+                      "timestamp": "2025-07-18"
+                    },
+                    "tags": [
+                      {
+                        "code": "type",
+                        "list": [
+                          {
+                            "code": "type",
+                            "value": "surge"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "tags": [
+                  {
+                    "code": "lsp_features",
+                    "list": [
+                      {
+                        "code": "009",
+                        "value": "yes"
+                      },
+                      {
+                        "code": "017",
+                        "value": "yes"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
-        ]
-      },
-      "bpp/providers": [
-        {
-          "id": "P1",
-          "descriptor": {
-            "name": "ONDC Pramaaan Logistics",
-            "short_desc": "Swiftly Yours, Delivered with Care",
-            "long_desc": "We deliver everywhere—yes, even Mars (just give us a little more rocket fuel)."
-          },
-          "categories": [
-            {
-              "id": "Standard Delivery",
-              "time": {
-                "label": "TAT",
-                "duration": "PT24H",
-                "timestamp": "2025-06-14"
-              }
-            }
-          ],
-          "fulfillments": [
-            {
-              "id": "6b765bac-3f13-4704-b30f-3bf7679bde25",
-              "type": "Delivery",
-              "start": {
-                "time": {
-                  "duration": "PT15M"
-                }
-              },
-              "tags": [
-                {
-                  "code": "distance",
-                  "list": [
-                    {
-                      "code": "motorable_distance_type",
-                      "value": "kilometer"
-                    },
-                    {
-                      "code": "motorable_distance",
-                      "value": "1.16"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "defe0bb7-e650-4c87-9a5a-576de544f74f",
-              "type": "RTO"
-            }
-          ],
-          "items": [
-            {
-              "id": "std_del",
-              "parent_item_id": "",
-              "descriptor": {
-                "code": "P2P",
-                "name": "Standard Delivery",
-                "long_desc": "Upto 1 day for Delivery",
-                "short_desc": "Upto 1 day for Delivery"
-              },
-              "category_id": "Standard Delivery",
-              "fulfillment_id": "6b765bac-3f13-4704-b30f-3bf7679bde25",
-              "price": {
-                "currency": "INR",
-                "value": "23.47"
-              },
-              "time": {
-                "label": "TAT",
-                "duration": "PT24H",
-                "timestamp": "2025-06-14"
-              },
-              "tags": [
-                {
-                  "code": "type",
-                  "list": [
-                    {
-                      "code": "type",
-                      "value": "base"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "rto_std",
-              "parent_item_id": "std_del",
-              "category_id": "Standard Delivery",
-              "descriptor": {
-                "code": "P2P",
-                "name": "Standard Delivery",
-                "long_desc": "Upto 1 day for Delivery",
-                "short_desc": "Upto 1 day for Delivery"
-              },
-              "fulfillment_id": "defe0bb7-e650-4c87-9a5a-576de544f74f",
-              "time": {
-                "label": "TAT",
-                "duration": "PT24H",
-                "timestamp": "2025-06-14"
-              },
-              "price": {
-                "currency": "INR",
-                "value": "35.20"
-              }
-            },
-            {
-              "id": "I4",
-              "parent_item_id": "",
-              "category_id": "Standard Delivery",
-              "fulfillment_id": "6b765bac-3f13-4704-b30f-3bf7679bde25",
-              "price": {
-                "currency": "INR",
-                "value": "19.18"
-              },
-              "time": {
-                "label": "TAT",
-                "duration": "PT24H",
-                "timestamp": "2025-06-14"
-              },
-              "tags": [
-                {
-                  "code": "type",
-                  "list": [
-                    {
-                      "code": "type",
-                      "value": "surge"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "tags": [
-            {
-              "code": "lsp_features",
-              "list": [
-                {
-                  "code": "005",
-                  "value": "yes"
-                },
-                {
-                  "code": "009",
-                  "value": "yes"
-                },
-                {
-                  "code": "017",
-                  "value": "yes"
-                }
-              ]
-            }
-          ]
         }
-      ]
-    }
-  }
-}
+      }
