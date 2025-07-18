@@ -1,261 +1,263 @@
 {
-        "context": {
-          "domain": "ONDC:LOG10",
-          "country": "IND",
-          "city": "std:123",
-          "core_version": "1.2.5",
-          "action": "on_init",
-          "transaction_id": "a734208e-b94c-4c5c-9945-0e4cebbfc7a7",
-          "message_id": "70d0bbba-b636-4cb6-87c3-6d6a7f6ff03b",
-          "timestamp": "2025-07-17T06:32:27.297Z",
-          "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
-          "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
-          "ttl": "PT30S",
-          "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
-          "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller"
+  "context": {
+    "domain": "ONDC:LOG10",
+    "country": "IND",
+    "city": "*",
+    "core_version": "1.2.5",
+    "action": "on_init",
+    "transaction_id": "7ef8a2a5-fc33-4cf3-b954-4689b7f9ce08",
+    "message_id": "8c76d032-c996-496c-bd57-6b709aed2868",
+    "timestamp": "2025-05-29T06:10:29.284Z",
+    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
+    "bap_id": "ondc.sequelstring.com/buyer/protocol",
+    "ttl": "PT30S",
+    "bpp_id": "ondc.sequelstring.com/seller/protocol",
+    "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "P1"
+      },
+      "items": [
+        {
+          "id": "I1",
+          "fulfillment_id": "9a57b3c6-e8ad-4aeb-b938-9bb92a5fe483"
         },
-        "message": {
-          "order": {
-            "provider": {
-              "id": "P1"
+        {
+          "id": "I3",
+          "fulfillment_id": "9a57b3c6-e8ad-4aeb-b938-9bb92a5fe483"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "9a57b3c6-e8ad-4aeb-b938-9bb92a5fe483",
+          "type": "Delivery",
+          "start": {
+            "location": {
+              "id": "S1",
+              "gps": "12.921200,77.588000",
+              "address": {
+                "name": "Sherlock Holmes",
+                "building": "221 B",
+                "locality": "Baker Street",
+                "city": "Bangalore",
+                "state": "Karanataka",
+                "country": "India",
+                "area_code": "560076"
+              }
             },
-            "items": [
-              {
-                "id": "std_del",
-                "fulfillment_id": "06e4247c-89d2-47ea-9af1-10923ee88efa"
+            "contact": {
+              "phone": "9876543210",
+              "email": "sherlock@detective.com"
+            }
+          },
+          "end": {
+            "location": {
+              "gps": "12.930800,77.583900",
+              "address": {
+                "name": "Tony Soprano",
+                "building": "633 Stagtrail Rd",
+                "locality": "N. Caldwell",
+                "city": "Bangalore",
+                "state": "Karanataka",
+                "country": "India",
+                "area_code": "560076"
               }
-            ],
-            "fulfillments": [
-              {
-                "id": "06e4247c-89d2-47ea-9af1-10923ee88efa",
-                "type": "Delivery",
-                "start": {
-                  "location": {
-                    "id": "S1",
-                    "gps": "12.453544,77.928379",
-                    "address": {
-                      "name": "221",
-                      "building": "B",
-                      "locality": "Baker Street",
-                      "city": "Bangalore",
-                      "state": "Karnataka",
-                      "country": "India",
-                      "area_code": "560041"
-                    }
-                  },
-                  "contact": {
-                    "phone": "9876543210",
-                    "email": "sherlock@detective.com"
-                  }
-                },
-                "end": {
-                  "location": {
-                    "gps": "12.453544,77.928379",
-                    "address": {
-                      "name": "633",
-                      "building": "Stagtrail Rd",
-                      "locality": "N. Caldwell",
-                      "city": "Mumbai",
-                      "state": "Maharashtra",
-                      "country": "India",
-                      "area_code": "560001"
-                    }
-                  },
-                  "contact": {
-                    "phone": "9876543210",
-                    "email": "tony@soprano.com"
-                  }
-                },
-                "tags": [
-                  {
-                    "code": "rider_check",
-                    "list": [
-                      {
-                        "code": "inline_check_for_rider",
-                        "value": "yes"
-                      }
-                    ]
-                  },
-                  {
-                    "code": "linked_provider",
-                    "list": [
-                      {
-                        "code": "id",
-                        "value": "P1"
-                      },
-                      {
-                        "code": "name",
-                        "value": "Seller1"
-                      }
-                    ]
-                  },
-                  {
-                    "code": "linked_order",
-                    "list": [
-                      {
-                        "code": "currency",
-                        "value": "INR"
-                      },
-                      {
-                        "code": "declared_value",
-                        "value": "1000.00"
-                      },
-                      {
-                        "code": "category",
-                        "value": "Home & Kitchen"
-                      },
-                      {
-                        "code": "weight_unit",
-                        "value": "kilogram"
-                      },
-                      {
-                        "code": "weight_value",
-                        "value": "2"
-                      },
-                      {
-                        "code": "dim_unit",
-                        "value": "centimeter"
-                      },
-                      {
-                        "code": "length",
-                        "value": "25"
-                      },
-                      {
-                        "code": "breadth",
-                        "value": "24"
-                      },
-                      {
-                        "code": "height",
-                        "value": "40"
-                      },
-                      {
-                        "code": "cod_order",
-                        "value": "yes"
-                      },
-                      {
-                        "code": "collection_amount",
-                        "value": "1200"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "payment": {
-              "collected_by": "BPP",
-              "type": "ON-FULFILLMENT",
-              "@ondc/org/settlement_basis": "invoicing",
-              "@ondc/org/settlement_window": "P15D",
-              "@ondc/org/settlement_details": [
+            },
+            "contact": {
+              "phone": "9876543210",
+              "email": "tony@soprano.com"
+            }
+          },
+          "tags": [
+            {
+              "code": "rider_check",
+              "list": [
                 {
-                  "settlement_counterparty": "lbnp",
-                  "settlement_type": "upi",
-                  "beneficiary_name": "xxxxx",
-                  "upi_address": "gft@oksbi",
-                  "settlement_bank_account_no": "XXXXXXXXXX234",
-                  "settlement_ifsc_code": "XXXXXXX233"
+                  "code": "inline_check_for_rider",
+                  "value": "yes"
                 }
               ]
             },
-            "quote": {
-              "price": {
-                "currency": "INR",
-                "value": "39.18"
-              },
-              "breakup": [
+            {
+              "code": "linked_provider",
+              "list": [
                 {
-                  "price": {
-                    "currency": "INR",
-                    "value": "20.00"
-                  },
-                  "@ondc/org/item_id": "std_del",
-                  "@ondc/org/title_type": "delivery"
+                  "code": "id",
+                  "value": "P1"
                 },
                 {
-                  "price": {
-                    "currency": "INR",
-                    "value": "0.00"
-                  },
-                  "@ondc/org/item_id": "std_del",
-                  "@ondc/org/title_type": "tax"
-                },
-                {
-                  "price": {
-                    "currency": "INR",
-                    "value": "19.18"
-                  },
-                  "@ondc/org/item_id": "I3",
-                  "@ondc/org/title_type": "cod"
-                },
-                {
-                  "price": {
-                    "currency": "INR",
-                    "value": "0.00"
-                  },
-                  "@ondc/org/item_id": "I3",
-                  "@ondc/org/title_type": "tax"
+                  "code": "name",
+                  "value": "Seller1"
                 }
-              ],
-              "ttl": "PT15M"
+              ]
             },
-            "tags": [
-              {
-                "code": "bpp_terms",
-                "list": [
-                  {
-                    "code": "static_terms",
-                    "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
-                  }
-                ]
-              }
-            ],
-            "cancellation_terms": [
-              {
-                "fulfillment_state": {
-                  "descriptor": {
-                    "code": "Pending",
-                    "short_desc": "132"
-                  }
+            {
+              "code": "linked_order",
+              "list": [
+                {
+                  "code": "currency",
+                  "value": "INR"
                 },
-                "cancellation_fee": {
-                  "percentage": "0.00",
-                  "amount": {
-                    "currency": "INR",
-                    "value": "0.00"
-                  }
-                }
-              },
-              {
-                "fulfillment_state": {
-                  "descriptor": {
-                    "code": "Agent-assigned",
-                    "short_desc": "102,103,105"
-                  }
+                {
+                  "code": "declared_value",
+                  "value": "1000.00"
                 },
-                "cancellation_fee": {
-                  "percentage": "30.00",
-                  "amount": {
-                    "currency": "INR",
-                    "value": "20.00"
-                  }
-                }
-              },
-              {
-                "fulfillment_state": {
-                  "descriptor": {
-                    "code": "Order-picked-up",
-                    "short_desc": "125,126,127,128"
-                  }
+                {
+                  "code": "category",
+                  "value": "Home & Kitchen"
                 },
-                "cancellation_fee": {
-                  "percentage": "30.00",
-                  "amount": {
-                    "currency": "INR",
-                    "value": "20.00"
-                  }
+                {
+                  "code": "weight_unit",
+                  "value": "kilogram"
+                },
+                {
+                  "code": "weight_value",
+                  "value": "2"
+                },
+                {
+                  "code": "dim_unit",
+                  "value": "centimeter"
+                },
+                {
+                  "code": "length",
+                  "value": "25"
+                },
+                {
+                  "code": "breadth",
+                  "value": "24"
+                },
+                {
+                  "code": "height",
+                  "value": "40"
+                },
+                {
+                  "code": "cod_order",
+                  "value": "yes"
+                },
+                {
+                  "code": "collection_amount",
+                  "value": "1050"
                 }
-              }
-            ]
+              ]
+            }
+          ]
+        }
+      ],
+      "payment": {
+        "collected_by": "BPP",
+        "type": "ON-FULFILLMENT",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "lbnp",
+            "settlement_type": "upi",
+            "beneficiary_name": "xxxxx",
+            "upi_address": "gft@oksbi",
+            "settlement_bank_account_no": "XXXXXXXXXX234",
+            "settlement_ifsc_code": "XXXXXXX233"
+          }
+        ]
+      },
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "42.65"
+        },
+        "breakup": [
+          {
+            "price": {
+              "currency": "INR",
+              "value": "23.47"
+            },
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "delivery"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/title_type": "tax"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "19.18"
+            },
+            "@ondc/org/item_id": "I3",
+            "@ondc/org/title_type": "cod"
+          },
+          {
+            "price": {
+              "currency": "INR",
+              "value": "0.00"
+            },
+            "@ondc/org/item_id": "I3",
+            "@ondc/org/title_type": "tax"
+          }
+        ],
+        "ttl": "PT15M"
+      },
+      "tags": [
+        {
+          "code": "bpp_terms",
+          "list": [
+            {
+              "code": "static_terms",
+              "value": "https://github.com/ONDC-Official/protocol-network-extension/discussions/79"
+            }
+          ]
+        }
+      ],
+      "cancellation_terms": [
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Pending",
+              "short_desc": "132"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "0.00",
+            "amount": {
+              "currency": "INR",
+              "value": "0.00"
+            }
+          }
+        },
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Agent-assigned",
+              "short_desc": "102,103,105"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "100.00",
+            "amount": {
+              "currency": "INR",
+              "value": "50.00"
+            }
+          }
+        },
+        {
+          "fulfillment_state": {
+            "descriptor": {
+              "code": "Order-picked-up",
+              "short_desc": "125,126,127,128"
+            }
+          },
+          "cancellation_fee": {
+            "percentage": "100.00",
+            "amount": {
+              "currency": "INR",
+              "value": "50.00"
+            }
           }
         }
-      }
+      ]
+    }
+  }
+}

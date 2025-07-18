@@ -1,20 +1,20 @@
- {
-        "context": {
-          "domain": "ONDC:LOG11",
-          "country": "IND",
-          "city": "std:123",
-          "core_version": "1.2.5",
-          "action": "status",
-          "transaction_id": "c6ecfaad-b88b-4c82-a5c1-0baff1faae36",
-          "message_id": "997dc4a5-19e3-4e94-b079-62e55d1483d2",
-          "timestamp": "2025-07-17T06:09:37.738Z",
-          "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
-          "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
-          "ttl": "PT30S",
-          "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
-          "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller"
-        },
-        "message": {
-          "order_id": "SS-1752732549498"
-        }
-      }
+{
+  "context": {
+    "domain": "ONDC:LOG11",
+    "country": "IND",
+    "city": "*",
+    "core_version": "1.2.5",
+    "action": "status",
+    "transaction_id": "29425153-f854-4a68-b34e-d784beb4883f",
+    "message_id": "e976e8d0-c99e-4b6e-bcdf-56507a9acdeb",
+    "timestamp": "2025-05-29T07:22:16.092Z",
+    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
+    "bap_id": "ondc.sequelstring.com/buyer/protocol",
+    "ttl": "PT30S",
+    "bpp_id": "ondc.sequelstring.com/seller/protocol",
+    "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
+  },
+  "message": {
+    "order_id": "SS-1748503227990"
+  }
+}
