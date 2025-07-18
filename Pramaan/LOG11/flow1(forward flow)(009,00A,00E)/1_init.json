@@ -1,179 +1,179 @@
 {
-  "context": {
-    "domain": "ONDC:LOG11",
-    "country": "IND",
-    "city": "*",
-    "core_version": "1.2.5",
-    "action": "init",
-    "transaction_id": "d51cf438-f23f-4419-8c3d-cb304614cacc",
-    "message_id": "6fe3f2fb-ec51-4af7-a54b-64f23590ec92",
-    "timestamp": "2025-05-26T12:27:47.005Z",
-    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
-    "bap_id": "ondc.sequelstring.com/buyer/protocol",
-    "ttl": "PT30S",
-    "bpp_id": "ondc.sequelstring.com/seller/protocol",
-    "bpp_uri": "https://ondc.sequelstring.com/seller/protocol"
-  },
-  "message": {
-    "order": {
-      "provider": {
-        "id": "P1",
-        "locations": [
-          {
-            "id": "L1"
-          }
-        ]
-      },
-      "items": [
-        {
-          "id": "exp_del",
-          "fulfillment_id": "df579054-41cd-468d-98ca-ee774158102f",
-          "category_id": "Express Delivery"
-        }
-      ],
-      "fulfillments": [
-        {
-          "id": "df579054-41cd-468d-98ca-ee774158102f",
-          "type": "Delivery",
-          "start": {
-            "location": {
-              "id": "S1",
-              "gps": "12.921200,77.588000",
-              "address": {
-                "name": "Sherlock Holmes",
-                "building": "221 B",
-                "locality": "Baker Street",
-                "city": "Bangalore",
-                "state": "Karanataka",
-                "country": "India",
-                "area_code": "560076"
-              }
-            },
-            "contact": {
-              "phone": "9876543210",
-              "email": "sherlock@detective.com"
-            }
-          },
-          "end": {
-            "location": {
-              "gps": "12.930800,77.583900",
-              "address": {
-                "name": "Tony Soprano",
-                "building": "633 Stagtrail Rd",
-                "locality": "N. Caldwell",
-                "city": "Bangalore",
-                "state": "Karanataka",
-                "country": "India",
-                "area_code": "560076"
-              }
-            },
-            "contact": {
-              "phone": "9876543210",
-              "email": "tony@soprano.com"
-            }
-          },
-          "tags": [
-            {
-              "code": "linked_provider",
-              "list": [
-                {
-                  "code": "id",
-                  "value": "P1"
-                },
-                {
-                  "code": "name",
-                  "value": "Seller1"
-                }
-              ]
-            },
-            {
-              "code": "linked_order",
-              "list": [
-                {
-                  "code": "currency",
-                  "value": "INR"
-                },
-                {
-                  "code": "declared_value",
-                  "value": "1000.00"
-                },
-                {
-                  "code": "category",
-                  "value": "Home & Kitchen"
-                },
-                {
-                  "code": "weight_unit",
-                  "value": "kilogram"
-                },
-                {
-                  "code": "weight_value",
-                  "value": "2"
-                },
-                {
-                  "code": "dim_unit",
-                  "value": "centimeter"
-                },
-                {
-                  "code": "length",
-                  "value": "25"
-                },
-                {
-                  "code": "breadth",
-                  "value": "24"
-                },
-                {
-                  "code": "height",
-                  "value": "40"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "billing": {
-        "name": "ONDC Pramaan Logistics Buyer NP",
-        "address": {
-          "name": "Sherlock Holmes",
-          "building": "221 B",
-          "locality": "Baker Street",
-          "city": "Baker Street",
-          "state": "Karanataka",
-          "country": "India",
-          "area_code": "560076"
+        "context": {
+          "domain": "ONDC:LOG11",
+          "country": "IND",
+          "city": "std:123",
+          "core_version": "1.2.5",
+          "action": "init",
+          "transaction_id": "1414a9d4-bf2f-4464-a443-aae270df9b95",
+          "message_id": "fae8c04e-bbd9-43a2-b50d-0b98bb2f1aae",
+          "timestamp": "2025-07-17T06:01:37.008Z",
+          "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+          "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+          "ttl": "PT30S",
+          "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+          "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller"
         },
-        "tax_number": "00ABCDE1234F1Z5",
-        "phone": "9876543210",
-        "email": "sherlock@detective.com",
-        "created_at": "2025-05-26T12:27:38.295Z",
-        "updated_at": "2025-05-26T12:27:38.295Z"
-      },
-      "payment": {
-        "collected_by": "BAP",
-        "type": "POST-FULFILLMENT",
-        "@ondc/org/settlement_basis": "invoicing",
-        "@ondc/org/settlement_window": "P15D",
-        "@ondc/org/settlement_details": [
-          {
-            "settlement_counterparty": "lbnp",
-            "settlement_type": "upi",
-            "beneficiary_name": "xxxxx",
-            "upi_address": "gft@oksbi",
-            "settlement_bank_account_no": "XXXXXXXXXX234",
-            "settlement_ifsc_code": "XXXXXXX233"
+        "message": {
+          "order": {
+            "provider": {
+              "id": "P1",
+              "locations": [
+                {
+                  "id": "L1"
+                }
+              ]
+            },
+            "items": [
+              {
+                "id": "std_del",
+                "fulfillment_id": "bc2d3eab-a3e4-4187-8531-9a89940ba1eb",
+                "category_id": "Standard Delivery"
+              }
+            ],
+            "fulfillments": [
+              {
+                "id": "bc2d3eab-a3e4-4187-8531-9a89940ba1eb",
+                "type": "Delivery",
+                "start": {
+                  "location": {
+                    "id": "S1",
+                    "gps": "12.453544,77.928379",
+                    "address": {
+                      "name": "221",
+                      "building": "B",
+                      "locality": "Baker Street",
+                      "city": "Bangalore",
+                      "state": "Karnataka",
+                      "country": "India",
+                      "area_code": "560041"
+                    }
+                  },
+                  "contact": {
+                    "phone": "9876543210",
+                    "email": "sherlock@detective.com"
+                  }
+                },
+                "end": {
+                  "location": {
+                    "gps": "12.453544,77.928379",
+                    "address": {
+                      "name": "633",
+                      "building": "Stagtrail Rd",
+                      "locality": "N. Caldwell",
+                      "city": "Mumbai",
+                      "state": "Maharashtra",
+                      "country": "India",
+                      "area_code": "560001"
+                    }
+                  },
+                  "contact": {
+                    "phone": "9876543210",
+                    "email": "tony@soprano.com"
+                  }
+                },
+                "tags": [
+                  {
+                    "code": "linked_provider",
+                    "list": [
+                      {
+                        "code": "id",
+                        "value": "P1"
+                      },
+                      {
+                        "code": "name",
+                        "value": "Seller1"
+                      }
+                    ]
+                  },
+                  {
+                    "code": "linked_order",
+                    "list": [
+                      {
+                        "code": "currency",
+                        "value": "INR"
+                      },
+                      {
+                        "code": "declared_value",
+                        "value": "1000.00"
+                      },
+                      {
+                        "code": "category",
+                        "value": "Home & Kitchen"
+                      },
+                      {
+                        "code": "weight_unit",
+                        "value": "kilogram"
+                      },
+                      {
+                        "code": "weight_value",
+                        "value": "2"
+                      },
+                      {
+                        "code": "dim_unit",
+                        "value": "centimeter"
+                      },
+                      {
+                        "code": "length",
+                        "value": "25"
+                      },
+                      {
+                        "code": "breadth",
+                        "value": "24"
+                      },
+                      {
+                        "code": "height",
+                        "value": "40"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "billing": {
+              "name": "ONDC Pramaan Logistics Buyer NP",
+              "address": {
+                "name": "221",
+                "building": "B",
+                "locality": "Baker Street",
+                "city": "Baker Street",
+                "state": "Karnataka",
+                "country": "India",
+                "area_code": "560041"
+              },
+              "tax_number": "00ABCDE1234F1Z5",
+              "phone": "9876543210",
+              "email": "sherlock@detective.com",
+              "created_at": "2025-07-17T06:00:44.864Z",
+              "updated_at": "2025-07-17T06:00:44.864Z"
+            },
+            "payment": {
+              "collected_by": "BAP",
+              "type": "ON-ORDER",
+              "@ondc/org/settlement_basis": "invoicing",
+              "@ondc/org/settlement_window": "P15D",
+              "@ondc/org/settlement_details": [
+                {
+                  "settlement_counterparty": "lbnp",
+                  "settlement_type": "upi",
+                  "beneficiary_name": "xxxxx",
+                  "upi_address": "gft@oksbi",
+                  "settlement_bank_account_no": "XXXXXXXXXX234",
+                  "settlement_ifsc_code": "XXXXXXX233"
+                }
+              ]
+            },
+            "tags": [
+              {
+                "code": "bap_terms",
+                "list": [
+                  {
+                    "code": "accept_bpp_terms",
+                    "value": "yes"
+                  }
+                ]
+              }
+            ]
           }
-        ]
-      },
-      "tags": [
-        {
-          "code": "bap_terms",
-          "list": [
-            {
-              "code": "accept_bpp_terms",
-              "value": "yes"
-            }
-          ]
         }
-      ]
-    }
-  }
-}
+      }

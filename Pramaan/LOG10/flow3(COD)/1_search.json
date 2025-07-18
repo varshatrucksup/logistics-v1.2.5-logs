@@ -1,174 +1,166 @@
-{
-  "context": {
-    "domain": "ONDC:LOG10",
-    "country": "IND",
-    "city": "*",
-    "core_version": "1.2.5",
-    "action": "search",
-    "transaction_id": "7ef8a2a5-fc33-4cf3-b954-4689b7f9ce08",
-    "message_id": "667eef48-9fc1-4483-839b-b065467e6da7",
-    "timestamp": "2025-05-29T06:10:24.713Z",
-    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
-    "bap_id": "ondc.sequelstring.com/buyer/protocol",
-    "ttl": "PT30S"
-  },
-  "message": {
-    "intent": {
-      "category": {
-        "id": "Immediate Delivery"
-      },
-      "provider": {
-        "time": {
-          "days": "1,2,3,4,5,6,7",
-          "duration": "PT30M",
-          "range": {
-            "start": "1100",
-            "end": "2100"
-          },
-          "schedule": {
-            "holidays": ["2025-06-13", "2025-06-28"]
-          }
-        }
-      },
-      "fulfillment": {
-        "type": "Delivery",
-        "start": {
-          "location": {
-            "gps": "12.921200,77.588000",
-            "address": {
-              "area_code": "560041"
+ {
+        "context": {
+          "domain": "ONDC:LOG10",
+          "country": "IND",
+          "city": "std:123",
+          "core_version": "1.2.5",
+          "action": "search",
+          "transaction_id": "a734208e-b94c-4c5c-9945-0e4cebbfc7a7",
+          "message_id": "b886dc02-ddf6-48a4-946a-e5734426c032",
+          "timestamp": "2025-07-17T06:31:38.531Z",
+          "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+          "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "intent": {
+            "category": {
+              "id": "Standard Delivery"
             },
-            "id": "S1"
-          },
-          "authorization": {
-            "type": "OTP"
-          }
-        },
-        "end": {
-          "location": {
-            "gps": "12.930800,77.583900",
-            "address": {
-              "area_code": "560001"
-            }
-          },
-          "authorization": {
-            "type": "OTP"
-          }
-        },
-        "tags": [
-          {
-            "code": "linked_provider",
-            "list": [
-              {
-                "code": "id",
-                "value": "P1"
-              },
-              {
-                "code": "name",
-                "value": "Seller1"
+            "provider": {
+              "time": {
+                "days": "1,2,3,4,5,6,7",
+                "duration": "PT30M",
+                "range": {
+                  "start": "11:00",
+                  "end": "21:00"
+                },
+                "schedule": {
+                  "holidays": [
+                    "2025-08-15",
+                    "2025-08-07"
+                  ]
+                }
               }
-            ]
-          },
-          {
-            "code": "linked_order",
-            "list": [
-              {
-                "code": "currency",
-                "value": "INR"
+            },
+            "fulfillment": {
+              "type": "Delivery",
+              "start": {
+                "location": {
+                  "gps": "12.453544,77.928379",
+                  "address": {
+                    "area_code": "560041"
+                  },
+                  "id": "S1"
+                }
               },
-              {
-                "code": "declared_value",
+              "end": {
+                "location": {
+                  "gps": "12.453544,77.928379",
+                  "address": {
+                    "area_code": "560001"
+                  }
+                }
+              },
+              "tags": [
+                {
+                  "code": "linked_provider",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "P1"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Seller1"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order",
+                  "list": [
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "declared_value",
+                      "value": "1000.00"
+                    },
+                    {
+                      "code": "category",
+                      "value": "Home & Kitchen"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "2"
+                    },
+                    {
+                      "code": "dim_unit",
+                      "value": "centimeter"
+                    },
+                    {
+                      "code": "length",
+                      "value": "25"
+                    },
+                    {
+                      "code": "breadth",
+                      "value": "24"
+                    },
+                    {
+                      "code": "height",
+                      "value": "40"
+                    },
+                    {
+                      "code": "cod_order",
+                      "value": "yes"
+                    },
+                    {
+                      "code": "collection_amount",
+                      "value": "1200"
+                    }
+                  ]
+                }
+              ]
+            },
+            "payment": {
+              "type": "ON-FULFILLMENT"
+            },
+            "@ondc/org/payload_details": {
+              "category": "Home & Kitchen",
+              "value": {
+                "currency": "INR",
                 "value": "1000.00"
               },
-              {
-                "code": "category",
-                "value": "Home & Kitchen"
+              "dangerous_goods": false,
+              "dimensions": {
+                "length": {
+                  "unit": "centimeter",
+                  "value": 25
+                },
+                "breadth": {
+                  "unit": "centimeter",
+                  "value": 24
+                },
+                "height": {
+                  "unit": "centimeter",
+                  "value": 40
+                }
               },
+              "weight": {
+                "unit": "kilogram",
+                "value": 2
+              }
+            },
+            "tags": [
               {
-                "code": "weight_unit",
-                "value": "kilogram"
-              },
-              {
-                "code": "weight_value",
-                "value": "2"
-              },
-              {
-                "code": "dim_unit",
-                "value": "centimeter"
-              },
-              {
-                "code": "length",
-                "value": "25"
-              },
-              {
-                "code": "breadth",
-                "value": "24"
-              },
-              {
-                "code": "height",
-                "value": "40"
-              },
-              {
-                "code": "cod_order",
-                "value": "yes"
-              },
-              {
-                "code": "collection_amount",
-                "value": "1050"
+                "code": "lbnp_features",
+                "list": [
+                  {
+                    "code": "00B",
+                    "value": "Yes"
+                  },
+                  {
+                    "code": "00E",
+                    "value": "Yes"
+                  }
+                ]
               }
             ]
           }
-        ]
-      },
-      "payment": {
-        "type": "ON-FULFILLMENT"
-      },
-      "@ondc/org/payload_details": {
-        "category": "Home & Kitchen",
-        "collection_amount": "1050",
-        "value": {
-          "currency": "INR",
-          "value": "1000.00"
-        },
-        "dimensions": {
-          "length": {
-            "unit": "centimeter",
-            "value": 25
-          },
-          "breadth": {
-            "unit": "centimeter",
-            "value": 24
-          },
-          "height": {
-            "unit": "centimeter",
-            "value": 40
-          }
-        },
-        "weight": {
-          "unit": "kilogram",
-          "value": 2
-        },
-        "dangerous_goods": false
-      },
-      "tags": [
-        {
-          "code": "lbnp_features",
-          "list": [
-            {
-              "code": "00B",
-              "value": "yes"
-            },
-            {
-              "code": "00E",
-              "value": "yes"
-            },
-            {
-              "code": "01D",
-              "value": "yes"
-            }
-          ]
         }
-      ]
-    }
-  }
-}
+      }
