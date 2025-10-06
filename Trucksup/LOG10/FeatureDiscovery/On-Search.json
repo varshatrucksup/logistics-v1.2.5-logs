@@ -11,7 +11,7 @@
     "bpp_uri": "https://ondc.trucksups.in/api/v1",
     "transaction_id": "dab958b4-babf-4f78-a759-61556399a8ec",
     "message_id": "e50336c3-e021-44c7-a21f-dd3f5d816d26",
-    "timestamp": "{{$isoTimestamp}}",
+    "timestamp": "2025-10-06T04:35:12.123Z",
     "ttl": "PT30S"
   },
   "message": {
